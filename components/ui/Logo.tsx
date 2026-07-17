@@ -9,7 +9,7 @@ export default function Logo({ className = "w-10 h-10" }: { className?: string }
       xmlns="http://www.w3.org/2000/svg"
     >
       {/* Dark background circle */}
-      <circle cx="50" cy="50" r="48" fill="#18160E" />
+      <circle cx="50" cy="50" r="48" fill="#000000" />
       
       {/* Firefly Body */}
       <path d="M50 20C46 20 42 24 42 28C42 32 46 36 50 36C54 36 58 32 58 28C58 24 54 20 50 20Z" fill="#F6F5ED" />

@@ -3,13 +3,14 @@
 @theme inline {
   --color-brand-red: #E51E25;
   --color-brand-yellow: #FFD100;
-  --color-ink: #18160E;
+  --color-ink: #000000;
   --color-ink-70: rgba(24, 22, 14, 0.7);
   --color-ink-40: rgba(24, 22, 14, 0.4);
   --color-bg-base: #F6F5ED;
   --color-surface: #FFFFFF;
   --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-heading: "ABeeZee", sans-serif;
+  --font-serif: "Playfair Display", serif;
 }
 
 /* ── Base Foundation ── */
@@ -22,10 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-::selection {
-  background: var(--color-brand-red);
-  color: #FFFFFF;
-}
+
 
 /* ── Typography Enhancements ── */
 .text-balance {

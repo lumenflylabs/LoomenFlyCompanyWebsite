@@ -1,48 +1,62 @@
 import { ABOUT } from "@/lib/constants";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function About() {
   return (
-    <section id="about" className="bg-[#F6F5ED] text-[#18160E] py-[clamp(80px,10vw,160px)] px-[clamp(24px,5%,120px)]">
-      <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24">
+    <section id="about" className="bg-[#000000] text-white py-40 md:py-64 px-[clamp(24px,5%,120px)] border-t border-white/10 overflow-hidden">
+      <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-24 lg:gap-32 items-center">
         
-        <div className="lg:w-1/2">
-          <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white shadow-sm border border-[#18160E]/5 mb-6">
-            <span className="font-sans font-bold text-[13px] text-[#E51E25] uppercase tracking-widest">
+        {/* Left Side: The Heavy Manifesto */}
+        <div className="flex-1 lg:pr-12">
+          <ScrollReveal>
+            <span className="font-sans font-bold text-[12px] text-[#E51E25] uppercase tracking-[0.2em] block mb-12">
               {ABOUT.eyebrow}
             </span>
-          </div>
-          <h2 className="font-heading text-[clamp(40px,5vw,70px)] leading-[1.1] mb-8">
-            {ABOUT.headline.split('\n').map((line, i) => (
-              <span key={i} className="block">{line}</span>
+            <h2 className="font-heading text-[clamp(48px,6vw,90px)] leading-[1.05] tracking-tight mb-16 text-white text-balance">
+              {ABOUT.headline.split('\n').map((line, i) => (
+                <span key={i} className="block">{line}</span>
+              ))}
+            </h2>
+          </ScrollReveal>
+          
+          <div className="flex flex-col gap-8 max-w-[600px]">
+            {ABOUT.paragraphs.map((p, i) => (
+              <ScrollReveal key={i} delay={0.2 + (0.1 * i)}>
+                <p className="font-sans text-xl md:text-2xl text-white/60 leading-relaxed">
+                  {p}
+                </p>
+              </ScrollReveal>
             ))}
-          </h2>
-          <div className="p-8 rounded-[32px] bg-[#18160E] text-white mt-12 shadow-xl">
-            <h3 className="font-heading text-[28px] text-[#FFD100] mb-4 whitespace-pre-line">
-              {ABOUT.cardTitle}
-            </h3>
-            <p className="font-sans text-[15px] text-white/70 leading-relaxed">
-              {ABOUT.cardDesc}
-            </p>
           </div>
         </div>
 
-        <div className="lg:w-1/2 flex flex-col gap-8 lg:pt-16">
-          {ABOUT.paragraphs.map((p, i) => (
-            <p key={i} className="font-sans text-[clamp(16px,1.5vw,20px)] text-[#18160E]/70 leading-relaxed font-medium">
-              {p}
-            </p>
-          ))}
-          
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-            {ABOUT.values.map((v, i) => (
-              <li key={i} className="flex gap-4 items-start bg-white p-6 rounded-[24px] soft-shadow border border-[#18160E]/5">
-                <span className="w-8 h-8 shrink-0 rounded-full bg-[#FFD100]/20 flex items-center justify-center text-[#18160E] mt-1">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                </span>
-                <span className="font-sans text-[15px] font-medium text-[#18160E] leading-relaxed">{v}</span>
-              </li>
-            ))}
-          </ul>
+        {/* Right Side: The Anchor Card */}
+        <div className="flex-1 w-full">
+          <ScrollReveal delay={0.4}>
+            <div className="bg-white text-[#000000] p-12 md:p-20 rounded-[40px] shadow-2xl flex flex-col justify-center transition-transform duration-500 hover:scale-[1.02]">
+              <h3 className="font-heading text-4xl md:text-6xl leading-[1.1] mb-8 text-balance">
+                {ABOUT.cardTitle.split('\n').map((line, i) => (
+                  <span key={i} className="block">{line}</span>
+                ))}
+              </h3>
+              <p className="font-sans text-lg md:text-xl text-[#000000]/60 leading-relaxed mb-16 max-w-[400px]">
+                {ABOUT.cardDesc}
+              </p>
+              
+              <ul className="flex flex-col gap-8 border-t border-[#000000]/10 pt-16">
+                {ABOUT.values.map((val, i) => (
+                  <li key={i} className="flex items-start gap-6 group">
+                    <span className="w-10 h-10 flex-shrink-0 rounded-full border border-[#000000]/10 flex items-center justify-center text-[#E51E25] group-hover:bg-[#E51E25] group-hover:text-white transition-colors duration-300">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </span>
+                    <span className="font-sans text-xl md:text-2xl text-[#000000]/80 leading-tight pt-1">
+                      {val}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </ScrollReveal>
         </div>
 
       </div>

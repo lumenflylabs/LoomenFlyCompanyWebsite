@@ -1,9 +1,9 @@
 export const COMPANY = {
   name: "Loomenfly Labs",
   legalName: "LoomenFlyLabs",
-  tagline: "Turn WhatsApp Into Your Front Desk",
+  tagline: "Turn WhatsApp Into Your FlowDesk",
   description:
-    "We build WhatsApp automation for local businesses that actually makes life easier — for you and your customers. No fluff, just practical tools that work.",
+    "We build custom software and WhatsApp Meta Flows that give your customers an interactive mini-website experience, while giving you a powerful dashboard to manage it all.",
   address: "Gurusadanam, Ala p.o, Nalinathe padi, Chengannur, Alappuzha, Kerala 689126, India",
   adminEmail: "admin@loomenflylabs.com",
   salesEmail: "gokul@loomenflylabs.com",
@@ -23,20 +23,18 @@ export type IndustryItem = {
 };
 
 export const NAV_LINKS = [
-  { label: "Why Us", href: "#why" },
-  { label: "Plans", href: "#plans" },
+  { label: "Platform", href: "#plans" },
+  { label: "Features", href: "#addons" },
   { label: "Industries", href: "#industries" },
-  { label: "Reviews", href: "#reviews" },
   { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
 ] as const;
 
 export const HERO = {
-  eyebrow: "WhatsApp automation for businesses",
-  headline: "Turn WhatsApp\nInto Your Front Desk",
-  highlight: "Front Desk",
+  eyebrow: "WhatsApp Mini-Website & Management Dashboard",
+  headline: "Turn WhatsApp\nInto Your FlowDesk",
+  highlight: "FlowDesk",
   subtitle:
-    "Automate bookings, follow-ups, reminders & promotions — all through WhatsApp. While you focus on what you love.",
+    "A custom WhatsApp Meta Flow that gives your customers a rich, interactive booking experience—paired with a powerful owner dashboard to manage staff, catalogs, and schedules. Zero coding required.",
   kpis: [
     { value: "24/7", label: "Always Available" },
     { value: "0s", label: "Response Delay" },
@@ -46,118 +44,118 @@ export const HERO = {
 
 export const PROBLEM_SOLUTION = {
   eyebrow: "The real problem",
-  headline: "You're Losing Customers\nWithout Even Knowing It",
+  headline: "You're Running a Business,\nNot an IT Department",
   subtitle:
-    "It's not about bad service. It's about the calls you couldn't pick up, the messages you missed, the follow-ups you forgot. Loomenfly fixes that — quietly, automatically.",
+    "Managing catalogs, tracking staff schedules, sending reminders, and collecting reviews manually is exhausting. You need a system that runs itself, without forcing your customers to download a new app.",
   without: {
-    label: "Without Loomenfly",
+    label: "Without FlowDesk",
     items: [
       {
         icon: "01",
-        title: "Missed calls during busy hours",
-        desc: "A customer rings while you're with someone. You can't answer. They move on to the next salon.",
+        title: "Chaotic WhatsApp inbox",
+        desc: "Customers texting 'What services do you offer?' while you're busy with a client. Lost leads and messy chats.",
       },
       {
         icon: "02",
-        title: "Staff buried in admin work",
-        desc: "Hours wasted managing bookings instead of actually serving the people in your chair.",
+        title: "Manual scheduling & conflicts",
+        desc: "Juggling staff timings and double-booking clients because you're using a paper diary or basic notes app.",
       },
       {
         icon: "03",
-        title: "WhatsApp inbox chaos",
-        desc: "90% of customers prefer to book on WhatsApp. But your personal inbox is a mess of 'Hi, is this available?' texts.",
+        title: "Tech headaches",
+        desc: "Trying to build a website or manage complex booking software that requires you to be a part-time coder.",
       },
       {
         icon: "04",
-        title: "Leads slipping through",
-        desc: "Reply a few minutes late? That customer already booked with your competitor.",
+        title: "Begging for reviews",
+        desc: "Manually messaging past clients asking for a Google Review, only for them to forget.",
       },
     ],
   },
   with: {
-    label: "With Loomenfly",
+    label: "With FlowDesk",
     items: [
       {
         icon: "01",
-        title: "A booking bot that works while you sleep",
-        desc: "Your WhatsApp takes bookings at 3 AM. Correctly. Every time. You wake up to a full schedule.",
+        title: "An interactive catalog inside WhatsApp",
+        desc: "Customers browse your services, pick a staff member, and book seamlessly without ever leaving WhatsApp.",
       },
       {
         icon: "02",
-        title: "Instant replies, every time",
-        desc: "Customers get a response in seconds. No waiting. No one gets ignored.",
+        title: "Your own management dashboard",
+        desc: "Update services, manage staff schedules, and view all booking data from one incredibly simple interface.",
       },
       {
         icon: "03",
-        title: "Smart reminders that actually reduce no-shows",
-        desc: "Reminders go out automatically — timed perfectly. Your appointment book stays full.",
+        title: "We build it. You just use it.",
+        desc: "Our team handles the entire technical setup and onboarding. You get a ready-to-use custom software suite.",
       },
       {
         icon: "04",
-        title: "Growth that runs itself",
-        desc: "Promotions, re-engagement messages, follow-ups — all on autopilot. You just show up and do your thing.",
+        title: "Automated growth",
+        desc: "FlowDesk automatically follows up for Google Reviews and sends promotional broadcasts to your past customers.",
       },
     ],
   },
 } as const;
 
 export const LEAD_CATCHER = {
-  eyebrow: "Start simple",
-  headline: "The Lead Catcher",
+  eyebrow: "The Core Software",
+  headline: "The FlowDesk Ecosystem",
   subtitle:
-    "A 24/7 WhatsApp booking bot that captures every lead and keeps your calendar synced. It's the foundation — and honestly, most businesses never need more than this.",
+    "A hybrid solution: An advanced mini-website experience for your customers, connected to a robust control center for you.",
   features: [
-    "24/7 WhatsApp Meta Flow booking bot",
-    "Auto-syncs to Google Calendar",
-    "FAQ auto-replies for common questions",
-    "Service & price menu on request",
-    "Simple booking dashboard",
-    "Instant booking confirmations",
+    "Management Dashboard to control it all",
+    "Visual catalogs to showcase service photos and past work",
+    "List and sell retail products directly through the flow",
+    "Interactive Meta Flow booking directly inside WhatsApp",
+    "Real-time Google Calendar synchronization",
+    "Full access to user data and booking history",
   ],
 } as const;
 
 export const PREMIUM_ADDONS = {
-  eyebrow: "Unlock as You Grow",
-  headline: "Premium Add-Ons\nfor Expanding Businesses",
+  eyebrow: "Automated Marketing",
+  headline: "Growth Features\nBuilt Right In",
   subtitle:
-    "Start with The Lead Catcher, then unlock these modular upgrades as your business scales.",
+    "FlowDesk doesn't just manage your bookings; it actively helps your business grow and retain customers on autopilot.",
   addons: [
     {
-      icon: "■",
-      title: "No-Show Protector",
-      tagline: "Cut no-shows by 70%+",
-      desc: "Automated 2-hour pre-appointment reminders sent directly to WhatsApp. Customers confirm or reschedule with one tap. Your chair stays filled.",
+      icon: "★",
+      title: "Google Review System",
+      tagline: "Boost your local ranking",
+      desc: "Automatically send a polite follow-up message asking happy customers to drop a Google Review right after their appointment.",
     },
     {
-      icon: "▲",
-      title: "Advance Deposits",
-      tagline: "Secure every booking",
-      desc: "Razorpay payment links sent automatically inside WhatsApp. Collect deposits upfront for high-demand slots. No more last-minute cancellations.",
+      icon: "📣",
+      title: "Broadcast Offers",
+      tagline: "Re-engage past clients",
+      desc: "Send targeted WhatsApp messages to previous customers about new services, special discounts, or gentle booking reminders.",
     },
     {
-      icon: "●",
-      title: "Multi-Stylist Routing",
-      tagline: "Let customers choose",
-      desc: "Customers pick their specific barber, doctor, or stylist directly in WhatsApp. Route bookings to the right professional automatically.",
+      icon: "🔔",
+      title: "Automated Reminders",
+      tagline: "Eliminate no-shows",
+      desc: "Send basic confirmation messages and timely reminders so your customers never miss an appointment.",
     },
     {
-      icon: "◆",
-      title: "The Festive Broadcaster",
-      tagline: "Bulk marketing campaigns",
-      desc: "Send targeted WhatsApp marketing campaigns to segmented customer lists. Festive offers, re-engagement blasts, and seasonal promotions — all automated.",
+      icon: "ℹ️",
+      title: "Smart FAQs",
+      tagline: "Instant answers",
+      desc: "A built-in list of Frequently Asked Questions that instantly answers common customer queries about location, pricing, and prep.",
     },
   ],
 } as const;
 
 export const TRUST_FLOW = {
-  eyebrow: "Built for Reliability",
-  headline: "Your Bookings Are Safe — Even If You Change Your Phone",
+  eyebrow: "Zero Tech Skills Required",
+  headline: "We Handle the Setup.\nYou Run the Business.",
   subtitle:
-    "Every booking is instantly mirrored to Google Calendar. Switch phones, lose your device, or go offline — your schedule is always intact, accessible anywhere, anytime.",
+    "You don't need to know anything about coding, tech, or software setup. We do 100% of the heavy lifting so you can focus on your clients.",
   nodes: [
-    { icon: "1", label: "Customer books\non WhatsApp" },
-    { icon: "2", label: "Auto-synced to\nGoogle Calendar" },
-    { icon: "3", label: "Access from\nany device" },
+    { icon: "1", label: "We input your details and\nbuild the interactive Flow" },
+    { icon: "2", label: "We connect the Flow to\nyour WhatsApp number" },
+    { icon: "3", label: "We hand over a Dashboard\nfully pre-loaded with your data" },
   ],
 } as const;
 
@@ -168,138 +166,104 @@ export const INDUSTRIES: {
   items: IndustryItem[];
 } = {
   eyebrow: "Industries We Serve",
-  headline: "Designed for Every\nCustomer-Facing Business",
+  headline: "Perfect for Salons,\nScalable for Everyone",
   subtitle:
-    "If your business takes appointments, bookings, or orders — Loomenfly automates it.",
+    "We are heavily focused on the Salon and Beauty industry, but FlowDesk's custom architecture adapts to any service business.",
   items: [
-    { icon: "01", name: "Salons", desc: "Hair · Beauty · Styling" },
-    { icon: "02", name: "Beauty Parlours", desc: "Skincare · Treatments" },
-    { icon: "03", name: "Nail Studios", desc: "Nail Art · Extensions" },
-    { icon: "04", name: "Clinics", desc: "Appointments · Follow-ups" },
-    { icon: "05", name: "Barbershops", desc: "Queue · Bookings" },
+    { icon: "01", name: "Salons", desc: "Hair · Beauty · Styling", highlighted: true },
+    { icon: "02", name: "Beauty Parlours", desc: "Skincare · Treatments", highlighted: true },
+    { icon: "03", name: "Nail Studios", desc: "Nail Art · Extensions", highlighted: true },
+    { icon: "04", name: "Barbershops", desc: "Queue · Staff Routing", highlighted: true },
+    { icon: "05", name: "Clinics", desc: "Appointments · Follow-ups" },
     { icon: "06", name: "Cafes", desc: "Reservations · Orders" },
-    { icon: "07", name: "Hotels", desc: "Bookings · Concierge" },
-    { icon: "08", name: "Your Business", desc: "Let's talk about it", highlighted: true },
+    { icon: "07", name: "Spas", desc: "Therapies · Massages" },
+    { icon: "08", name: "Your Business", desc: "Let's build your flow" },
   ],
 };
 
-export const REVIEWS = {
-  eyebrow: "Client Stories",
-  headline: "Businesses Already Glowing",
-  subtitle:
-    "Real results from businesses who made WhatsApp their front desk.",
-  items: [
-    {
-      stars: 5,
-      quote:
-        "We went from missing 10+ calls a day to capturing every single enquiry. Bookings doubled in the first month. Best investment we made for the salon.",
-      author: "Akshaya Nair",
-      business: "Bloom Beauty Studio, Kochi",
-      initial: "A",
-    },
-    {
-      stars: 5,
-      quote:
-        "The automated reminders alone reduced our no-shows by 70%. Our staff can now focus entirely on customers in front of them instead of being glued to the phone.",
-      author: "Rahul Menon",
-      business: "The Barber's Corner, Thrissur",
-      initial: "R",
-    },
-    {
-      stars: 5,
-      quote:
-        "Setup was smooth and fast. Within a week we had a fully automated booking system on WhatsApp. Our customers love how quick and easy it is — and so do we.",
-      author: "Priya Thomas",
-      business: "Petal Nail Studio, Ernakulam",
-      initial: "P",
-    },
-  ],
-} as const;
-
 export const ABOUT = {
-  eyebrow: "About Us",
-  headline: "We Build the Automation.\nYou Build the Business.",
+  eyebrow: "Our Approach",
+  headline: "Custom Software,\nWithout the Custom Price Tag.",
   paragraphs: [
-    "Loomenfly Labs was born from a simple observation: local businesses lose customers not because of poor service — but because of missed conversations. A call at the wrong time. A WhatsApp message that went unread.",
-    "We build intelligent WhatsApp systems that handle the entire customer journey — from the first 'Hi' to confirmed booking, reminder, and loyalty follow-up — without any manual work from your team.",
-    "Every bot we build is crafted to represent your brand with warmth, clarity, and professionalism. Technology that feels human.",
+    "Loomenfly Labs is shifting the paradigm of local business software. We realized that off-the-shelf booking apps force you to change how you work, and custom software development is too expensive.",
+    "So we created a hybrid. We use advanced WhatsApp Meta Flows to build an interactive, mini-website experience that your customers already know how to use. Then, we pair it with a powerful dashboard that puts you in total control.",
+    "No coding. No steep learning curves. Just a brilliantly simple ecosystem designed to make managing your business effortless.",
   ],
   values: [
-    "Human-first automation that still feels personal",
-    "Fast setup — no technical knowledge required",
-    "Ongoing support from a team that genuinely cares",
-    "Scales from a single shop to a full chain",
+    "Interactive Meta Flows that feel like a native app",
+    "Complete control via your Management Dashboard",
+    "Done-for-you onboarding and technical setup",
+    "Built natively for the Salon & Beauty industry first",
   ],
   cardTitle: "Built in Kerala.\nScaling Everywhere.",
   cardDesc:
-    "We're a team of builders, designers & automation specialists making technology accessible to every local business.",
+    "We're a team of software engineers and designers bringing enterprise-grade automation to local businesses.",
 } as const;
 
 export const CUSTOM_SOLUTIONS = {
-  eyebrow: "Custom Solutions",
-  headline: "Need Something Custom?",
+  eyebrow: "The Onboarding Experience",
+  headline: "Completely Hands-Free Setup",
   subtitle:
-    "Tell us about your business and we'll design a solution that fits perfectly.",
+    "When you partner with Loomenfly, you aren't left alone to figure things out. We act as your dedicated technical team.",
   perks: [
     {
       icon: "A",
-      title: "Built around your workflow",
-      desc: "We study how you operate and design automation that fits naturally.",
+      title: "The Discovery Call",
+      desc: "We jump on a quick call with you to understand your services, pricing, facilities, and staff.",
     },
     {
       icon: "B",
-      title: "Integrates with your existing tools",
-      desc: "Connect WhatsApp with your POS, CRM, calendar, or any business software.",
+      title: "We Build the Catalog",
+      desc: "You don't lift a finger. Our team manually inputs all your services and staff data into your new dashboard.",
     },
     {
       icon: "C",
-      title: "Scales as you grow",
-      desc: "Add features, locations, or staff anytime — your automation grows with you.",
+      title: "Number Connection",
+      desc: "We securely connect the interactive Meta Flow directly to your existing business WhatsApp number.",
     },
     {
       icon: "D",
-      title: "Dedicated onboarding support",
-      desc: "Our team handles the full setup. You just approve and go live.",
+      title: "Ready to Launch",
+      desc: "We hand over the keys to a fully operational system. You just sit back and watch the bookings roll in.",
     },
   ],
 } as const;
 
 export const CONTACT = {
   eyebrow: "Get in Touch",
-  headline: "Let's Start the Conversation",
+  headline: "Let's Build\nYour FlowDesk",
   subtitle:
-    "Tell us about your business and we'll show you exactly how Loomenfly can transform it.",
+    "Ready to upgrade your booking experience and take control with your own dashboard? Let's talk.",
   methods: [
-    { icon: "►", label: "Sales Enquiries — Gokul (Owner)", value: COMPANY.salesEmail, href: `mailto:${COMPANY.salesEmail}` },
-    { icon: "►", label: "Technical Lead — Hashiq", value: COMPANY.techEmail, href: `mailto:${COMPANY.techEmail}` },
-    { icon: "►", label: "Client Success — Saheeda", value: COMPANY.successEmail, href: `mailto:${COMPANY.successEmail}` },
+    { icon: "►", label: "Sales Enquiries — Gokul (CEO)", value: COMPANY.salesEmail, href: `mailto:${COMPANY.salesEmail}` },
+    { icon: "►", label: "Technical Lead — Hashiq (CTO)", value: COMPANY.techEmail, href: `mailto:${COMPANY.techEmail}` },
+    { icon: "►", label: "Operations — Saheeda (COO)", value: COMPANY.successEmail, href: `mailto:${COMPANY.successEmail}` },
   ],
 } as const;
 
 export const FOOTER = {
   description:
-    "We build WhatsApp automation systems that help businesses simplify bookings, delight customers, and grow on autopilot.",
+    "We build custom software ecosystems powered by WhatsApp Meta Flows and intuitive management dashboards.",
   navColumns: [
     {
       title: "Navigation",
       links: [
         { label: "Home", href: "/" },
-        { label: "Why Loomenfly", href: "/#why" },
-        { label: "Plans", href: "/#plans" },
+        { label: "Why FlowDesk", href: "/#why" },
+        { label: "Platform", href: "/#plans" },
         { label: "Industries", href: "/#industries" },
         { label: "About Us", href: "/#about" },
         { label: "Contact", href: "/#contact" },
       ],
     },
     {
-      title: "Services",
+      title: "Features",
       links: [
-        { label: "The Lead Catcher", href: "/#plans" },
-        { label: "No-Show Protector", href: "/#addons" },
-        { label: "Advance Deposits", href: "/#addons" },
-        { label: "Multi-Stylist Routing", href: "/#addons" },
-        { label: "Festive Broadcaster", href: "/#addons" },
-        { label: "Custom Solutions", href: "/#custom" },
+        { label: "The FlowDesk Ecosystem", href: "/#plans" },
+        { label: "Google Review System", href: "/#addons" },
+        { label: "Broadcast Ads", href: "/#addons" },
+        { label: "Management Dashboard", href: "/#custom" },
+        { label: "Done-for-you Setup", href: "/#why" },
       ],
     },
   ],

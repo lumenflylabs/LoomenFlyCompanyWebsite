@@ -1,80 +1,88 @@
 import { COMPANY, FOOTER } from "@/lib/constants";
-import Logo from "@/components/ui/Logo";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#18160E] text-[#F6F5ED] pt-[100px] pb-8 px-[clamp(24px,5%,120px)] mt-20 relative overflow-hidden">
+    <footer className="bg-[#000000] text-white overflow-hidden relative">
       
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#E51E25]/10 rounded-full blur-[100px]" />
-      
-      <div className="max-w-[1200px] mx-auto relative z-10">
-        
-        {/* Massive Sign-off */}
-        <div className="mb-20 text-center flex flex-col items-center">
-          <h2 className="font-heading text-[clamp(40px,7vw,80px)] leading-[1.1] text-[#F6F5ED] max-w-[800px] mb-10">
-            Let's build something <span className="text-[#FFD100]">beautiful</span> together.
-          </h2>
-          <a
-            href={COMPANY.waLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-10 py-5 bg-[#E51E25] text-white font-sans font-bold text-[16px] rounded-full hover:bg-[#FFD100] hover:text-[#18160E] transition-colors shadow-lg"
-          >
-            Start a Project
-          </a>
-        </div>
+      {/* Colossal Marquee */}
+      <div className="w-full overflow-hidden border-t border-white/10 select-none flex items-center justify-center py-12 md:py-24">
+        <h2 className="font-heading text-[16vw] leading-none text-white/[0.03] whitespace-nowrap px-8">
+          LOOMENFLY LABS
+        </h2>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-t border-[#F6F5ED]/10 pt-16 pb-16">
-          <div className="flex flex-col gap-6">
-            <div className="flex items-center gap-3">
-              <Logo className="w-8 h-8 text-[#FFD100]" />
-              <span className="font-heading text-2xl text-[#F6F5ED] mt-1">
-                Loomenfly
+      <div className="max-w-[1400px] mx-auto px-[clamp(24px,5%,120px)] pb-12">
+        
+        {/* Editorial Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-16 lg:gap-8 mb-24 md:mb-40 pt-16 border-t border-white/10">
+          
+          <div className="md:col-span-12 lg:col-span-6 lg:pr-24">
+            <ScrollReveal>
+              <span className="font-heading text-3xl md:text-4xl mb-8 block text-white/90">
+                The New Standard.
               </span>
-            </div>
-            <p className="text-[15px] font-sans text-[#F6F5ED]/60 leading-relaxed max-w-[280px]">
-              {FOOTER.description}
-            </p>
-            <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#FFD100] text-[15px] font-medium hover:text-[#F6F5ED] transition-colors">
-              {COMPANY.adminEmail}
-            </a>
+              <p className="font-sans text-xl md:text-2xl text-white/50 leading-relaxed mb-12">
+                {FOOTER.description}
+              </p>
+              <p className="font-sans text-sm text-white/30 leading-relaxed max-w-[300px]">
+                {COMPANY.address}
+              </p>
+            </ScrollReveal>
           </div>
 
-          {FOOTER.navColumns.map((col) => (
-            <div key={col.title}>
-              <h5 className="font-sans font-bold text-[14px] text-[#F6F5ED] mb-6 uppercase tracking-wider">{col.title}</h5>
-              <ul className="flex flex-col gap-4 list-none">
-                {col.links.map((link) => (
-                  <li key={link.label}>
-                    <a href={link.href} className="text-[#F6F5ED]/70 text-[15px] font-medium hover:text-[#E51E25] transition-colors">
+          <div className="md:col-span-6 lg:col-span-3">
+            <ScrollReveal delay={0.1}>
+              <h4 className="font-sans font-bold text-[11px] text-white/30 uppercase tracking-[0.2em] mb-8">
+                {FOOTER.navColumns[0].title}
+              </h4>
+              <ul className="flex flex-col gap-5">
+                {FOOTER.navColumns[0].links.map((link, i) => (
+                  <li key={i}>
+                    <a href={link.href} className="font-sans text-lg text-white/70 hover:text-white transition-colors duration-300">
                       {link.label}
                     </a>
                   </li>
                 ))}
               </ul>
-            </div>
-          ))}
+            </ScrollReveal>
+          </div>
 
-          <div>
-            <h5 className="font-sans font-bold text-[14px] text-[#F6F5ED] mb-6 uppercase tracking-wider">Follow Us</h5>
-            <div className="flex flex-col gap-4">
-              {FOOTER.socials.map((s) => (
-                <a key={s.label} href={s.href} className="text-[#F6F5ED]/70 text-[15px] font-medium hover:text-[#FFD100] transition-colors">
-                  {s.label}
+          <div className="md:col-span-6 lg:col-span-3">
+            <ScrollReveal delay={0.2}>
+              <h4 className="font-sans font-bold text-[11px] text-white/30 uppercase tracking-[0.2em] mb-8">
+                {FOOTER.navColumns[1].title}
+              </h4>
+              <ul className="flex flex-col gap-5">
+                {FOOTER.navColumns[1].links.map((link, i) => (
+                  <li key={i}>
+                    <a href={link.href} className="font-sans text-lg text-white/70 hover:text-white transition-colors duration-300">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </ScrollReveal>
+          </div>
+          
+        </div>
+
+        {/* The Pill Anchor */}
+        <ScrollReveal delay={0.3}>
+          <div className="flex flex-col md:flex-row items-center justify-between p-6 md:p-8 rounded-full border border-white/10 gap-8 bg-white/5">
+            <p className="font-sans text-sm text-white/40">
+              © {COMPANY.year} {COMPANY.legalName}. All rights reserved.
+            </p>
+            <div className="flex gap-6 md:gap-8">
+              {FOOTER.socials.map((social, i) => (
+                <a key={i} href={social.href} className="font-sans text-sm font-semibold uppercase tracking-wider text-white/40 hover:text-white transition-colors duration-300">
+                  {social.label}
                 </a>
               ))}
             </div>
           </div>
-        </div>
+        </ScrollReveal>
 
-        {/* Bottom Legal Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-[13px] font-sans font-medium text-[#F6F5ED]/40 pt-8 border-t border-[#F6F5ED]/10">
-          <span>© {COMPANY.year} {COMPANY.legalName}. All Rights Reserved.</span>
-          <div className="flex gap-6 flex-wrap justify-center">
-            <a href="/privacy" className="hover:text-[#F6F5ED] transition-colors">Privacy Policy</a>
-            <a href="/terms" className="hover:text-[#F6F5ED] transition-colors">Terms of Service</a>
-          </div>
-        </div>
       </div>
     </footer>
   );

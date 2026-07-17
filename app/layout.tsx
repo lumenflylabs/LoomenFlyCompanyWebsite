@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ABeeZee, Plus_Jakarta_Sans } from "next/font/google";
+import { ABeeZee, Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -15,6 +15,12 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 const siteUrl = "https://loomenflylabs.com";
@@ -34,11 +40,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
+      <html
       lang="en"
-      className={`${abeezee.variable} ${plusJakartaSans.variable} h-full antialiased scroll-smooth`}
+      className={`${abeezee.variable} ${plusJakartaSans.variable} ${playfair.variable} h-full antialiased scroll-smooth scroll-pt-[120px]`}
     >
-      <body className="min-h-full flex flex-col bg-[#F6F5ED] text-[#18160E] selection:bg-[#E51E25] selection:text-[#F6F5ED]">
+      <body className="min-h-full flex flex-col bg-[#F6F5ED] text-[#000000] relative">
+        
+        {/* Global Editorial Film Grain */}
+        <div className="pointer-events-none fixed inset-0 z-[9999] opacity-[0.04]">
+          <svg className="absolute inset-0 w-full h-full">
+            <filter id="noiseFilter">
+              <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+          </svg>
+        </div>
+
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

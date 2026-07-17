@@ -24,7 +24,7 @@ export default function SectionHeader({
       </span>
       <h2
         className={`font-heading font-bold leading-[1.15] tracking-tight mb-5 ${
-          dark ? "text-white" : "text-[#18160E]"
+          dark ? "text-white" : "text-[#000000]"
         } text-[clamp(28px,3.8vw,48px)]`}
         style={{ whiteSpace: "pre-line" }}
       >
