@@ -8,12 +8,10 @@ import Reviews from "@/components/Reviews";
 import About from "@/components/About";
 import CustomSolutions from "@/components/CustomSolutions";
 import Contact from "@/components/Contact";
-import HashScrollHandler from "@/components/HashScrollHandler";
 
 export default function Home() {
   return (
     <main className="flex-1">
-      <HashScrollHandler />
       <Hero />
       <ProblemSolution />
       <LeadCatcher />

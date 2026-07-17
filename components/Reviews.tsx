@@ -1,71 +1,46 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import SectionHeader from "@/components/ui/SectionHeader";
 import { REVIEWS } from "@/lib/constants";
 
 export default function Reviews() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-    if (sectionRef.current) {
-      sectionRef.current.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
-    }
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section
-      id="reviews"
-      className="py-[100px] px-[clamp(16px,6%,80px)] bg-gradient-to-b from-[#FFFBEA] to-[#FAF9F4]"
-      ref={sectionRef}
-    >
-      <div className="text-center reveal">
-        <SectionHeader
-          eyebrow={REVIEWS.eyebrow}
-          headline={REVIEWS.headline}
-          subtitle={REVIEWS.subtitle}
-        />
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-[60px] max-w-5xl mx-auto">
-        {REVIEWS.items.map((review, i) => (
-          <div
-            key={i}
-            className={`rounded-2xl bg-white border border-[rgba(24,22,14,0.08)] p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(200,150,0,0.12)] hover:border-[rgba(245,197,24,0.3)] reveal ${`d${i + 1}`}`}
-          >
-            <div className="text-[#F5C518] text-[14px] tracking-[2px] mb-3.5">
-              {"★".repeat(review.stars)}
-            </div>
-            <p className="text-[13.5px] text-[rgba(24,22,14,0.7)] leading-relaxed italic mb-5 pl-3.5 border-l-[3px] border-[rgba(245,197,24,0.4)]">
-              &ldquo;{review.quote}&rdquo;
-            </p>
-            <div className="flex items-center gap-3">
-              <div className="w-[42px] h-[42px] rounded-full bg-gradient-to-br from-[#FFE57A] to-[#F5C518] flex items-center justify-center font-heading font-extrabold text-base text-[#18160E]">
-                {review.initial}
-              </div>
-              <div>
-                <div className="font-bold text-[14px] text-[#18160E] tracking-tight">
-                  {review.author}
-                </div>
-                <div className="text-[12px] text-[rgba(24,22,14,0.4)]">
-                  {review.business}
-                </div>
-              </div>
-            </div>
+    <section id="reviews" className="bg-[#18160E] text-[#F6F5ED] py-[clamp(80px,10vw,160px)] px-[clamp(24px,5%,120px)]">
+      <div className="max-w-[1200px] mx-auto">
+        
+        <div className="mb-20 text-center">
+          <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/5 mb-6">
+            <span className="font-sans font-bold text-[13px] text-[#FFD100] uppercase tracking-widest">
+              {REVIEWS.eyebrow}
+            </span>
           </div>
-        ))}
+          <h2 className="font-heading text-[clamp(36px,5vw,60px)] leading-[1.1] mb-6 max-w-[800px] mx-auto">
+            {REVIEWS.headline}
+          </h2>
+          <p className="font-sans font-medium text-[clamp(16px,2vw,20px)] text-[#F6F5ED]/60 max-w-[600px] mx-auto leading-relaxed">
+            {REVIEWS.subtitle}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {REVIEWS.items.map((review, i) => (
+            <div key={i} className="bg-white/5 p-8 rounded-[32px] border border-white/5 flex flex-col justify-between">
+              <div>
+                <span className="font-heading text-6xl text-[#FFD100] leading-none mb-4 block">"</span>
+                <p className="font-sans text-[16px] text-white/80 leading-relaxed mb-8">
+                  {review.quote}
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-[#E51E25] flex items-center justify-center font-heading text-white">
+                  {review.initial}
+                </div>
+                <div>
+                  <h4 className="font-heading text-[16px] text-white">{review.author}</h4>
+                  <span className="font-sans text-[12px] text-[#FFD100] uppercase tracking-wider">{review.business}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
       </div>
     </section>
   );

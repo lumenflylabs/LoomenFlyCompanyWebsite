@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Sora, Plus_Jakarta_Sans } from "next/font/google";
+import { ABeeZee, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ScrollProgress from "@/components/ui/ScrollProgress";
+import { COMPANY } from "@/lib/constants";
 
-const sora = Sora({
+const abeezee = ABeeZee({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400"],
 });
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -17,43 +17,14 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const siteUrl = "https://lumenflylabs.com";
+const siteUrl = "https://loomenflylabs.com";
 
 export const metadata: Metadata = {
-  title: "Lumenfly Labs — Turn WhatsApp Into Your Front Desk",
-  description:
-    "Automate bookings, customer follow-ups, reminders, and promotions — all through WhatsApp. Lumenfly Labs builds intelligent WhatsApp bots for businesses.",
+  title: `${COMPANY.name} — ${COMPANY.tagline}`,
+  description: COMPANY.description,
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: "/",
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_IN",
-    siteName: "Lumenfly Labs",
-    title: "Lumenfly Labs — Turn WhatsApp Into Your Front Desk",
-    description:
-      "Automate every booking, follow-up, and reminder through WhatsApp. 24/7.",
-    url: siteUrl,
-    images: [
-      {
-        url: "/og-image.svg",
-        width: 1200,
-        height: 630,
-        alt: "Lumenfly Labs — Turn WhatsApp Into Your Front Desk",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Lumenfly Labs — Turn WhatsApp Into Your Front Desk",
-    description:
-      "Automate every booking, follow-up, and reminder through WhatsApp. 24/7.",
-    images: ["/og-image.svg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
 };
 
@@ -65,10 +36,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sora.variable} ${plusJakartaSans.variable} h-full antialiased`}
+      className={`${abeezee.variable} ${plusJakartaSans.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-[#FAF9F4] text-[#18160E]">
-        <ScrollProgress />
+      <body className="min-h-full flex flex-col bg-[#F6F5ED] text-[#18160E] selection:bg-[#E51E25] selection:text-[#F6F5ED]">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

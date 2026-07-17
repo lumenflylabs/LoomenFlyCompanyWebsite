@@ -1,22 +1,17 @@
 export const COMPANY = {
-  name: "Lumenfly Labs",
-  legalName: "LumenFlyLabs",
+  name: "Loomenfly Labs",
+  legalName: "LoomenFlyLabs",
   tagline: "Turn WhatsApp Into Your Front Desk",
   description:
     "We build WhatsApp automation for local businesses that actually makes life easier — for you and your customers. No fluff, just practical tools that work.",
   address: "Gurusadanam, Ala p.o, Nalinathe padi, Chengannur, Alappuzha, Kerala 689126, India",
-  // Email hierarchy for Udyam / Meta compliance:
-  // adminEmail = Legal & Compliance (Footer, Privacy, Terms, Refund contact)
-  // salesEmail = Gokul (Owner & Sales)
-  // techEmail  = Hashiq (Technical Lead)
-  // successEmail = Saheeda (Client Success)
-  adminEmail: "admin@lumenflylabs.com",
-  salesEmail: "gokul@lumenflylabs.com",
-  techEmail: "hashiq@lumenflylabs.com",
-  successEmail: "saheeda@lumenflylabs.com",
+  adminEmail: "admin@loomenflylabs.com",
+  salesEmail: "gokul@loomenflylabs.com",
+  techEmail: "hashiq@loomenflylabs.com",
+  successEmail: "saheeda@loomenflylabs.com",
   waNumber: "+919746914027",
-  waLink: "https://wa.me/919746914027?text=Hi%20Lumenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
-  waDemoText: "Hi%20Lumenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
+  waLink: "https://wa.me/919746914027?text=Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
+  waDemoText: "Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   year: new Date().getFullYear(),
 } as const;
 
@@ -53,53 +48,53 @@ export const PROBLEM_SOLUTION = {
   eyebrow: "The real problem",
   headline: "You're Losing Customers\nWithout Even Knowing It",
   subtitle:
-    "It's not about bad service. It's about the calls you couldn't pick up, the messages you missed, the follow-ups you forgot. Lumenfly fixes that — quietly, automatically.",
+    "It's not about bad service. It's about the calls you couldn't pick up, the messages you missed, the follow-ups you forgot. Loomenfly fixes that — quietly, automatically.",
   without: {
-    label: "Without Lumenfly",
+    label: "Without Loomenfly",
     items: [
       {
-        icon: "📵",
-                title: "Missed calls during busy hours",
+        icon: "01",
+        title: "Missed calls during busy hours",
         desc: "A customer rings while you're with someone. You can't answer. They move on to the next salon.",
       },
       {
-        icon: "⏳",
-                title: "Staff buried in admin work",
+        icon: "02",
+        title: "Staff buried in admin work",
         desc: "Hours wasted managing bookings instead of actually serving the people in your chair.",
       },
       {
-        icon: "💬",
-                title: "WhatsApp inbox chaos",
+        icon: "03",
+        title: "WhatsApp inbox chaos",
         desc: "90% of customers prefer to book on WhatsApp. But your personal inbox is a mess of 'Hi, is this available?' texts.",
       },
       {
-        icon: "📉",
-                title: "Leads slipping through",
+        icon: "04",
+        title: "Leads slipping through",
         desc: "Reply a few minutes late? That customer already booked with your competitor.",
       },
     ],
   },
   with: {
-    label: "With Lumenfly",
+    label: "With Loomenfly",
     items: [
       {
-        icon: "🤖",
-                title: "A booking bot that works while you sleep",
+        icon: "01",
+        title: "A booking bot that works while you sleep",
         desc: "Your WhatsApp takes bookings at 3 AM. Correctly. Every time. You wake up to a full schedule.",
       },
       {
-        icon: "⚡",
-                title: "Instant replies, every time",
+        icon: "02",
+        title: "Instant replies, every time",
         desc: "Customers get a response in seconds. No waiting. No one gets ignored.",
       },
       {
-        icon: "🔔",
-                title: "Smart reminders that actually reduce no-shows",
+        icon: "03",
+        title: "Smart reminders that actually reduce no-shows",
         desc: "Reminders go out automatically — timed perfectly. Your appointment book stays full.",
       },
       {
-        icon: "📊",
-                title: "Growth that runs itself",
+        icon: "04",
+        title: "Growth that runs itself",
         desc: "Promotions, re-engagement messages, follow-ups — all on autopilot. You just show up and do your thing.",
       },
     ],
@@ -128,36 +123,28 @@ export const PREMIUM_ADDONS = {
     "Start with The Lead Catcher, then unlock these modular upgrades as your business scales.",
   addons: [
     {
-      icon: "🛡️",
+      icon: "■",
       title: "No-Show Protector",
       tagline: "Cut no-shows by 70%+",
       desc: "Automated 2-hour pre-appointment reminders sent directly to WhatsApp. Customers confirm or reschedule with one tap. Your chair stays filled.",
-      gradient: "from-amber-500/20 to-yellow-600/10",
-      borderColor: "border-amber-500/30",
     },
     {
-      icon: "💳",
+      icon: "▲",
       title: "Advance Deposits",
       tagline: "Secure every booking",
       desc: "Razorpay payment links sent automatically inside WhatsApp. Collect deposits upfront for high-demand slots. No more last-minute cancellations.",
-      gradient: "from-emerald-500/20 to-green-600/10",
-      borderColor: "border-emerald-500/30",
     },
     {
-      icon: "👥",
+      icon: "●",
       title: "Multi-Stylist Routing",
       tagline: "Let customers choose",
       desc: "Customers pick their specific barber, doctor, or stylist directly in WhatsApp. Route bookings to the right professional automatically.",
-      gradient: "from-blue-500/20 to-indigo-600/10",
-      borderColor: "border-blue-500/30",
     },
     {
-      icon: "📢",
+      icon: "◆",
       title: "The Festive Broadcaster",
       tagline: "Bulk marketing campaigns",
       desc: "Send targeted WhatsApp marketing campaigns to segmented customer lists. Festive offers, re-engagement blasts, and seasonal promotions — all automated.",
-      gradient: "from-purple-500/20 to-pink-600/10",
-      borderColor: "border-purple-500/30",
     },
   ],
 } as const;
@@ -168,9 +155,9 @@ export const TRUST_FLOW = {
   subtitle:
     "Every booking is instantly mirrored to Google Calendar. Switch phones, lose your device, or go offline — your schedule is always intact, accessible anywhere, anytime.",
   nodes: [
-    { icon: "💬", label: "Customer books\non WhatsApp", bg: "bg-[#25D366]" },
-    { icon: "📅", label: "Auto-synced to\nGoogle Calendar", bg: "bg-[#4285F4]" },
-    { icon: "📱", label: "Access from\nany device", bg: "bg-white" },
+    { icon: "1", label: "Customer books\non WhatsApp" },
+    { icon: "2", label: "Auto-synced to\nGoogle Calendar" },
+    { icon: "3", label: "Access from\nany device" },
   ],
 } as const;
 
@@ -183,16 +170,16 @@ export const INDUSTRIES: {
   eyebrow: "Industries We Serve",
   headline: "Designed for Every\nCustomer-Facing Business",
   subtitle:
-    "If your business takes appointments, bookings, or orders — Lumenfly automates it.",
+    "If your business takes appointments, bookings, or orders — Loomenfly automates it.",
   items: [
-    { icon: "💇", name: "Salons", desc: "Hair · Beauty · Styling" },
-    { icon: "💆", name: "Beauty Parlours", desc: "Skincare · Treatments" },
-    { icon: "💅", name: "Nail Studios", desc: "Nail Art · Extensions" },
-    { icon: "🏥", name: "Clinics", desc: "Appointments · Follow-ups" },
-    { icon: "✂️", name: "Barbershops", desc: "Queue · Bookings" },
-    { icon: "☕", name: "Cafes", desc: "Reservations · Orders" },
-    { icon: "🏨", name: "Hotels", desc: "Bookings · Concierge" },
-    { icon: "✦", name: "Your Business", desc: "Let's talk about it", highlighted: true },
+    { icon: "01", name: "Salons", desc: "Hair · Beauty · Styling" },
+    { icon: "02", name: "Beauty Parlours", desc: "Skincare · Treatments" },
+    { icon: "03", name: "Nail Studios", desc: "Nail Art · Extensions" },
+    { icon: "04", name: "Clinics", desc: "Appointments · Follow-ups" },
+    { icon: "05", name: "Barbershops", desc: "Queue · Bookings" },
+    { icon: "06", name: "Cafes", desc: "Reservations · Orders" },
+    { icon: "07", name: "Hotels", desc: "Bookings · Concierge" },
+    { icon: "08", name: "Your Business", desc: "Let's talk about it", highlighted: true },
   ],
 };
 
@@ -233,7 +220,7 @@ export const ABOUT = {
   eyebrow: "About Us",
   headline: "We Build the Automation.\nYou Build the Business.",
   paragraphs: [
-    "Lumenfly Labs was born from a simple observation: local businesses lose customers not because of poor service — but because of missed conversations. A call at the wrong time. A WhatsApp message that went unread.",
+    "Loomenfly Labs was born from a simple observation: local businesses lose customers not because of poor service — but because of missed conversations. A call at the wrong time. A WhatsApp message that went unread.",
     "We build intelligent WhatsApp systems that handle the entire customer journey — from the first 'Hi' to confirmed booking, reminder, and loyalty follow-up — without any manual work from your team.",
     "Every bot we build is crafted to represent your brand with warmth, clarity, and professionalism. Technology that feels human.",
   ],
@@ -255,22 +242,22 @@ export const CUSTOM_SOLUTIONS = {
     "Tell us about your business and we'll design a solution that fits perfectly.",
   perks: [
     {
-      icon: "🎯",
+      icon: "A",
       title: "Built around your workflow",
       desc: "We study how you operate and design automation that fits naturally.",
     },
     {
-      icon: "⚙️",
+      icon: "B",
       title: "Integrates with your existing tools",
       desc: "Connect WhatsApp with your POS, CRM, calendar, or any business software.",
     },
     {
-      icon: "📈",
+      icon: "C",
       title: "Scales as you grow",
       desc: "Add features, locations, or staff anytime — your automation grows with you.",
     },
     {
-      icon: "🤝",
+      icon: "D",
       title: "Dedicated onboarding support",
       desc: "Our team handles the full setup. You just approve and go live.",
     },
@@ -281,11 +268,11 @@ export const CONTACT = {
   eyebrow: "Get in Touch",
   headline: "Let's Start the Conversation",
   subtitle:
-    "Tell us about your business and we'll show you exactly how Lumenfly can transform it.",
+    "Tell us about your business and we'll show you exactly how Loomenfly can transform it.",
   methods: [
-    { icon: "💼", label: "Sales Enquiries — Gokul (Owner)", value: COMPANY.salesEmail, href: `mailto:${COMPANY.salesEmail}` },
-    { icon: "👨‍💻", label: "Technical Lead — Hashiq", value: COMPANY.techEmail, href: `mailto:${COMPANY.techEmail}` },
-    { icon: "🌟", label: "Client Success — Saheeda", value: COMPANY.successEmail, href: `mailto:${COMPANY.successEmail}` },
+    { icon: "►", label: "Sales Enquiries — Gokul (Owner)", value: COMPANY.salesEmail, href: `mailto:${COMPANY.salesEmail}` },
+    { icon: "►", label: "Technical Lead — Hashiq", value: COMPANY.techEmail, href: `mailto:${COMPANY.techEmail}` },
+    { icon: "►", label: "Client Success — Saheeda", value: COMPANY.successEmail, href: `mailto:${COMPANY.successEmail}` },
   ],
 } as const;
 
@@ -297,7 +284,7 @@ export const FOOTER = {
       title: "Navigation",
       links: [
         { label: "Home", href: "/" },
-        { label: "Why Lumenfly", href: "/#why" },
+        { label: "Why Loomenfly", href: "/#why" },
         { label: "Plans", href: "/#plans" },
         { label: "Industries", href: "/#industries" },
         { label: "About Us", href: "/#about" },
@@ -324,36 +311,4 @@ export const FOOTER = {
   ],
 } as const;
 
-// Icon map: maps emoji strings to hand-drawn SVG icon component names
-// Used by components to render human-made icons instead of emoji
-export const ICON_MAP: Record<string, string> = {
-  // ProblemSolution - Without
-  "📵": "MissedCallIcon",
-  "⏳": "OverwhelmedIcon",
-  "💬": "MessageIcon",
-  "📉": "CracksIcon",
-  // ProblemSolution - With
-  "🤖": "RobotIcon",
-  "⚡": "LightningIcon",
-  "🔔": "BellIcon",
-  "📊": "GrowthIcon",
-  // PremiumAddons
-  "🛡️": "ShieldIcon",
-  "💳": "CalendarIcon",
-  "👥": "UserIcon",
-  "📢": "SparkleIcon",
-  // TrustFlow
-  "📅": "CalendarIcon",
-  "📱": "PhoneIcon",
-  // CustomSolutions
-  "🎯": "TargetIcon",
-  "⚙️": "GearIcon",
-  "📈": "ChartIcon",
-  "🤝": "HandshakeIcon",
-  // Contact
-  "✉️": "MailIcon",
-  "👨‍💻": "TechIcon",
-  "🌟": "StarIcon",
-  // About
-  "✦": "DiamondIcon",
-};
+export const ICON_MAP: Record<string, string> = {};

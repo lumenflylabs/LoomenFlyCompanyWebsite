@@ -1,129 +1,55 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import SectionHeader from "@/components/ui/SectionHeader";
-import { PROBLEM_SOLUTION, ICON_MAP } from "@/lib/constants";
-import * as Icons from "@/components/ui/HandDrawnIcons";
-
-function ProblemItem({
-  icon,
-  title,
-  desc,
-  gold,
-  delay,
-}: {
-  icon: string;
-  title: string;
-  desc: string;
-  gold?: boolean;
-  delay?: string;
-}) {
-  return (
-    <div
-      className={`flex items-start gap-3.5 p-4 rounded-xl border shadow-[0_2px_8px_rgba(0,0,0,0.05)] transition-all duration-220 hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(0,0,0,0.07)] reveal ${
-        gold
-          ? "bg-white border-[rgba(245,197,24,0.3)] hover:border-[rgba(245,197,24,0.5)]"
-          : "bg-white border-[rgba(24,22,14,0.08)] hover:border-[rgba(245,197,24,0.3)]"
-      } ${delay || ""}`}
-    >
-      <div
-        className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${
-          gold ? "bg-[rgba(245,197,24,0.12)]" : "bg-[rgba(255,90,90,0.08)]"
-        }`}
-      >
-        {(() => {
-          const name = ICON_MAP[icon];
-          if (name) {
-            const IconComp = (Icons as any)[name];
-            return IconComp ? <IconComp className="w-5 h-5" /> : icon;
-          }
-          return <span className="text-lg">{icon}</span>;
-        })()}
-      </div>
-      <div>
-        <h4 className="text-[13.5px] font-semibold text-[#18160E] mb-0.5 tracking-tight">
-          {title}
-        </h4>
-        <p className="text-[12.5px] text-[rgba(24,22,14,0.7)] leading-relaxed">{desc}</p>
-      </div>
-    </div>
-  );
-}
+import { PROBLEM_SOLUTION } from "@/lib/constants";
 
 export default function ProblemSolution() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-    if (sectionRef.current) {
-      sectionRef.current.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
-    }
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section
-      id="why"
-      className="py-[100px] px-[clamp(16px,6%,80px)]"
-      style={{
-        background:
-          "linear-gradient(180deg, #FAF9F4 0%, #FFFBEA 100%)",
-      }}
-      ref={sectionRef}
-    >
-      <div className="text-center reveal">
-        <SectionHeader
-          eyebrow={PROBLEM_SOLUTION.eyebrow}
-          headline={PROBLEM_SOLUTION.headline}
-          subtitle={PROBLEM_SOLUTION.subtitle}
-        />
+    <section id="problem" className="relative bg-white text-[#18160E] py-[clamp(80px,10vw,160px)] px-[clamp(24px,5%,120px)] border-t border-[#18160E]/5 overflow-hidden">
+      
+      <div className="max-w-[1200px] mx-auto text-center mb-20">
+        <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#18160E]/5 mb-6">
+          <span className="font-sans font-bold text-[13px] text-[#E51E25] uppercase tracking-widest">
+            {PROBLEM_SOLUTION.eyebrow}
+          </span>
+        </div>
+        <h2 className="font-heading text-[clamp(36px,5vw,60px)] leading-[1.1] mb-6 max-w-[800px] mx-auto">
+          {PROBLEM_SOLUTION.headline}
+        </h2>
+        <p className="font-sans font-medium text-[clamp(16px,2vw,20px)] text-[#18160E]/60 max-w-[600px] mx-auto leading-relaxed">
+          {PROBLEM_SOLUTION.subtitle}
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16 items-start">
-        {/* Without */}
-        <div>
-          <div className="text-[12px] font-bold tracking-wide uppercase mb-5 flex items-center gap-2 text-[rgba(24,22,14,0.6)]">
-            <span className="w-[7px] h-[7px] rounded-full bg-[#FF5A5A]" />
+      <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+        
+        {/* Without Column */}
+        <div className="bg-[#F6F5ED] p-8 lg:p-12 rounded-[40px] border border-[#18160E]/5">
+          <h3 className="font-heading text-[28px] text-[#E51E25] mb-8 pb-4 border-b border-[#18160E]/10">
             {PROBLEM_SOLUTION.without.label}
-          </div>
-          {PROBLEM_SOLUTION.without.items.map((item, i) => (
-            <ProblemItem
-              key={i}
-              icon={item.icon}
-              title={item.title}
-              desc={item.desc}
-              delay={`d${i + 1}`}
-            />
-          ))}
+          </h3>
+          <ul className="flex flex-col gap-8">
+            {PROBLEM_SOLUTION.without.items.map((item, i) => (
+              <li key={i} className="flex flex-col gap-2">
+                <h4 className="font-heading text-[20px] text-[#18160E]">{item.title}</h4>
+                <p className="font-sans text-[15px] text-[#18160E]/60 leading-relaxed">{item.desc}</p>
+              </li>
+            ))}
+          </ul>
         </div>
 
-        {/* With */}
-        <div>
-          <div className="text-[12px] font-bold tracking-wide uppercase mb-5 flex items-center gap-2 text-[rgba(24,22,14,0.6)]">
-            <span className="w-[7px] h-[7px] rounded-full bg-[#C49400]" />
+        {/* With Column */}
+        <div className="bg-[#18160E] text-[#F6F5ED] p-8 lg:p-12 rounded-[40px] shadow-2xl shadow-[#18160E]/10">
+          <h3 className="font-heading text-[28px] text-[#FFD100] mb-8 pb-4 border-b border-[#F6F5ED]/10">
             {PROBLEM_SOLUTION.with.label}
-          </div>
-          {PROBLEM_SOLUTION.with.items.map((item, i) => (
-            <ProblemItem
-              key={i}
-              icon={item.icon}
-              title={item.title}
-              desc={item.desc}
-              gold
-              delay={`d${i + 1}`}
-            />
-          ))}
+          </h3>
+          <ul className="flex flex-col gap-8">
+            {PROBLEM_SOLUTION.with.items.map((item, i) => (
+              <li key={i} className="flex flex-col gap-2">
+                <h4 className="font-heading text-[20px] text-white">{item.title}</h4>
+                <p className="font-sans text-[15px] text-[#F6F5ED]/60 leading-relaxed">{item.desc}</p>
+              </li>
+            ))}
+          </ul>
         </div>
+
       </div>
     </section>
   );

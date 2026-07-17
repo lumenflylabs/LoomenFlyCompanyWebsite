@@ -1,75 +1,47 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import SectionHeader from "@/components/ui/SectionHeader";
 import { INDUSTRIES } from "@/lib/constants";
-import { IndustryIcons } from "@/components/ui/HandDrawnIcons";
 
 export default function Industries() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-    if (sectionRef.current) {
-      sectionRef.current.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
-    }
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section
-      id="industries"
-      className="py-[100px] px-[clamp(16px,6%,80px)] bg-[#FAF9F4]"
-      ref={sectionRef}
-    >
-      <div className="text-center reveal">
-        <SectionHeader
-          eyebrow={INDUSTRIES.eyebrow}
-          headline={INDUSTRIES.headline}
-          subtitle={INDUSTRIES.subtitle}
-        />
-      </div>
+    <section id="industries" className="bg-[#F6F5ED] text-[#18160E] py-[clamp(80px,10vw,160px)] px-[clamp(24px,5%,120px)] border-t border-[#18160E]/5">
+      <div className="max-w-[1200px] mx-auto">
+        
+        <div className="mb-20 text-center">
+          <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white shadow-sm border border-[#18160E]/5 mb-6">
+            <span className="font-sans font-bold text-[13px] text-[#E51E25] uppercase tracking-widest">
+              {INDUSTRIES.eyebrow}
+            </span>
+          </div>
+          <h2 className="font-heading text-[clamp(36px,5vw,60px)] leading-[1.1] mb-6 max-w-[800px] mx-auto">
+            {INDUSTRIES.headline}
+          </h2>
+          <p className="font-sans font-medium text-[clamp(16px,2vw,20px)] text-[#18160E]/60 max-w-[600px] mx-auto leading-relaxed">
+            {INDUSTRIES.subtitle}
+          </p>
+        </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-[60px] max-w-5xl mx-auto">
-        {INDUSTRIES.items.map((item, i) => (
-          <div
-            key={i}
-            className={`rounded-2xl p-7 text-center border transition-all duration-300 cursor-default hover:-translate-y-1 reveal ${
-              item.highlighted
-                ? "border-[rgba(245,197,24,0.3)] bg-[rgba(245,197,24,0.04)] hover:shadow-[0_8px_32px_rgba(200,150,0,0.15)]"
-                : "border-[rgba(24,22,14,0.08)] bg-white hover:border-[rgba(245,197,24,0.3)] hover:shadow-[0_8px_32px_rgba(200,150,0,0.10)]"
-            } ${`d${(i % 4) + 1}`}`}
-          >
-            <div
-              className={`w-[58px] h-[58px] rounded-[17px] flex items-center justify-center mx-auto mb-3.5 transition-colors duration-250 ${
-                item.highlighted
-                  ? "bg-[rgba(245,197,24,0.18)]"
-                  : "bg-[rgba(245,197,24,0.1)]"
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {INDUSTRIES.items.map((item, i) => (
+            <div 
+              key={i} 
+              className={`p-8 rounded-[24px] border border-[#18160E]/5 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-1 ${
+                item.highlighted 
+                  ? 'bg-[#18160E] text-white shadow-lg' 
+                  : 'bg-white soft-shadow'
               }`}
             >
-              {(() => {
-                const IconComp = IndustryIcons[item.icon];
-                return IconComp ? <IconComp className="w-[26px] h-[26px]" /> : <span className="text-[26px]">{item.icon}</span>;
-              })()}
+              <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 font-heading text-xl ${
+                item.highlighted ? 'bg-white text-[#18160E]' : 'bg-[#F6F5ED] text-[#E51E25]'
+              }`}>
+                {item.icon}
+              </div>
+              <h3 className="font-heading text-[20px] mb-2">{item.name}</h3>
+              <p className={`font-sans text-[14px] ${item.highlighted ? 'text-white/60' : 'text-[#18160E]/50'}`}>
+                {item.desc}
+              </p>
             </div>
-            <div className="font-bold text-[14px] text-[#18160E] mb-0.5 tracking-tight">
-              {item.name}
-            </div>
-            <div className="text-[11.5px] text-[rgba(24,22,14,0.4)] font-medium">
-              {item.desc}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
       </div>
     </section>
   );
