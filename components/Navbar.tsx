@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { COMPANY, NAV_LINKS } from "@/lib/constants";
 import Logo from "@/components/ui/Logo";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -40,7 +42,7 @@ export default function Navbar() {
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <a
-                  href={`/${link.href}`}
+                  href={pathname === "/" ? link.href : `/${link.href}`}
                   className="px-5 py-2 rounded-full text-[14px] font-sans font-medium text-[#000000]/70 hover:text-[#000000] hover:bg-black/5 transition-all duration-300"
                 >
                   {link.label}
@@ -87,7 +89,7 @@ export default function Navbar() {
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
-              href={`/${link.href}`}
+              href={pathname === "/" ? link.href : `/${link.href}`}
               onClick={() => setMobileOpen(false)}
               className="text-3xl font-heading text-[#000000] hover:text-[#E51E25] transition-colors"
             >

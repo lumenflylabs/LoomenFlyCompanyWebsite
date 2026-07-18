@@ -1,7 +1,12 @@
+"use client";
+
 import { COMPANY, FOOTER } from "@/lib/constants";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+
   return (
     <footer className="bg-[#000000] text-white overflow-hidden relative">
       
@@ -43,7 +48,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-5">
                 {FOOTER.navColumns[0].links.map((link, i) => (
                   <li key={i}>
-                    <a href={link.href} className="font-sans text-lg text-white/70 hover:text-white transition-colors duration-300">
+                    <a href={pathname === "/" && link.href.startsWith("/#") ? link.href.substring(1) : link.href} className="font-sans text-lg text-white/70 hover:text-white transition-colors duration-300">
                       {link.label}
                     </a>
                   </li>
@@ -60,7 +65,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-5">
                 {FOOTER.navColumns[1].links.map((link, i) => (
                   <li key={i}>
-                    <a href={link.href} className="font-sans text-lg text-white/70 hover:text-white transition-colors duration-300">
+                    <a href={pathname === "/" && link.href.startsWith("/#") ? link.href.substring(1) : link.href} className="font-sans text-lg text-white/70 hover:text-white transition-colors duration-300">
                       {link.label}
                     </a>
                   </li>
