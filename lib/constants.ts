@@ -275,4 +275,28 @@ export const FOOTER = {
   ],
 } as const;
 
+export const REVIEWS = {
+  eyebrow: "What Our Clients Say",
+  headline: "Don't Just Take Our Word For It",
+  subtitle:
+    "Join the growing number of local businesses using FlowDesk to automate their bookings and scale their growth.",
+  items: [
+    {
+      quote: "FlowDesk completely changed how we handle our salon bookings. No more double-booking or lost chats on WhatsApp.",
+      author: "Sarah M.",
+      role: "Salon Owner",
+    },
+    {
+      quote: "Our customers love the interactive catalog. It feels like a premium app, but they never have to leave WhatsApp.",
+      author: "Rahul T.",
+      role: "Spa Manager",
+    },
+    {
+      quote: "The Google Review automation alone has brought us so much new business. Highly recommended for any clinic.",
+      author: "Dr. Ananya",
+      role: "Clinic Director",
+    },
+  ],
+} as const;
+
 export const ICON_MAP: Record<string, string> = {};
