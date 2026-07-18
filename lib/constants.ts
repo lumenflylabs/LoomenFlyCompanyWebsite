@@ -1,10 +1,13 @@
 export const COMPANY = {
   name: "Loomenfly Labs",
-  legalName: "LoomenFlyLabs",
+  legalName: "LOOMENFLY LABS LLP",
+  llpin: "ACZ-5532",
+  udyam: "UDYAM-KL-01-0070166",
+  pan: "AANFL3526F",
   tagline: "Turn WhatsApp Into Your FlowDesk",
   description:
     "We build custom software and WhatsApp Meta Flows that give your customers an interactive mini-website experience, while giving you a powerful dashboard to manage it all.",
-  address: "Gurusadanam, Ala p.o, Nalinathe padi, Chengannur, Alappuzha, Kerala 689126, India",
+  address: "Door No. 150, Gurusadanam, Ala P.O, Chengannur, Alappuzha, Kerala - 689126, India",
   adminEmail: "admin@loomenflylabs.com",
   salesEmail: "gokul@loomenflylabs.com",
   techEmail: "hashiq@loomenflylabs.com",

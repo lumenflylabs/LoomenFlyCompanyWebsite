@@ -28,6 +28,10 @@ export default function Footer() {
               <p className="font-sans text-sm text-white/30 leading-relaxed max-w-[300px]">
                 {COMPANY.address}
               </p>
+              <p className="font-sans text-[11px] text-white/20 mt-4 leading-relaxed tracking-wide">
+                LLPIN: {COMPANY.llpin} <br />
+                MSME Udyam: {COMPANY.udyam}
+              </p>
             </ScrollReveal>
           </div>
 
