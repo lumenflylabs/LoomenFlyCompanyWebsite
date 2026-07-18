@@ -89,8 +89,12 @@ export default function TermsConditions() {
               If you have any queries regarding any of our terms, please contact us at:
               <br /><br />
               <strong>{COMPANY.legalName}</strong><br />
+              {COMPANY.address}<br />
               <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline transition-all">
                 {COMPANY.adminEmail}
+              </a><br />
+              <a href={`tel:${COMPANY.phone}`} className="text-[#E51E25] hover:underline transition-all">
+                {COMPANY.phone}
               </a>
             </p>
           </div>

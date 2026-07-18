@@ -12,8 +12,9 @@ export const COMPANY = {
   salesEmail: "gokul@loomenflylabs.com",
   techEmail: "hashiq@loomenflylabs.com",
   successEmail: "saheeda@loomenflylabs.com",
-  waNumber: "+919746914027",
-  waLink: "https://wa.me/919746914027?text=Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
+  phone: "+91 9292025954",
+  waNumber: "+919292025954",
+  waLink: "https://wa.me/919292025954?text=Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   waDemoText: "Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   year: new Date().getFullYear(),
 } as const;
