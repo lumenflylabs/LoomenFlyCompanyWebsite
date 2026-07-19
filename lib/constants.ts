@@ -272,10 +272,8 @@ export const FOOTER = {
     },
   ],
   socials: [
-    { label: "Instagram", href: "#" },
-    { label: "LinkedIn", href: "#" },
-    { label: "Facebook", href: "#" },
-    { label: "Twitter", href: "#" },
+    { label: "Instagram", href: "https://www.instagram.com/loomenflylabs/" },
+    { label: "X (Twitter)", href: "https://x.com/LoomenflyLabs" },
   ],
 } as const;
 
