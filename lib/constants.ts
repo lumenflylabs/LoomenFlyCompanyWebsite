@@ -1,6 +1,6 @@
 export const COMPANY = {
   name: "Loomenfly Labs",
-  legalName: "LOOMENFLY LABS LLP",
+  legalName: "Loomenfly Labs LLP",
   llpin: "ACZ-5532",
   udyam: "UDYAM-KL-01-0070166",
   pan: "AANFL3526F",
