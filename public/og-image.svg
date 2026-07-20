@@ -29,7 +29,7 @@
   <rect x="770" y="467" width="130" height="22" rx="18" fill="white"/>
   <circle cx="920" cy="478" r="12" fill="#0B5345"/>
   <!-- Text content -->
-  <text x="80" y="200" font-family="system-ui, sans-serif" font-size="52" font-weight="800" fill="#18160E">Turn WhatsApp</text>
+  <text x="80" y="200" font-family="system-ui, sans-serif" font-size="52" font-weight="800" fill="#18160E">Turn Your Chat</text>
   <text x="80" y="270" font-family="system-ui, sans-serif" font-size="52" font-weight="800" fill="#18160E">Into Your</text>
   <text x="80" y="340" font-family="system-ui, sans-serif" font-size="52" font-weight="800" fill="#F5C518">Front Desk</text>
   <text x="80" y="400" font-family="system-ui, sans-serif" font-size="18" fill="#666" font-weight="400">Automate bookings, follow-ups & reminders</text>

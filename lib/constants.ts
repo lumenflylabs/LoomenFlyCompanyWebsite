@@ -4,9 +4,9 @@ export const COMPANY = {
   llpin: "ACZ-5532",
   udyam: "UDYAM-KL-01-0070166",
   pan: "AANFL3526F",
-  tagline: "Turn WhatsApp Into Your FlowDesk",
+  tagline: "Turn Your Messages Into Bookings",
   description:
-    "We build custom software and WhatsApp Meta Flows that give your customers an interactive mini-website experience, while giving you a powerful dashboard to manage it all.",
+    "We build custom software and automated messaging flows that give your customers an interactive booking experience directly on WhatsApp, while giving you a powerful dashboard to manage it all.",
   address: "Door No. 150, Gurusadanam, Ala P.O, Chengannur, Alappuzha, Kerala - 689126, India",
   adminEmail: "admin@loomenflylabs.com",
   salesEmail: "gokul@loomenflylabs.com",
@@ -34,15 +34,15 @@ export const NAV_LINKS = [
 ] as const;
 
 export const HERO = {
-  eyebrow: "WhatsApp Mini-Website & Management Dashboard",
-  headline: "Turn WhatsApp\nInto Your FlowDesk",
-  highlight: "FlowDesk",
+  eyebrow: "Automated Booking & Management Dashboard",
+  headline: "Turn Your Chat\nInto a Booking Engine.",
+  highlight: "Booking Engine.",
   subtitle:
-    "A custom WhatsApp Meta Flow that gives your customers a rich, interactive booking experience—paired with a powerful owner dashboard to manage staff, catalogs, and schedules. Zero coding required.",
+    "A custom automated flow that gives your customers a rich, app-like booking experience natively inside WhatsApp—paired with a powerful owner dashboard to manage staff, catalogs, and schedules. Zero coding required.",
   kpis: [
     { value: "24/7", label: "Always Available" },
-    { value: "0s", label: "Response Delay" },
-    { value: "100%", label: "Bookings Captured" },
+    { value: "Instant", label: "Replies" },
+    { value: "Automated", label: "Lead Capture" },
   ],
 } as const;
 
@@ -56,7 +56,7 @@ export const PROBLEM_SOLUTION = {
     items: [
       {
         icon: "01",
-        title: "Chaotic WhatsApp inbox",
+        title: "Chaotic message inbox",
         desc: "Customers texting 'What services do you offer?' while you're busy with a client. Lost leads and messy chats.",
       },
       {
@@ -81,8 +81,8 @@ export const PROBLEM_SOLUTION = {
     items: [
       {
         icon: "01",
-        title: "An interactive catalog inside WhatsApp",
-        desc: "Customers browse your services, pick a staff member, and book seamlessly without ever leaving WhatsApp.",
+        title: "An interactive catalog inside your chat",
+        desc: "Customers browse your services, pick a staff member, and book seamlessly without ever leaving the chat interface.",
       },
       {
         icon: "02",
@@ -107,12 +107,12 @@ export const LEAD_CATCHER = {
   eyebrow: "The Core Software",
   headline: "The FlowDesk Ecosystem",
   subtitle:
-    "A hybrid solution: An advanced mini-website experience for your customers, connected to a robust control center for you.",
+    "A hybrid solution: An automated, app-like booking experience for your customers, connected to a powerful control center for you.",
   features: [
     "Management Dashboard to control it all",
     "Visual catalogs to showcase service photos and past work",
     "List and sell retail products directly through the flow",
-    "Interactive Meta Flow booking directly inside WhatsApp",
+    "Interactive booking flows natively inside WhatsApp",
     "Real-time Google Calendar synchronization",
     "Full access to user data and booking history",
   ],
@@ -127,14 +127,14 @@ export const PREMIUM_ADDONS = {
     {
       icon: "★",
       title: "Google Review System",
-      tagline: "Boost your local ranking",
+      tagline: "Build your local reputation",
       desc: "Automatically send a polite follow-up message asking happy customers to drop a Google Review right after their appointment.",
     },
     {
       icon: "📣",
       title: "Broadcast Offers",
       tagline: "Re-engage past clients",
-      desc: "Send targeted WhatsApp messages to previous customers about new services, special discounts, or gentle booking reminders.",
+      desc: "Send targeted promotional messages to previous customers about new services, special discounts, or gentle booking reminders.",
     },
     {
       icon: "🔔",
@@ -158,7 +158,7 @@ export const TRUST_FLOW = {
     "You don't need to know anything about coding, tech, or software setup. We do 100% of the heavy lifting so you can focus on your clients.",
   nodes: [
     { icon: "1", label: "We input your details and\nbuild the interactive Flow" },
-    { icon: "2", label: "We connect the Flow to\nyour WhatsApp number" },
+    { icon: "2", label: "We connect the Flow to\nyour business number" },
     { icon: "3", label: "We hand over a Dashboard\nfully pre-loaded with your data" },
   ],
 } as const;
@@ -190,11 +190,11 @@ export const ABOUT = {
   headline: "Custom Software,\nWithout the Custom Price Tag.",
   paragraphs: [
     "Loomenfly Labs is shifting the paradigm of local business software. We realized that off-the-shelf booking apps force you to change how you work, and custom software development is too expensive.",
-    "So we created a hybrid. We use advanced WhatsApp Meta Flows to build an interactive, mini-website experience that your customers already know how to use. Then, we pair it with a powerful dashboard that puts you in total control.",
+    "So we created a hybrid. We use the official WhatsApp Business Platform to build an interactive booking experience that your customers already know how to use. Then, we pair it with a powerful dashboard that puts you in total control.",
     "No coding. No steep learning curves. Just a brilliantly simple ecosystem designed to make managing your business effortless.",
   ],
   values: [
-    "Interactive Meta Flows that feel like a native app",
+    "Interactive flows that feel like a native app",
     "Complete control via your Management Dashboard",
     "Done-for-you onboarding and technical setup",
     "Built natively for the Salon & Beauty industry first",
@@ -223,7 +223,7 @@ export const CUSTOM_SOLUTIONS = {
     {
       icon: "C",
       title: "Number Connection",
-      desc: "We securely connect the interactive Meta Flow directly to your existing business WhatsApp number.",
+      desc: "We securely connect the interactive Flow directly to your existing WhatsApp Business number.",
     },
     {
       icon: "D",
@@ -247,7 +247,7 @@ export const CONTACT = {
 
 export const FOOTER = {
   description:
-    "We build custom software ecosystems powered by WhatsApp Meta Flows and intuitive management dashboards.",
+    "We build custom software ecosystems powered by the WhatsApp Business Platform and intuitive management dashboards.",
   navColumns: [
     {
       title: "Navigation",
@@ -284,17 +284,17 @@ export const REVIEWS = {
     "Join the growing number of local businesses using FlowDesk to automate their bookings and scale their growth.",
   items: [
     {
-      quote: "FlowDesk completely changed how we handle our salon bookings. No more double-booking or lost chats on WhatsApp.",
+      quote: "FlowDesk completely changed how we handle our salon bookings. No more double-booking or lost chats in our inbox.",
       author: "Sarah M.",
       role: "Salon Owner",
     },
     {
-      quote: "Our customers love the interactive catalog. It feels like a premium app, but they never have to leave WhatsApp.",
+      quote: "Our customers love the interactive catalog. It feels like a premium app, but they never have to leave the chat.",
       author: "Rahul T.",
       role: "Spa Manager",
     },
     {
-      quote: "The Google Review automation alone has brought us so much new business. Highly recommended for any clinic.",
+      quote: "The automated review requests alone have brought us so much new business. Highly recommended for any clinic.",
       author: "Dr. Ananya",
       role: "Clinic Director",
     },

@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
               <li><strong>Personal Data:</strong> Personally identifiable information, such as your name, shipping address, email address, and telephone number, that you voluntarily give to us when you register with the Site or when you choose to participate in various activities related to the Site.</li>
               <li><strong>Derivative Data:</strong> Information our servers automatically collect when you access the Site, such as your IP address, your browser type, your operating system, your access times, and the pages you have viewed directly before and after accessing the Site.</li>
-              <li><strong>WhatsApp Meta Data:</strong> For clients utilizing our FlowDesk services, we process necessary Meta API data required to facilitate the interactive booking experiences on your behalf.</li>
+              <li><strong>Messaging API Data:</strong> For clients utilizing our FlowDesk services, we process necessary API data required to facilitate the interactive booking experiences on your behalf.</li>
             </ul>
           </div>
 

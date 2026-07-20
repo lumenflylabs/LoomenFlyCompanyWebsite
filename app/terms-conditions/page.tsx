@@ -34,7 +34,7 @@ export default function TermsConditions() {
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
               <li><strong>"Company"</strong>, "Ourselves", "We", "Our" and "Us", refers to {COMPANY.legalName}.</li>
               <li><strong>"Client"</strong>, "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions.</li>
-              <li><strong>"Service"</strong> refers to the FlowDesk WhatsApp Meta Flow and management dashboard ecosystem provided by us.</li>
+              <li><strong>"Service"</strong> refers to the FlowDesk automated messaging and management dashboard ecosystem provided by us.</li>
             </ul>
           </div>
 
