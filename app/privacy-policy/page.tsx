@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
           Legal
         </span>
         <h1 className="font-heading text-[clamp(40px,6vw,72px)] font-medium leading-[1.05] tracking-tight text-[#111111] mb-12">
-          Privacy Policy
+          Privacy Policy for FlowDesk
         </h1>
         
         <div className="font-sans text-base md:text-lg text-[#111111]/70 flex flex-col gap-8 leading-relaxed">
@@ -23,7 +23,15 @@ export default function PrivacyPolicy() {
           </p>
 
           <p>
-            At {COMPANY.name}, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our FlowDesk software services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
+            Welcome to FlowDesk. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, and safeguard your data when you interact with our WhatsApp booking services and business management tools.
+          </p>
+          
+          <p className="font-bold text-[#111111]">
+            FlowDesk is a software product developed and operated by {COMPANY.legalName}.
+          </p>
+
+          <p>
+            This policy has been specifically designed to comply with the Meta Platform Terms and WhatsApp Business API Policies.
           </p>
 
           <div>
@@ -31,64 +39,84 @@ export default function PrivacyPolicy() {
               1. Information We Collect
             </h2>
             <p className="mb-4">
-              We may collect information about you in a variety of ways. The information we may collect includes:
+              When you interact with our WhatsApp chatbot or booking flows, we collect the minimum amount of data necessary to facilitate your appointment:
             </p>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li><strong>Personal Data:</strong> Personally identifiable information, such as your name, shipping address, email address, and telephone number, that you voluntarily give to us when you register with the Site or when you choose to participate in various activities related to the Site.</li>
-              <li><strong>Derivative Data:</strong> Information our servers automatically collect when you access the Site, such as your IP address, your browser type, your operating system, your access times, and the pages you have viewed directly before and after accessing the Site.</li>
-              <li><strong>Messaging API Data:</strong> For clients utilizing our FlowDesk services, we process necessary API data required to facilitate the interactive booking experiences on your behalf.</li>
+              <li><strong>Contact Information:</strong> Your WhatsApp phone number (which is securely encrypted and blind-indexed in our database) and your name.</li>
+              <li><strong>Demographic Data:</strong> Age and gender (only if provided for specific service eligibility).</li>
+              <li><strong>Booking Data:</strong> The services you select, the locations you book, and your appointment times.</li>
+              <li><strong>Communications:</strong> The messages and feedback you send through the WhatsApp interface.</li>
             </ul>
           </div>
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              2. Use of Your Information
+              2. How We Secure Your Data (Enterprise-Grade Security)
             </h2>
             <p className="mb-4">
-              Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Site to:
+              We employ state-of-the-art security measures to protect your data, exceeding industry standards:
             </p>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li>Create and manage your account.</li>
-              <li>Deliver targeted advertising, coupons, newsletters, and other information regarding promotions and the Site to you.</li>
-              <li>Email you regarding your account or order.</li>
-              <li>Fulfill and manage purchases, orders, payments, and other transactions related to the Site.</li>
-              <li>Operate and manage the FlowDesk infrastructure for your local business.</li>
+              <li><strong>Field-Level Encryption:</strong> Highly sensitive Personally Identifiable Information (PII), such as your WhatsApp phone number, is encrypted at rest using AES-256 encryption. We use blind-indexing to query data without ever exposing the raw phone numbers to the database administrators.</li>
+              <li><strong>End-to-End Flow Encryption:</strong> All data entered into WhatsApp Forms (Flows) is symmetrically encrypted on your device and decrypted only by our private backend servers.</li>
+              <li><strong>Data Isolation:</strong> Business owner data is strictly separated using Row-Level Security (RLS). A business owner can never access the customer data of another business.</li>
             </ul>
           </div>
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              3. Disclosure of Your Information
+              3. How We Use Your Information
             </h2>
-            <p>
-              We may share information we have collected about you in certain situations. Your information may be disclosed as follows: By Law or to Protect Rights, Third-Party Service Providers, Marketing Communications, and Business Transfers. We will not sell, trade, or otherwise transfer your personally identifiable information to outside parties without your consent.
+            <p className="mb-4">
+              We use the information we collect solely for the purpose of providing and improving our service:
+            </p>
+            <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
+              <li>To schedule, modify, and cancel your appointments.</li>
+              <li>To send you automated reminders and notifications via WhatsApp.</li>
+              <li>To allow business owners (Tenants) to manage their schedules.</li>
+            </ul>
+            <p className="mt-4 font-semibold">
+              We do NOT sell, rent, or trade your personal information to third parties.
             </p>
           </div>
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              4. Security of Your Information
+              4. Third-Party Services
             </h2>
-            <p>
-              We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.
+            <p className="mb-4">
+              We share information with third parties only when strictly necessary to provide our services:
             </p>
+            <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
+              <li><strong>Meta / WhatsApp:</strong> To facilitate the messaging interface.</li>
+              <li><strong>Google Calendar:</strong> If a business owner connects their calendar, your appointment time and name may be synced to their secure Google Calendar.</li>
+            </ul>
           </div>
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              5. Contact Us
+              5. Your Rights and Data Deletion
+            </h2>
+            <p className="mb-4">
+              Under Meta's Platform Terms and applicable global data protection laws (like GDPR/CCPA), you have the right to:
+            </p>
+            <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
+              <li>Request a copy of the personal data we hold about you.</li>
+              <li>Request that we correct any inaccurate data.</li>
+              <li><strong>Request Data Deletion:</strong> You can request the complete deletion of your profile and appointment history. To initiate a data deletion request, please email {COMPANY.adminEmail}. Upon request, all PII (including encrypted phone numbers and names) will be permanently purged from our databases within 30 days.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
+              6. Contact Us
             </h2>
             <p>
-              If you have questions or comments about this Privacy Policy, please contact us at:
+              If you have any questions about this Privacy Policy or our data practices, please contact our Data Protection Officer at:
               <br /><br />
               <strong>{COMPANY.legalName}</strong><br />
-              {COMPANY.address}<br />
-              <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline transition-all">
-                {COMPANY.adminEmail}
-              </a><br />
-              <a href={`tel:${COMPANY.phone}`} className="text-[#E51E25] hover:underline transition-all">
-                {COMPANY.phone}
-              </a>
+              Email: <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline transition-all">{COMPANY.adminEmail}</a><br />
+              Address: {COMPANY.address}
             </p>
           </div>
         </div>

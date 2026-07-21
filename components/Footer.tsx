@@ -76,6 +76,11 @@ export default function Footer() {
           
         </div>
 
+        {/* Meta Disclaimer */}
+        <div className="text-center font-sans text-xs text-white/20 max-w-3xl mx-auto mb-8 px-4 leading-relaxed">
+          {COMPANY.legalName} is an independent software provider. We are not affiliated with, sponsored by, or endorsed by WhatsApp Inc. or Meta Platforms, Inc.
+        </div>
+
         {/* The Vibe-Coded Pill Anchor */}
         <div className="group flex flex-col md:flex-row items-center justify-between py-6 px-8 md:py-4 md:px-8 rounded-3xl md:rounded-full bg-white/[0.02] backdrop-blur-xl border border-white/[0.05] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:bg-white/[0.04] hover:border-white/10 transition-all duration-500 gap-6">
           <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6 font-sans text-[13px] text-white/40 text-center">
