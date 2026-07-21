@@ -36,6 +36,11 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
     apple: "/images/logo.jpeg",
   },
+  verification: {
+    other: {
+      "facebook-domain-verification": "067by66wm4xvz067lskbpnhu55kc9r",
+    },
+  },
 };
 
 export default function RootLayout({

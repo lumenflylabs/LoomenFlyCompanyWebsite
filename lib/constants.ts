@@ -1,13 +1,13 @@
 export const COMPANY = {
   name: "Loomenfly Labs",
-  legalName: "Loomenfly Labs LLP",
+  legalName: "LOOMENFLY LABS LLP",
   llpin: "ACZ-5532",
   udyam: "UDYAM-KL-01-0070166",
   pan: "AANFL3526F",
   tagline: "Turn Your Messages Into Bookings",
   description:
     "We build custom software and automated messaging flows that give your customers an interactive booking experience directly on WhatsApp, while giving you a powerful dashboard to manage it all.",
-  address: "Door No. 150, Gurusadanam, Ala P.O, Chengannur, Alappuzha, Kerala - 689126, India",
+  address: "Door No. 150, Gurusadanam, Ala P.O, Chengannur, Ala (Alappuzha), Chengannur Police Station, Chengannur, Alappuzha- 689126, Kerala, India",
   adminEmail: "admin@loomenflylabs.com",
   salesEmail: "gokul@loomenflylabs.com",
   techEmail: "hashiq@loomenflylabs.com",
