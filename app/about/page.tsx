@@ -45,7 +45,7 @@ export default function AboutPage() {
               <strong>FlowDesk</strong> is a proprietary software platform developed, owned, and operated entirely by <strong>{COMPANY.legalName}</strong>. 
             </p>
             <p className="mb-4">
-              FlowDesk connects directly to the official Meta / WhatsApp Cloud API to provide local service businesses (salons, spas, clinics, studios) with an interactive, app-like booking experience inside WhatsApp. It combines direct client messaging with a powerful cloud-based management dashboard for business owners.
+              FlowDesk connects directly to the official Meta / WhatsApp Cloud API to provide local service businesses (salons, spas, wellness centers, studios) with an interactive, app-like booking experience inside WhatsApp. It combines direct client messaging with a powerful cloud-based management dashboard for business owners.
             </p>
           </div>
 

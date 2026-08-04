@@ -18,7 +18,7 @@ import { triggerParallaxDemo, setNavigating } from "@/lib/scroll-navigation";
 
 /** Sections below LeadCatcher — skip parallax, scroll directly (same as Navbar). */
 const SECTIONS_BELOW_LEAD_CATCHER = new Set([
-  "#addons", "#industries", "#reviews", "#about", "#contact", "#custom",
+  "#addons", "#reviews", "#about", "#contact", "#custom",
 ]);
 
 export default function HashScrollHandler() {

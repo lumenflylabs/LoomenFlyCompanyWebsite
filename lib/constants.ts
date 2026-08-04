@@ -29,7 +29,6 @@ export type IndustryItem = {
 export const NAV_LINKS = [
   { label: "Platform", href: "/#plans" },
   { label: "Features", href: "/#addons" },
-  { label: "Industries", href: "/#industries" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ] as const;
