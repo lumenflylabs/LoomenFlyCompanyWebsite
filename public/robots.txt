@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://loomenflylabs.com/sitemap.xml
+Sitemap: https://www.loomenflylabs.com/sitemap.xml

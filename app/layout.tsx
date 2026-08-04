@@ -23,7 +23,7 @@ const playfair = Playfair_Display({
   style: ["normal", "italic"],
 });
 
-const siteUrl = "https://loomenflylabs.com";
+const siteUrl = "https://www.loomenflylabs.com";
 
 export const metadata: Metadata = {
   title: `${COMPANY.name} — ${COMPANY.tagline}`,
