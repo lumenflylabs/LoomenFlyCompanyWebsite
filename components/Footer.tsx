@@ -5,12 +5,6 @@ export default function Footer() {
   return (
     <footer className="bg-[#000000] text-white overflow-hidden relative border-t border-white/10">
       
-      {/* Colossal Clean Brand Watermark */}
-      <div className="w-full overflow-hidden border-b border-white/10 select-none flex items-center justify-center py-16 md:py-24">
-        <h2 className="font-heading text-[clamp(44px,12vw,140px)] font-bold text-white/[0.04] whitespace-nowrap px-6 tracking-tight">
-          LOOMENFLY LABS
-        </h2>
-      </div>
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24">
         
