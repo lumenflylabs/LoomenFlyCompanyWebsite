@@ -1,4 +1,4 @@
-import { LEAD_CATCHER } from "@/lib/constants";
+import { COMPANY, LEAD_CATCHER } from "@/lib/constants";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const BENTO_CONFIG = [
@@ -8,6 +8,15 @@ const BENTO_CONFIG = [
   { span: "md:col-span-2 lg:col-span-4", bg: "bg-[#FFD100]", text: "text-[#000000]", border: "border-transparent" },
   { span: "md:col-span-2 lg:col-span-3", bg: "bg-white", text: "text-[#000000]", border: "border-[#000000]/5" },
   { span: "md:col-span-2 lg:col-span-3", bg: "bg-white", text: "text-[#000000]", border: "border-[#000000]/5" },
+];
+
+const FEATURE_TAGS = [
+  "Control Center",
+  "Catalog Engine",
+  "In-Chat Commerce",
+  "Conversational Flow",
+  "Calendar Sync",
+  "Client Intelligence",
 ];
 
 export default function LeadCatcher() {
@@ -35,6 +44,7 @@ export default function LeadCatcher() {
           {LEAD_CATCHER.features.map((feature, index) => {
             const config = BENTO_CONFIG[index % BENTO_CONFIG.length];
             const isLargeCard = index === 0 || index === 3;
+            const categoryTag = FEATURE_TAGS[index] || `Module 0${index + 1}`;
 
             return (
               <ScrollReveal key={index} delay={0.05 * index} className={`${config.span}`}>
@@ -44,25 +54,30 @@ export default function LeadCatcher() {
                     rounded-[32px] border ${config.border} ${config.bg} ${config.text}
                     shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)]
                     flex flex-col justify-between group
-                    transition-transform duration-500 hover:scale-[1.01] cursor-pointer
+                    transition-transform duration-500 hover:scale-[1.01]
                     relative overflow-hidden z-10
                   `}
                 >
                   <div className="flex justify-between items-start mb-12 relative z-20">
                     <div className="flex items-center gap-3">
-                      <span className="font-sans font-bold text-[11px] uppercase tracking-[0.2em] opacity-50">
-                        Feature 0{index + 1}
+                      <span className="font-mono font-semibold text-[11px] uppercase tracking-[0.15em] opacity-60">
+                        {categoryTag}
                       </span>
                     </div>
                     
                     {/* Explicit Conversion CTA */}
-                    <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-y-2 group-hover:translate-y-0 flex items-center gap-2 bg-current text-white px-4 py-2 rounded-full cursor-pointer pointer-events-auto shadow-xl hover:scale-105 active:scale-95"
-                         style={{ backgroundColor: config.bg === 'bg-[#111111]' ? 'white' : 'black', color: config.bg === 'bg-[#111111]' ? 'black' : 'white' }}>
+                    <a
+                      href={COMPANY.waLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-y-2 group-hover:translate-y-0 flex items-center gap-2 bg-current text-white px-4 py-2 rounded-full cursor-pointer shadow-xl hover:scale-105 active:scale-95"
+                      style={{ backgroundColor: config.bg === 'bg-[#111111]' ? 'white' : 'black', color: config.bg === 'bg-[#111111]' ? 'black' : 'white' }}
+                    >
                       <span className="font-sans font-bold text-[12px] uppercase tracking-[0.1em]">
-                        Explore
+                        View Demo
                       </span>
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </div>
+                    </a>
                   </div>
                   
                   <h3 className={`font-heading text-3xl md:text-4xl lg:text-[40px] leading-[1.1] text-balance relative z-20 ${index === 0 || index === 3 ? 'max-w-[60%]' : ''}`}>
