@@ -30,13 +30,14 @@ export default function Footer() {
               <p className="font-sans text-xl md:text-2xl text-white/50 leading-relaxed mb-12">
                 {FOOTER.description}
               </p>
-              <p className="font-sans text-sm text-white/30 leading-relaxed max-w-[300px]">
+              <p className="font-sans text-sm text-white/40 leading-relaxed max-w-[340px]">
                 {COMPANY.address}
               </p>
-              <p className="font-sans text-[11px] text-white/20 mt-4 leading-relaxed tracking-wide">
-                LLPIN: {COMPANY.llpin} <br />
-                MSME Udyam: {COMPANY.udyam}
-              </p>
+              <div className="font-sans text-xs text-white/40 mt-4 flex flex-col gap-1">
+                <p><strong>Email:</strong> <a href={`mailto:${COMPANY.adminEmail}`} className="text-white/70 hover:text-white underline">{COMPANY.adminEmail}</a></p>
+                <p><strong>Phone:</strong> {COMPANY.phone}</p>
+                <p className="text-[11px] text-white/30 mt-1">LLPIN: {COMPANY.llpin} | MSME: {COMPANY.udyam}</p>
+              </div>
             </ScrollReveal>
           </div>
 
@@ -77,21 +78,23 @@ export default function Footer() {
         </div>
 
         {/* Meta Disclaimer */}
-        <div className="text-center font-sans text-xs text-white/20 max-w-3xl mx-auto mb-8 px-4 leading-relaxed">
+        <div className="text-center font-sans text-xs text-white/30 max-w-3xl mx-auto mb-8 px-4 leading-relaxed">
           {COMPANY.legalName} is an independent software provider. We are not affiliated with, sponsored by, or endorsed by WhatsApp Inc. or Meta Platforms, Inc.
         </div>
 
         {/* The Vibe-Coded Pill Anchor */}
         <div className="group flex flex-col md:flex-row items-center justify-between py-6 px-8 md:py-4 md:px-8 rounded-3xl md:rounded-full bg-white/[0.02] backdrop-blur-xl border border-white/[0.05] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:bg-white/[0.04] hover:border-white/10 transition-all duration-500 gap-6">
-          <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6 font-sans text-[13px] text-white/40 text-center">
+          <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6 font-sans text-[13px] text-white/50 text-center">
             <p>© {COMPANY.year} {COMPANY.legalName}</p>
             <div className="hidden md:block w-[1px] h-3 bg-white/10" />
             <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
-              <a href="/privacy-policy" className="hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-all duration-300">Privacy Policy</a>
+              <a href="/privacy-policy" className="hover:text-white transition-all duration-300">Privacy Policy</a>
               <div className="w-[1px] h-3 bg-white/10" />
-              <a href="/terms-conditions" className="hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-all duration-300">Terms & Conditions</a>
+              <a href="/terms-of-service" className="hover:text-white transition-all duration-300">Terms of Service</a>
               <div className="w-[1px] h-3 bg-white/10" />
-              <a href="/data-deletion" className="hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-all duration-300">Data Deletion</a>
+              <a href="/data-deletion" className="hover:text-white transition-all duration-300">Data Deletion</a>
+              <div className="w-[1px] h-3 bg-white/10" />
+              <a href="/contact" className="hover:text-white transition-all duration-300">Contact Us</a>
             </div>
           </div>
           <div className="flex flex-wrap justify-center gap-6">
