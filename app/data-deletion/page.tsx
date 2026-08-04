@@ -87,8 +87,8 @@ export default function DataDeletionPage() {
               View Privacy Policy
             </Link>
             <span>•</span>
-            <Link href="/terms-conditions" className="text-[#E51E25] hover:underline font-medium">
-              View Terms & Conditions
+            <Link href="/terms-of-service" className="text-[#E51E25] hover:underline font-medium">
+              View Terms of Service
             </Link>
             <span>•</span>
             <Link href="/contact" className="text-[#E51E25] hover:underline font-medium">
