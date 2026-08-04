@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { COMPANY, NAV_LINKS } from "@/lib/constants";
 import Logo from "@/components/ui/Logo";
@@ -30,23 +31,27 @@ export default function Navbar() {
           `}
         >
           
-          <a href="/" className="flex items-center gap-3 pl-3 group z-50">
+          <Link href="/" className="flex items-center gap-3 pl-3 group z-50">
             <Logo className="w-8 h-8 transition-transform duration-500 group-hover:scale-110" />
             <span className="font-heading text-lg font-bold text-[#000000] tracking-tight mt-0.5">
               Loomenfly Labs
             </span>
-          </a>
+          </Link>
 
           {/* Magnetic Pill Links */}
           <ul className="hidden md:flex gap-1 list-none items-center absolute left-1/2 -translate-x-1/2">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
-                <a
-                  href={pathname === "/" ? link.href : `/${link.href}`}
-                  className="px-5 py-2 rounded-full text-[14px] font-sans font-medium text-[#000000]/70 hover:text-[#000000] hover:bg-black/5 transition-all duration-300"
+                <Link
+                  href={link.href}
+                  className={`px-5 py-2 rounded-full text-[14px] font-sans font-medium transition-all duration-300 ${
+                    pathname === link.href
+                      ? "text-[#000000] bg-black/5 font-semibold"
+                      : "text-[#000000]/70 hover:text-[#000000] hover:bg-black/5"
+                  }`}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -87,14 +92,14 @@ export default function Navbar() {
       >
         <div className="flex flex-col gap-6 items-center text-center">
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.href}
-              href={pathname === "/" ? link.href : `/${link.href}`}
+              href={link.href}
               onClick={() => setMobileOpen(false)}
               className="text-3xl font-heading text-[#000000] hover:text-[#E51E25] transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <a
             href={COMPANY.waLink}
