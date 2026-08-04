@@ -90,6 +90,8 @@ export default function Footer() {
               <a href="/privacy-policy" className="hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-all duration-300">Privacy Policy</a>
               <div className="w-[1px] h-3 bg-white/10" />
               <a href="/terms-conditions" className="hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-all duration-300">Terms & Conditions</a>
+              <div className="w-[1px] h-3 bg-white/10" />
+              <a href="/data-deletion" className="hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-all duration-300">Data Deletion</a>
             </div>
           </div>
           <div className="flex flex-wrap justify-center gap-6">

@@ -250,14 +250,13 @@ export const FOOTER = {
     "We build custom software ecosystems powered by the WhatsApp Business Platform and intuitive management dashboards.",
   navColumns: [
     {
-      title: "Navigation",
+      title: "Company & Legal",
       links: [
-        { label: "Home", href: "/" },
-        { label: "Why FlowDesk", href: "/#why" },
-        { label: "Platform", href: "/#plans" },
-        { label: "Industries", href: "/#industries" },
-        { label: "About Us", href: "/#about" },
-        { label: "Contact", href: "/#contact" },
+        { label: "About Us", href: "/about" },
+        { label: "Contact Us", href: "/contact" },
+        { label: "Privacy Policy", href: "/privacy-policy" },
+        { label: "Terms & Conditions", href: "/terms-conditions" },
+        { label: "Data Deletion", href: "/data-deletion" },
       ],
     },
     {
