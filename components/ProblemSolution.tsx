@@ -116,7 +116,7 @@ export default function ProblemSolution() {
               </p>
               
               <div className="absolute bottom-12 left-12 lg:left-24 flex items-center gap-4 text-[#111111]/40 font-mono text-xs uppercase tracking-[0.2em]">
-                <span>Scroll to explore</span>
+                <span>Scroll to view comparison</span>
                 <div className="w-24 h-[1px] bg-[#111111]/20" />
                 <span>&rarr;</span>
               </div>
