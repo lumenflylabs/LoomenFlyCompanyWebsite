@@ -12,9 +12,9 @@ export const COMPANY = {
   salesEmail: "gokul@loomenflylabs.com",
   techEmail: "hashiq@loomenflylabs.com",
   successEmail: "saheeda@loomenflylabs.com",
-  phone: "+91 0000000000",
-  waNumber: "+910000000000",
-  waLink: "https://wa.me/910000000000?text=Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
+  phone: "+91 9746914027",
+  waNumber: "+919746914027",
+  waLink: "https://wa.me/919746914027?text=Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   waDemoText: "Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   year: new Date().getFullYear(),
 } as const;
@@ -139,8 +139,8 @@ export const PREMIUM_ADDONS = {
     {
       icon: "🔔",
       title: "Automated Reminders",
-      tagline: "Eliminate no-shows",
-      desc: "Send basic confirmation messages and timely reminders so your customers never miss an appointment.",
+      tagline: "Reduce no-shows",
+      desc: "Send basic confirmation messages and timely reminders to help your customers remember their appointments.",
     },
     {
       icon: "ℹ️",
