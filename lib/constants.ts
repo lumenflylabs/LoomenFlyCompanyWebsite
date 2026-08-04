@@ -27,7 +27,7 @@ export type IndustryItem = {
 };
 
 export const NAV_LINKS = [
-  { label: "Platform", href: "/#plans" },
+  { label: "Why FlowDesk", href: "/#why" },
   { label: "Features", href: "/#addons" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -262,7 +262,7 @@ export const FOOTER = {
     {
       title: "Features",
       links: [
-        { label: "The FlowDesk Ecosystem", href: "/#plans" },
+        { label: "Interactive Booking", href: "/#why" },
         { label: "Google Review System", href: "/#addons" },
         { label: "Broadcast Ads", href: "/#addons" },
         { label: "Management Dashboard", href: "/#custom" },
