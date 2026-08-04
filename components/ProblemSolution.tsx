@@ -1,7 +1,5 @@
 "use client";
 
-'use client';
-
 import { useRef } from "react";
 import { PROBLEM_SOLUTION } from "@/lib/constants";
 import { motion, useScroll, useTransform } from "framer-motion";

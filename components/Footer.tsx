@@ -85,24 +85,24 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-3.5">
               <li>
-                <a href="/#why" className="font-sans text-sm text-white/70 hover:text-white transition-colors duration-200">
+                <Link href="/#why" className="font-sans text-sm text-white/70 hover:text-white transition-colors duration-200">
                   Interactive Booking Flow
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#addons" className="font-sans text-sm text-white/70 hover:text-white transition-colors duration-200">
+                <Link href="/#addons" className="font-sans text-sm text-white/70 hover:text-white transition-colors duration-200">
                   No-Show Protector
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#addons" className="font-sans text-sm text-white/70 hover:text-white transition-colors duration-200">
+                <Link href="/#addons" className="font-sans text-sm text-white/70 hover:text-white transition-colors duration-200">
                   Catalog CMS & Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#addons" className="font-sans text-sm text-white/70 hover:text-white transition-colors duration-200">
+                <Link href="/#addons" className="font-sans text-sm text-white/70 hover:text-white transition-colors duration-200">
                   Google Calendar 2-Way Sync
-                </a>
+                </Link>
               </li>
               <li>
                 <a href={COMPANY.waLink} target="_blank" rel="noopener noreferrer" className="font-sans text-sm text-[#FFD100] hover:underline flex items-center gap-1.5 font-medium">

@@ -1,5 +1,6 @@
 import React from "react";
 import { COMPANY } from "@/lib/constants";
+import Link from "next/link";
 
 export const metadata = {
   title: `Privacy Policy | ${COMPANY.name}`,
@@ -103,7 +104,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
               <li>Request a copy of the personal data we hold about you.</li>
               <li>Request that we correct any inaccurate data.</li>
-              <li><strong>Request Data Deletion:</strong> You can request the complete deletion of your profile and appointment history. To initiate a data deletion request, please email {COMPANY.adminEmail}. Upon request, all PII (including encrypted phone numbers and names) will be permanently purged from our databases within 30 days.</li>
+              <li><strong>Request Data Deletion:</strong> You can request the complete deletion of your profile and appointment history via our <Link href="/data-deletion" className="text-[#E51E25] hover:underline font-medium">Data Deletion Instructions</Link> or by emailing <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] font-mono hover:underline">{COMPANY.adminEmail}</a>. Upon request, all PII (including encrypted phone numbers and names) will be permanently purged from our databases within 30 days.</li>
             </ul>
           </div>
 
@@ -119,6 +120,21 @@ export default function PrivacyPolicy() {
               Address: {COMPANY.address}
             </p>
           </div>
+
+          <div className="pt-6 border-t border-[#111111]/10 flex flex-wrap gap-4 text-sm">
+            <Link href="/terms-of-service" className="text-[#E51E25] hover:underline font-medium">
+              Terms of Service
+            </Link>
+            <span>•</span>
+            <Link href="/data-deletion" className="text-[#E51E25] hover:underline font-medium">
+              Data Deletion Instructions
+            </Link>
+            <span>•</span>
+            <Link href="/contact" className="text-[#E51E25] hover:underline font-medium">
+              Contact Us
+            </Link>
+          </div>
+
         </div>
       </div>
     </div>
