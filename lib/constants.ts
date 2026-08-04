@@ -27,7 +27,7 @@ export type IndustryItem = {
 };
 
 export const NAV_LINKS = [
-  { label: "Why FlowDesk", href: "/#why" },
+  { label: "Platform", href: "/#plans" },
   { label: "Features", href: "/#addons" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },

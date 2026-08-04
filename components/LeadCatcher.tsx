@@ -64,20 +64,6 @@ export default function LeadCatcher() {
                         {categoryTag}
                       </span>
                     </div>
-                    
-                    {/* Explicit Conversion CTA */}
-                    <a
-                      href={COMPANY.waLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-y-2 group-hover:translate-y-0 flex items-center gap-2 bg-current text-white px-4 py-2 rounded-full cursor-pointer shadow-xl hover:scale-105 active:scale-95"
-                      style={{ backgroundColor: config.bg === 'bg-[#111111]' ? 'white' : 'black', color: config.bg === 'bg-[#111111]' ? 'black' : 'white' }}
-                    >
-                      <span className="font-sans font-bold text-[12px] uppercase tracking-[0.1em]">
-                        View Demo
-                      </span>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
                   </div>
                   
                   <h3 className={`font-heading text-3xl md:text-4xl lg:text-[40px] leading-[1.1] text-balance relative z-20 ${index === 0 || index === 3 ? 'max-w-[60%]' : ''}`}>

@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import ProblemSolution from "@/components/ProblemSolution";
+import LeadCatcher from "@/components/LeadCatcher";
 import PremiumAddons from "@/components/PremiumAddons";
 import TrustFlow from "@/components/TrustFlow";
 import About from "@/components/About";
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <ProblemSolution />
+      <LeadCatcher />
       <PremiumAddons />
       <TrustFlow />
       <About />
