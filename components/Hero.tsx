@@ -19,7 +19,12 @@ export default function Hero() {
         {/* Main Headline */}
         <div className="relative max-w-[1000px] mx-auto mb-6 z-10">
           <h1 className="font-heading text-[clamp(40px,6vw,84px)] leading-[1.1] text-balance text-center text-[#000000]">
-            Automate WhatsApp Bookings <br /> with <span className="text-[#E51E25] underline decoration-[#FFD100] decoration-wavy decoration-2 sm:decoration-4 underline-offset-8">FlowDesk</span>
+            Automate WhatsApp Bookings <br /> with <span className="text-[#E51E25] relative inline-block pr-2">
+              FlowDesk
+              <svg className="absolute -bottom-2 left-0 w-full h-[14px] pointer-events-none" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,10 Q50,0 100,10" fill="none" stroke="#FFD100" strokeWidth="4" strokeLinecap="round" />
+              </svg>
+            </span>
           </h1>
         </div>
 
