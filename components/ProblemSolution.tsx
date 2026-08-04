@@ -18,7 +18,7 @@ export default function ProblemSolution() {
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
 
   return (
-    <section id="problem" className="relative bg-[#F6F5ED] text-[#111111]">
+    <section id="why" className="relative bg-[#F6F5ED] text-[#111111]">
       
       {/* 
         ========================================================================
