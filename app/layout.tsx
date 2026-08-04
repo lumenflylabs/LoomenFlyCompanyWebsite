@@ -71,7 +71,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html
+    <html
       lang="en"
       className={`${abeezee.variable} ${plusJakartaSans.variable} ${playfair.variable} h-full antialiased scroll-smooth scroll-pt-[120px]`}
     >
@@ -90,6 +90,23 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+
+        {/* Static Crawler Fallback for Raw Non-JS Scrapers */}
+        <noscript>
+          <div style={{ padding: "40px 20px", background: "#0a0a0a", color: "#ffffff", fontFamily: "sans-serif" }}>
+            <h2>{COMPANY.legalName}</h2>
+            <p>LLPIN: {COMPANY.llpin} | MSME Udyam: {COMPANY.udyam}</p>
+            <p>Registered Address: {COMPANY.address}</p>
+            <p>Corporate Email: {COMPANY.adminEmail} | Official Phone: {COMPANY.phone}</p>
+            <p>
+              <a href="/privacy-policy" style={{ color: "#FFD100" }}>Privacy Policy</a> | {" "}
+              <a href="/terms-of-service" style={{ color: "#FFD100" }}>Terms of Service</a> | {" "}
+              <a href="/data-deletion" style={{ color: "#FFD100" }}>Data Deletion Instructions</a> | {" "}
+              <a href="/about" style={{ color: "#FFD100" }}>About Us</a> | {" "}
+              <a href="/contact" style={{ color: "#FFD100" }}>Contact Us</a>
+            </p>
+          </div>
+        </noscript>
       </body>
     </html>
   );

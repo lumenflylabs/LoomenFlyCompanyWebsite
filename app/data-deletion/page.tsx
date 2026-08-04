@@ -1,10 +1,22 @@
 import React from "react";
+import type { Metadata } from "next";
 import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata = {
-  title: `Data Deletion Instructions | ${COMPANY.name}`,
+export const metadata: Metadata = {
+  title: `User Data Deletion Instructions | ${COMPANY.name}`,
   description: `Instructions on how users can request data deletion for FlowDesk and WhatsApp integrations provided by ${COMPANY.name} (${COMPANY.legalName}).`,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: "https://www.loomenflylabs.com/data-deletion",
+  },
 };
 
 export default function DataDeletionPage() {

@@ -1,4 +1,19 @@
 User-agent: *
 Allow: /
 
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://www.loomenflylabs.com/sitemap.xml

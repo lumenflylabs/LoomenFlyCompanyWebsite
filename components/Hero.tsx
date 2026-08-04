@@ -1,7 +1,5 @@
-"use client";
-
 import { COMPANY, HERO } from "@/lib/constants";
-import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -9,12 +7,7 @@ export default function Hero() {
       id="home" 
       className="relative min-h-screen bg-white flex flex-col items-center justify-center p-6 md:p-12"
     >
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full flex flex-col items-center justify-center"
-      >
+      <div className="w-full flex flex-col items-center justify-center">
         {/* Trust Pill / Legal Relationship */}
         <div className="mb-6 z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#111111]/5 border border-[#111111]/10 text-[12px] font-mono font-semibold text-[#111111]/80 uppercase tracking-wider">
@@ -48,14 +41,14 @@ export default function Hero() {
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </a>
-          <a
+          <Link
             href="/about"
             className="px-8 py-4 bg-white hover:bg-[#111111]/5 border border-[#111111]/15 text-[#111111] font-sans font-medium text-[15px] rounded-full transition-all duration-300"
           >
             About Loomenfly Labs
-          </a>
+          </Link>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }
