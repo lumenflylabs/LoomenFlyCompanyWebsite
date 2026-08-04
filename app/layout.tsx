@@ -36,6 +36,28 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
     apple: "/images/logo.jpeg",
   },
+  openGraph: {
+    title: `${COMPANY.name} — ${COMPANY.tagline}`,
+    description: COMPANY.description,
+    url: siteUrl,
+    siteName: COMPANY.legalName,
+    images: [
+      {
+        url: "/images/logo.jpeg",
+        width: 1200,
+        height: 630,
+        alt: `${COMPANY.name} Logo`,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${COMPANY.name} — ${COMPANY.tagline}`,
+    description: COMPANY.description,
+    images: ["/images/logo.jpeg"],
+  },
   verification: {
     other: {
       "facebook-domain-verification": "067by66wm4xvz067lskbpnhu55kc9r",
