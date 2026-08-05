@@ -24,6 +24,13 @@ export const COMPANY = {
     { name: "MS Mohammed Hashiq", role: "Designated Partner & CTO", email: "hashiq@loomenflylabs.com" },
     { name: "Saheeda Menamthuruthil Muhammed", role: "Designated Partner & COO", email: "saheeda@loomenflylabs.com" },
   ],
+  socials: {
+    whatsapp: "https://wa.me/919746914027?text=Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
+    linkedin: "https://www.linkedin.com/company/loomenfly-labs",
+    github: "https://github.com/lumenflylabs",
+    instagram: "https://www.instagram.com/loomenflylabs",
+    x: "https://x.com/loomenflylabs",
+  },
 } as const;
 
 export const DESIGNATED_PARTNERS = COMPANY.partners;

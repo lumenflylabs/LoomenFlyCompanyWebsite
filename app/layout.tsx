@@ -101,6 +101,10 @@ export default function RootLayout({
     ],
     sameAs: [
       COMPANY.waLink,
+      COMPANY.socials.linkedin,
+      COMPANY.socials.github,
+      COMPANY.socials.instagram,
+      COMPANY.socials.x,
     ],
   };
 
