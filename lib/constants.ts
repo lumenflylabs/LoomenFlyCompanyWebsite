@@ -12,7 +12,7 @@ export const COMPANY = {
   salesEmail: "gokul@loomenflylabs.com",
   techEmail: "hashiq@loomenflylabs.com",
   successEmail: "saheeda@loomenflylabs.com",
-  phone: "+91 9292025954",
+  phone: "+91 7736119930",
   altPhone: "+91 9746914027",
   waNumber: "+919746914027",
   waLink: "https://wa.me/919746914027?text=Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
