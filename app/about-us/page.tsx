@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image",
+        url: "https://www.loomenflylabs.com/images/og-banner.png",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `About Us | ${COMPANY.legalName}`,
     description: `Official Corporate Profile of ${COMPANY.legalName} (${COMPANY.name}), leadership team, and software ecosystem.`,
-    images: ["/opengraph-image"],
+    images: ["https://www.loomenflylabs.com/images/og-banner.png"],
   },
 };
 

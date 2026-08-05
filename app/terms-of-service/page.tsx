@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image",
+        url: "https://www.loomenflylabs.com/images/og-banner.png",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Terms of Service | ${COMPANY.legalName}`,
     description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) governing the FlowDesk WhatsApp booking platform and software services.`,
-    images: ["/opengraph-image"],
+    images: ["https://www.loomenflylabs.com/images/og-banner.png"],
   },
 };
 
