@@ -133,7 +133,7 @@ export default function DataDeletionPage() {
               In accordance with the <strong>Information Technology Act, 2000</strong> and <strong>IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021</strong>, if you have any questions or escalate concerns regarding your data deletion request, please reach out to our Grievance Officer:
             </p>
             <div className="mt-3 text-sm text-[#111111]/80 flex flex-col gap-1">
-              <p><strong>Name:</strong> M.V.S. Mohammed Hashiq (Designated Partner)</p>
+              <p><strong>Name:</strong> MS Mohammed Hashiq (Designated Partner)</p>
               <p><strong>Email:</strong> <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline font-mono">{COMPANY.adminEmail}</a></p>
               <p><strong>Entity:</strong> {COMPANY.legalName} (LLPIN: {COMPANY.llpin})</p>
               <p><strong>Address:</strong> {COMPANY.address}</p>

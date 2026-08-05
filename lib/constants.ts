@@ -21,7 +21,7 @@ export const COMPANY = {
   disclaimer: "LOOMENFLY LABS LLP is an independent software development entity registered in Kerala, India. FlowDesk uses the official WhatsApp Business Platform Cloud API. We are not affiliated with, sponsored by, or endorsed by WhatsApp Inc. or Meta Platforms, Inc.",
   partners: [
     { name: "Gokul Surendran", role: "Designated Partner & CEO", email: "gokul@loomenflylabs.com" },
-    { name: "M.V.S. Mohammed Hashiq", role: "Designated Partner & CTO", email: "hashiq@loomenflylabs.com" },
+    { name: "MS Mohammed Hashiq", role: "Designated Partner & CTO", email: "hashiq@loomenflylabs.com" },
     { name: "Saheeda Menamthuruthil Muhammed", role: "Designated Partner & COO", email: "saheeda@loomenflylabs.com" },
   ],
 } as const;
@@ -210,7 +210,7 @@ export const ABOUT = {
   ],
   cardTitle: "Built in Kerala.\nScaling Everywhere.",
   cardDesc:
-    "LOOMENFLY LABS LLP (LLPIN: ACZ-5532), registered in Kerala. Founded by Gokul Surendran, M.V.S. Mohammed Hashiq, and Saheeda Menamthuruthil Muhammed — Designated Partners.",
+    "LOOMENFLY LABS LLP (LLPIN: ACZ-5532), registered in Kerala. Founded by Gokul Surendran, MS Mohammed Hashiq, and Saheeda Menamthuruthil Muhammed — Designated Partners.",
 } as const;
 
 export const CUSTOM_SOLUTIONS = {

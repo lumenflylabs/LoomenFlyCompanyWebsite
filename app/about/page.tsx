@@ -95,7 +95,7 @@ export default function AboutPage() {
 
               <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm">
                 <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-1 font-bold">Designated Partner</span>
-                <h3 className="font-heading text-xl text-[#111111] mb-1">M.V.S. Mohammed Hashiq</h3>
+                <h3 className="font-heading text-xl text-[#111111] mb-1">MS Mohammed Hashiq</h3>
                 <p className="text-xs text-[#111111]/60 mb-4">Chief Technology Officer (CTO)</p>
                 <a href={`mailto:${COMPANY.techEmail}`} className="text-xs text-[#E51E25] hover:underline font-mono">{COMPANY.techEmail}</a>
               </div>
