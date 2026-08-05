@@ -4,18 +4,32 @@ import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Terms of Service | ${COMPANY.name}`,
+  title: `Terms of Service | ${COMPANY.legalName}`,
   description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) and the FlowDesk WhatsApp booking platform.`,
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
   alternates: {
     canonical: "https://www.loomenflylabs.com/terms-of-service",
+  },
+  openGraph: {
+    title: `Terms of Service | ${COMPANY.legalName}`,
+    description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) governing the FlowDesk WhatsApp booking platform and software services.`,
+    url: "https://www.loomenflylabs.com/terms-of-service",
+    siteName: COMPANY.legalName,
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/logo.jpeg",
+        width: 1200,
+        height: 630,
+        alt: `${COMPANY.name} Logo`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Terms of Service | ${COMPANY.legalName}`,
+    description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) governing the FlowDesk WhatsApp booking platform and software services.`,
+    images: ["/images/logo.jpeg"],
   },
 };
 
@@ -32,7 +46,7 @@ export default function TermsOfService() {
         
         <div className="font-sans text-base md:text-lg text-[#111111]/70 flex flex-col gap-8 leading-relaxed">
           <p>
-            Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+            <strong>Last Updated:</strong> August 5, 2026
           </p>
 
           <p>
@@ -40,6 +54,7 @@ export default function TermsOfService() {
           </p>
           
           <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm text-sm text-[#111111]/80">
+            <h2 className="font-heading text-lg font-bold text-[#111111] mb-2">Corporate Entity Information</h2>
             <p><strong>Legal Entity:</strong> {COMPANY.legalName}</p>
             <p><strong>LLPIN:</strong> {COMPANY.llpin} | <strong>MSME Udyam:</strong> {COMPANY.udyam}</p>
             <p><strong>Registered Office:</strong> {COMPANY.address}</p>
@@ -48,7 +63,7 @@ export default function TermsOfService() {
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              1. Platform Description & Scope
+              1. Platform Description &amp; Scope
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
               <li>FlowDesk provides interactive booking infrastructure, automated client notifications, and calendar management software integrated directly with the official WhatsApp Business Platform (Cloud API).</li>
@@ -58,17 +73,17 @@ export default function TermsOfService() {
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              2. Compliance with Meta & WhatsApp Policies
+              2. Compliance with Meta &amp; WhatsApp Policies
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li>All businesses and users utilizing FlowDesk must strictly adhere to the <strong>Meta Platform Terms</strong> and <strong>WhatsApp Business Messaging & Commerce Policies</strong>.</li>
+              <li>All businesses and users utilizing FlowDesk must strictly adhere to the <strong>Meta Platform Terms</strong> and <strong>WhatsApp Business Messaging &amp; Commerce Policies</strong>.</li>
               <li>Spam, deceptive content, harassment, or unauthorized promotional messaging is strictly prohibited and grounds for immediate termination of platform access.</li>
             </ul>
           </div>
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              3. User Messaging, Consent & Opt-In
+              3. User Messaging, Consent &amp; Opt-In
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
               <li>By initiating a chat session with an active FlowDesk WhatsApp number, customers explicitly consent to receive transactional booking confirmations, rescheduling options, and appointment reminders.</li>
@@ -78,7 +93,7 @@ export default function TermsOfService() {
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              4. Data Privacy, Deletion & Security
+              4. Data Privacy, Deletion &amp; Security
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
               <li>All booking information, phone numbers, and customer metadata are secured using AES-256 encryption, blind-indexing, and PostgreSQL Row-Level Security (RLS).</li>
@@ -88,7 +103,7 @@ export default function TermsOfService() {
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              5. Intellectual Property & Independence Disclaimer
+              5. Intellectual Property &amp; Independence Disclaimer
             </h2>
             <p className="mb-4">
               FlowDesk and all proprietary software algorithms, UI components, and dashboards are the exclusive intellectual property of <strong>{COMPANY.legalName}</strong>.
@@ -100,7 +115,7 @@ export default function TermsOfService() {
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              6. Pricing, Custom Setup & Refund Policy
+              6. Pricing, Custom Setup &amp; Refund Policy
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
               <li><strong>Custom Pricing:</strong> FlowDesk platform setup and license fees are tailored to each business client based on catalog size, multi-staff routing, and custom workflow requirements established during discovery.</li>
@@ -111,7 +126,7 @@ export default function TermsOfService() {
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              7. Legal Inquiries & Governance
+              7. Legal Inquiries &amp; Governance
             </h2>
             <p>
               These Terms of Service are governed by the laws of India and the jurisdiction of Kerala.<br /><br />
@@ -129,6 +144,10 @@ export default function TermsOfService() {
             <span>•</span>
             <Link href="/data-deletion" className="text-[#E51E25] hover:underline font-medium">
               Data Deletion Instructions
+            </Link>
+            <span>•</span>
+            <Link href="/about" className="text-[#E51E25] hover:underline font-medium">
+              About Us
             </Link>
             <span>•</span>
             <Link href="/contact" className="text-[#E51E25] hover:underline font-medium">

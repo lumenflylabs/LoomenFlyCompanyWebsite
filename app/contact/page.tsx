@@ -1,10 +1,36 @@
 import React from "react";
+import type { Metadata } from "next";
 import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata = {
-  title: `Contact Us | ${COMPANY.name}`,
-  description: `Contact ${COMPANY.name} (${COMPANY.legalName}) for sales, support, partnership inquiries, and verification support.`,
+export const metadata: Metadata = {
+  title: `Contact Us | ${COMPANY.legalName}`,
+  description: `Contact ${COMPANY.name} (${COMPANY.legalName}) for sales, technical support, enterprise WhatsApp integrations, and official verification inquiries.`,
+  alternates: {
+    canonical: "https://www.loomenflylabs.com/contact",
+  },
+  openGraph: {
+    title: `Contact Us | ${COMPANY.legalName}`,
+    description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and FlowDesk WhatsApp booking platform.`,
+    url: "https://www.loomenflylabs.com/contact",
+    siteName: COMPANY.legalName,
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/logo.jpeg",
+        width: 1200,
+        height: 630,
+        alt: `${COMPANY.name} Logo`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Contact Us | ${COMPANY.legalName}`,
+    description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and FlowDesk WhatsApp booking platform.`,
+    images: ["/images/logo.jpeg"],
+  },
 };
 
 export default function ContactPage() {
@@ -26,7 +52,7 @@ export default function ContactPage() {
           {/* General & Verification Contact */}
           <div className="p-8 bg-white rounded-3xl border border-[#111111]/10 shadow-sm flex flex-col justify-between">
             <div>
-              <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-2 font-bold">General & Legal</span>
+              <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-2 font-bold">General &amp; Legal</span>
               <h2 className="font-heading text-2xl text-[#111111] mb-2">Corporate Office</h2>
               <p className="font-sans text-sm text-[#111111]/70 mb-6 leading-relaxed">
                 For administrative, partnership, and legal verification inquiries:
@@ -63,7 +89,7 @@ export default function ContactPage() {
           <h2 className="font-heading text-2xl text-[#111111] mb-6">Direct Department Channels</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-4 rounded-xl bg-[#F6F5ED] border border-[#111111]/5">
-              <p className="font-bold text-sm text-[#111111] mb-1">Sales & Onboarding</p>
+              <p className="font-bold text-sm text-[#111111] mb-1">Sales &amp; Onboarding</p>
               <p className="text-xs text-[#111111]/60 mb-3">Gokul (CEO)</p>
               <a href={`mailto:${COMPANY.salesEmail}`} className="text-xs text-[#E51E25] font-mono hover:underline">{COMPANY.salesEmail}</a>
             </div>
@@ -75,11 +101,30 @@ export default function ContactPage() {
             </div>
 
             <div className="p-4 rounded-xl bg-[#F6F5ED] border border-[#111111]/5">
-              <p className="font-bold text-sm text-[#111111] mb-1">Operations & Support</p>
+              <p className="font-bold text-sm text-[#111111] mb-1">Operations &amp; Support</p>
               <p className="text-xs text-[#111111]/60 mb-3">Saheeda (COO)</p>
               <a href={`mailto:${COMPANY.successEmail}`} className="text-xs text-[#E51E25] font-mono hover:underline">{COMPANY.successEmail}</a>
             </div>
           </div>
+        </div>
+
+        {/* Cross-Navigation Footer */}
+        <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 mb-12 flex flex-wrap gap-4 text-sm">
+          <Link href="/privacy-policy" className="text-[#E51E25] hover:underline font-medium">
+            Privacy Policy
+          </Link>
+          <span>•</span>
+          <Link href="/terms-of-service" className="text-[#E51E25] hover:underline font-medium">
+            Terms of Service
+          </Link>
+          <span>•</span>
+          <Link href="/data-deletion" className="text-[#E51E25] hover:underline font-medium">
+            Data Deletion Instructions
+          </Link>
+          <span>•</span>
+          <Link href="/about" className="text-[#E51E25] hover:underline font-medium">
+            About Us
+          </Link>
         </div>
 
         {/* WhatsApp Direct CTA */}

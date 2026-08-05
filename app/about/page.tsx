@@ -1,21 +1,35 @@
 import React from "react";
 import type { Metadata } from "next";
-import { COMPANY } from "@/lib/constants";
+import { COMPANY, DESIGNATED_PARTNERS } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `About Us | ${COMPANY.name}`,
-  description: `Learn about ${COMPANY.name} (${COMPANY.legalName}), our mission, leadership, and our flagship product FlowDesk.`,
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+  title: `About Us | ${COMPANY.legalName}`,
+  description: `Learn about ${COMPANY.name} (${COMPANY.legalName}), our mission, MCA Designated Partners, and our flagship product FlowDesk.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/about",
+  },
+  openGraph: {
+    title: `About Us | ${COMPANY.legalName}`,
+    description: `Official Corporate Profile of ${COMPANY.legalName} (${COMPANY.name}), leadership team, and software ecosystem.`,
+    url: "https://www.loomenflylabs.com/about",
+    siteName: COMPANY.legalName,
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/logo.jpeg",
+        width: 1200,
+        height: 630,
+        alt: `${COMPANY.name} Logo`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `About Us | ${COMPANY.legalName}`,
+    description: `Official Corporate Profile of ${COMPANY.legalName} (${COMPANY.name}), leadership team, and software ecosystem.`,
+    images: ["/images/logo.jpeg"],
   },
 };
 
@@ -64,7 +78,7 @@ export default function AboutPage() {
           {/* Leadership Team (Designated Partners) */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-2">
-              Designated Partners & Leadership
+              Designated Partners &amp; Leadership
             </h2>
             <p className="text-sm text-[#111111]/60 mb-6">
               Founded and managed by Designated Partners registered under the Limited Liability Partnership Act:

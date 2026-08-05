@@ -26,6 +26,8 @@ export const COMPANY = {
   ],
 } as const;
 
+export const DESIGNATED_PARTNERS = COMPANY.partners;
+
 export type IndustryItem = {
   icon: string;
   name: string;

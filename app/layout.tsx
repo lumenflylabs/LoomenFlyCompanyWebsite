@@ -26,20 +26,17 @@ const playfair = Playfair_Display({
 const siteUrl = "https://www.loomenflylabs.com";
 
 export const metadata: Metadata = {
-  title: `${COMPANY.name} — ${COMPANY.tagline}`,
-  description: COMPANY.description,
   metadataBase: new URL(siteUrl),
-  alternates: {
-    canonical: "/",
+  title: {
+    default: `${COMPANY.name} — ${COMPANY.tagline}`,
+    template: `%s | ${COMPANY.legalName}`,
   },
+  description: COMPANY.description,
   icons: {
     icon: "/favicon.svg",
     apple: "/images/logo.jpeg",
   },
   openGraph: {
-    title: `${COMPANY.name} — ${COMPANY.tagline}`,
-    description: COMPANY.description,
-    url: siteUrl,
     siteName: COMPANY.legalName,
     images: [
       {
@@ -54,8 +51,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${COMPANY.name} — ${COMPANY.tagline}`,
-    description: COMPANY.description,
     images: ["/images/logo.jpeg"],
   },
   verification: {

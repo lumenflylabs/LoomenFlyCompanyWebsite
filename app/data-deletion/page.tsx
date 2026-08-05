@@ -4,18 +4,32 @@ import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `User Data Deletion Instructions | ${COMPANY.name}`,
-  description: `Instructions on how users can request data deletion for FlowDesk and WhatsApp integrations provided by ${COMPANY.name} (${COMPANY.legalName}).`,
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+  title: `User Data Deletion Instructions | ${COMPANY.legalName}`,
+  description: `Instructions on how users can request data deletion for FlowDesk and WhatsApp integrations provided by ${COMPANY.name} (${COMPANY.legalName}) in accordance with Meta Platform Terms.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/data-deletion",
+  },
+  openGraph: {
+    title: `User Data Deletion Instructions | ${COMPANY.legalName}`,
+    description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and FlowDesk WhatsApp integrations.`,
+    url: "https://www.loomenflylabs.com/data-deletion",
+    siteName: COMPANY.legalName,
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/logo.jpeg",
+        width: 1200,
+        height: 630,
+        alt: `${COMPANY.name} Logo`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `User Data Deletion Instructions | ${COMPANY.legalName}`,
+    description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and FlowDesk WhatsApp integrations.`,
+    images: ["/images/logo.jpeg"],
   },
 };
 
@@ -24,7 +38,7 @@ export default function DataDeletionPage() {
     <div className="bg-[#F6F5ED] min-h-screen pt-40 pb-24 px-6 md:px-12">
       <div className="max-w-[800px] mx-auto">
         <span className="font-mono text-xs tracking-[0.3em] text-[#E51E25] uppercase mb-6 font-bold block">
-          User Data Rights & Compliance
+          User Data Rights &amp; Compliance
         </span>
         <h1 className="font-heading text-[clamp(36px,5vw,64px)] font-medium leading-[1.05] tracking-tight text-[#111111] mb-8">
           User Data Deletion Instructions
@@ -32,7 +46,7 @@ export default function DataDeletionPage() {
         
         <div className="font-sans text-base md:text-lg text-[#111111]/80 flex flex-col gap-8 leading-relaxed">
           <p>
-            Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+            <strong>Last Updated:</strong> August 5, 2026
           </p>
 
           <p>
@@ -41,6 +55,7 @@ export default function DataDeletionPage() {
 
           {/* Legal Entity Credentials Card */}
           <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm text-sm text-[#111111]/80">
+            <h2 className="font-heading text-lg font-bold text-[#111111] mb-2">Corporate Entity Information</h2>
             <p><strong>Legal Entity:</strong> {COMPANY.legalName}</p>
             <p><strong>LLPIN:</strong> {COMPANY.llpin} | <strong>MSME Udyam:</strong> {COMPANY.udyam}</p>
             <p><strong>Registered Office:</strong> {COMPANY.address}</p>
@@ -49,7 +64,7 @@ export default function DataDeletionPage() {
 
           <div className="p-8 bg-white rounded-3xl border border-[#111111]/10 shadow-sm">
             <h2 className="font-heading text-2xl text-[#111111] mb-4">
-              How to Request Data Deletion
+              How to Request Data Deletion (Step-by-Step)
             </h2>
             <p className="mb-4">
               If you have interacted with a FlowDesk WhatsApp booking flow or service and wish to have all your personal information, booking records, and phone numbers permanently purged from our servers, you can initiate a deletion request through either of the following methods:
@@ -57,25 +72,22 @@ export default function DataDeletionPage() {
 
             <div className="flex flex-col gap-4 mt-6">
               <div className="p-5 bg-[#F6F5ED] rounded-xl border border-[#111111]/5">
-                <h3 className="font-bold text-[#111111] mb-1">Option 1: Direct Email Request (Official Meta Requirement)</h3>
+                <h3 className="font-bold text-[#111111] mb-1">Option 1: Direct Email Request (Official Meta Standard)</h3>
                 <p className="text-sm text-[#111111]/70 mb-2">
-                  Send an email to our Data Protection Officer with the exact subject line:
+                  To request data deletion, send an email to <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] font-mono hover:underline">{COMPANY.adminEmail}</a> with the exact subject line:
                 </p>
                 <div className="p-3 bg-white rounded-lg border border-[#111111]/10 font-mono text-sm font-bold text-[#E51E25] mb-2">
-                  Subject: DATA DELETION REQUEST
+                  Subject: DELETE MY DATA
                 </div>
-                <p className="text-sm">
-                  To: <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] font-mono hover:underline">{COMPANY.adminEmail}</a>
-                </p>
-                <p className="text-xs text-[#111111]/60 mt-2">
-                  Please specify the phone number used during your WhatsApp interactions so our automated tools can locate and purge your encrypted records.
+                <p className="text-sm text-[#111111]/80">
+                  In your email body, simply state your request and include the WhatsApp phone number used during your booking interactions so our automated compliance system can identify and purge your records. We will delete all records within <strong>30 days</strong> (typical processing time is 7 to 14 business days) and send a written confirmation receipt.
                 </p>
               </div>
 
               <div className="p-5 bg-[#F6F5ED] rounded-xl border border-[#111111]/5">
                 <h3 className="font-bold text-[#111111] mb-1">Option 2: WhatsApp Chat Command</h3>
                 <p className="text-sm text-[#111111]/70">
-                  Send the message <strong>&quot;DELETE MY DATA&quot;</strong> or <strong>&quot;STOP&quot;</strong> directly inside any active FlowDesk WhatsApp conversation. Our automated system will immediately revoke consent and flag your account for complete data purging.
+                  Send the message <strong>&quot;DELETE MY DATA&quot;</strong> or <strong>&quot;STOP&quot;</strong> directly inside any active FlowDesk WhatsApp conversation. Our automated system will immediately revoke consent and flag your account for complete data purging within 30 days.
                 </p>
               </div>
             </div>
@@ -120,6 +132,10 @@ export default function DataDeletionPage() {
             <span>•</span>
             <Link href="/terms-of-service" className="text-[#E51E25] hover:underline font-medium">
               View Terms of Service
+            </Link>
+            <span>•</span>
+            <Link href="/about" className="text-[#E51E25] hover:underline font-medium">
+              About Us
             </Link>
             <span>•</span>
             <Link href="/contact" className="text-[#E51E25] hover:underline font-medium">
