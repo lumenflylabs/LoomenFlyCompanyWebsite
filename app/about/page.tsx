@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.loomenflylabs.com/images/og-clean.png",
+        url: "https://www.loomenflylabs.com/images/og-human.png",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `About Us | ${COMPANY.legalName}`,
     description: `Official Corporate Profile of ${COMPANY.legalName} (${COMPANY.name}), leadership team, and software ecosystem.`,
-    images: ["https://www.loomenflylabs.com/images/og-clean.png"],
+    images: ["https://www.loomenflylabs.com/images/og-human.png"],
   },
 };
 
