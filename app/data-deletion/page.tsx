@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.loomenflylabs.com/images/og-banner.png",
+        url: "https://www.loomenflylabs.com/images/og-preview.png",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `User Data Deletion Instructions | ${COMPANY.legalName}`,
     description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and FlowDesk WhatsApp integrations.`,
-    images: ["https://www.loomenflylabs.com/images/og-banner.png"],
+    images: ["https://www.loomenflylabs.com/images/og-preview.png"],
   },
 };
 
