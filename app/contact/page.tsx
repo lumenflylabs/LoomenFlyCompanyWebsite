@@ -4,7 +4,9 @@ import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Contact Us | ${COMPANY.legalName}`,
+  title: {
+    absolute: `Contact Us | ${COMPANY.legalName}`,
+  },
   description: `Contact ${COMPANY.name} (${COMPANY.legalName}) for sales, technical support, enterprise WhatsApp integrations, and official verification inquiries.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/contact",

@@ -4,7 +4,9 @@ import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `User Data Deletion Instructions | ${COMPANY.legalName}`,
+  title: {
+    absolute: `User Data Deletion Instructions | ${COMPANY.legalName}`,
+  },
   description: `Instructions on how users can request data deletion for FlowDesk and WhatsApp integrations provided by ${COMPANY.name} (${COMPANY.legalName}) in accordance with Meta Platform Terms.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/data-deletion",

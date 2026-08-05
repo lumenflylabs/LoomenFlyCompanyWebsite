@@ -4,7 +4,9 @@ import { COMPANY, DESIGNATED_PARTNERS } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `About Us | ${COMPANY.legalName}`,
+  title: {
+    absolute: `About Us | ${COMPANY.legalName}`,
+  },
   description: `Learn about ${COMPANY.name} (${COMPANY.legalName}), our mission, MCA Designated Partners, and our flagship product FlowDesk.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/about",

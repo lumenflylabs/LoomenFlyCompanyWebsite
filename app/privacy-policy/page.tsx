@@ -4,7 +4,9 @@ import { COMPANY, DESIGNATED_PARTNERS } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Privacy Policy | ${COMPANY.legalName}`,
+  title: {
+    absolute: `Privacy Policy | ${COMPANY.legalName}`,
+  },
   description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the FlowDesk WhatsApp Business Platform Cloud API integration and booking system.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/privacy-policy",

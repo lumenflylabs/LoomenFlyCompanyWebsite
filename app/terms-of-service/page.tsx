@@ -4,7 +4,9 @@ import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Terms of Service | ${COMPANY.legalName}`,
+  title: {
+    absolute: `Terms of Service | ${COMPANY.legalName}`,
+  },
   description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) and the FlowDesk WhatsApp booking platform.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/terms-of-service",
