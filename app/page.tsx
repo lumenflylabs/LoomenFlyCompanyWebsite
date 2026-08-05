@@ -22,10 +22,11 @@ export const metadata: Metadata = {
     siteName: COMPANY.legalName,
     images: [
       {
-        url: "/images/logo.jpeg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: `${COMPANY.name} Logo`,
+        type: "image/png",
+        alt: `${COMPANY.name} — ${COMPANY.tagline}`,
       },
     ],
     locale: "en_US",
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${COMPANY.name} — ${COMPANY.tagline}`,
     description: COMPANY.description,
-    images: ["/images/logo.jpeg"],
+    images: ["/opengraph-image"],
   },
 };
 

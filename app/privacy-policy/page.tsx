@@ -20,10 +20,11 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/logo.jpeg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: `${COMPANY.name} Logo`,
+        type: "image/png",
+        alt: `Privacy Policy | ${COMPANY.legalName}`,
       },
     ],
   },
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Privacy Policy | ${COMPANY.legalName}`,
     description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the FlowDesk WhatsApp Business Platform Cloud API integration and booking system.`,
-    images: ["/images/logo.jpeg"],
+    images: ["/opengraph-image"],
   },
 };
 

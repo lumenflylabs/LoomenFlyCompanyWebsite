@@ -20,10 +20,11 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/logo.jpeg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: `${COMPANY.name} Logo`,
+        type: "image/png",
+        alt: `Contact Us | ${COMPANY.legalName}`,
       },
     ],
   },
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Contact Us | ${COMPANY.legalName}`,
     description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and FlowDesk WhatsApp booking platform.`,
-    images: ["/images/logo.jpeg"],
+    images: ["/opengraph-image"],
   },
 };
 

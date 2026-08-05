@@ -20,10 +20,11 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/logo.jpeg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: `${COMPANY.name} Logo`,
+        type: "image/png",
+        alt: `User Data Deletion Instructions | ${COMPANY.legalName}`,
       },
     ],
   },
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `User Data Deletion Instructions | ${COMPANY.legalName}`,
     description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and FlowDesk WhatsApp integrations.`,
-    images: ["/images/logo.jpeg"],
+    images: ["/opengraph-image"],
   },
 };
 
