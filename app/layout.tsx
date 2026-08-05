@@ -97,7 +97,8 @@ export default function RootLayout({
             <h2>{COMPANY.legalName}</h2>
             <p>LLPIN: {COMPANY.llpin} | MSME Udyam: {COMPANY.udyam}</p>
             <p>Registered Address: {COMPANY.address}</p>
-            <p>Corporate Email: {COMPANY.adminEmail} | Official Phone: {COMPANY.phone}</p>
+            <p>Corporate Email: {COMPANY.adminEmail} | Official Phone: {COMPANY.phone} / {COMPANY.altPhone}</p>
+            <p>{COMPANY.disclaimer}</p>
             <p>
               <a href="/privacy-policy" style={{ color: "#FFD100" }}>Privacy Policy</a> | {" "}
               <a href="/terms-of-service" style={{ color: "#FFD100" }}>Terms of Service</a> | {" "}

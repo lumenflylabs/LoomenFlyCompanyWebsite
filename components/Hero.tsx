@@ -53,6 +53,13 @@ export default function Hero() {
             About Loomenfly Labs
           </Link>
         </div>
+
+        {/* Direct Corporate Inquiries Badge */}
+        <div className="mt-8 z-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 font-sans text-xs text-[#000000]/60">
+          <span>Official Inquiries: <a href={`mailto:${COMPANY.adminEmail}`} className="font-mono text-[#E51E25] hover:underline">{COMPANY.adminEmail}</a></span>
+          <span className="hidden sm:inline text-[#000000]/20">&bull;</span>
+          <span>Phone: <a href={`tel:${COMPANY.phone}`} className="hover:text-[#000000]">{COMPANY.phone}</a></span>
+        </div>
       </div>
     </section>
   );

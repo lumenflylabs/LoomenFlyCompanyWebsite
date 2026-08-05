@@ -1,10 +1,22 @@
 import React from "react";
+import type { Metadata } from "next";
 import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: `About Us | ${COMPANY.name}`,
-  description: `Learn about ${COMPANY.name} (LOOMENFLY LABS LLP), our mission, leadership, and our flagship product FlowDesk.`,
+  description: `Learn about ${COMPANY.name} (${COMPANY.legalName}), our mission, leadership, and our flagship product FlowDesk.`,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: "https://www.loomenflylabs.com/about",
+  },
 };
 
 export default function AboutPage() {
@@ -18,7 +30,7 @@ export default function AboutPage() {
           About {COMPANY.name}
         </h1>
         <p className="font-sans text-xl md:text-2xl text-[#111111]/70 leading-relaxed mb-12">
-          {COMPANY.name} is a software and technology firm based in Kerala, India, specializing in conversational commerce, automated booking infrastructure, and business management software.
+          We are <strong>{COMPANY.legalName}</strong> (LLPIN: {COMPANY.llpin}), an Indian software and technology firm registered in Kerala, specializing in conversational commerce, automated booking infrastructure, and business management software.
         </p>
 
         <div className="flex flex-col gap-12 font-sans text-base md:text-lg text-[#111111]/80 leading-relaxed">
@@ -31,8 +43,8 @@ export default function AboutPage() {
               <p><strong>LLPIN:</strong> {COMPANY.llpin}</p>
               <p><strong>MSME Udyam:</strong> {COMPANY.udyam}</p>
               <p className="md:col-span-2"><strong>Registered Office:</strong> {COMPANY.address}</p>
-              <p><strong>Official Inquiries:</strong> <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline">{COMPANY.adminEmail}</a></p>
-              <p><strong>Official Phone:</strong> {COMPANY.phone}</p>
+              <p><strong>Official Inquiries:</strong> <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline font-mono">{COMPANY.adminEmail}</a></p>
+              <p><strong>Official Contact:</strong> {COMPANY.phone} / {COMPANY.altPhone}</p>
             </div>
           </div>
 
@@ -45,33 +57,36 @@ export default function AboutPage() {
               <strong>FlowDesk</strong> is a proprietary software platform developed, owned, and operated entirely by <strong>{COMPANY.legalName}</strong>. 
             </p>
             <p className="mb-4">
-              FlowDesk connects directly to the official Meta / WhatsApp Cloud API to provide local service businesses (salons, spas, wellness centers, studios) with an interactive, app-like booking experience inside WhatsApp. It combines direct client messaging with a powerful cloud-based management dashboard for business owners.
+              FlowDesk connects directly to the official Meta / WhatsApp Business Platform (Cloud API) to provide local service businesses (salons, spas, wellness centers, studios) with an interactive, app-like booking experience inside WhatsApp. It combines direct client messaging with a powerful cloud-based management dashboard for business owners.
             </p>
           </div>
 
-          {/* Leadership Team */}
+          {/* Leadership Team (Designated Partners) */}
           <div>
-            <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-6">
-              Leadership Team
+            <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-2">
+              Designated Partners & Leadership
             </h2>
+            <p className="text-sm text-[#111111]/60 mb-6">
+              Founded and managed by Designated Partners registered under the Limited Liability Partnership Act:
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm">
-                <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-1 font-bold">Executive</span>
-                <h3 className="font-heading text-xl text-[#111111] mb-2">Gokul</h3>
+                <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-1 font-bold">Designated Partner</span>
+                <h3 className="font-heading text-xl text-[#111111] mb-1">Gokul Surendran</h3>
                 <p className="text-xs text-[#111111]/60 mb-4">Chief Executive Officer (CEO)</p>
                 <a href={`mailto:${COMPANY.salesEmail}`} className="text-xs text-[#E51E25] hover:underline font-mono">{COMPANY.salesEmail}</a>
               </div>
 
               <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm">
-                <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-1 font-bold">Technology</span>
-                <h3 className="font-heading text-xl text-[#111111] mb-2">Hashiq</h3>
+                <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-1 font-bold">Designated Partner</span>
+                <h3 className="font-heading text-xl text-[#111111] mb-1">M.V.S. Mohammed Hashiq</h3>
                 <p className="text-xs text-[#111111]/60 mb-4">Chief Technology Officer (CTO)</p>
                 <a href={`mailto:${COMPANY.techEmail}`} className="text-xs text-[#E51E25] hover:underline font-mono">{COMPANY.techEmail}</a>
               </div>
 
               <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm">
-                <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-1 font-bold">Operations</span>
-                <h3 className="font-heading text-xl text-[#111111] mb-2">Saheeda</h3>
+                <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-1 font-bold">Designated Partner</span>
+                <h3 className="font-heading text-xl text-[#111111] mb-1">Saheeda Menamthuruthil Muhammed</h3>
                 <p className="text-xs text-[#111111]/60 mb-4">Chief Operating Officer (COO)</p>
                 <a href={`mailto:${COMPANY.successEmail}`} className="text-xs text-[#E51E25] hover:underline font-mono">{COMPANY.successEmail}</a>
               </div>
@@ -81,7 +96,7 @@ export default function AboutPage() {
           {/* Compliance & Independence */}
           <div className="p-6 bg-[#111111]/5 rounded-2xl text-sm text-[#111111]/70 border border-[#111111]/10">
             <p>
-              <strong>Disclaimer:</strong> {COMPANY.legalName} is an independent technology and software engineering entity. We integrate with the official WhatsApp Business Platform (Cloud API) in accordance with Meta Platform Terms. We are not directly affiliated with, sponsored by, or endorsed by Meta Platforms, Inc. or WhatsApp Inc.
+              <strong>Disclaimer:</strong> {COMPANY.disclaimer}
             </p>
           </div>
 

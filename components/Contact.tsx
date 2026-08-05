@@ -62,6 +62,32 @@ export default function Contact() {
             </ScrollReveal>
           ))}
 
+          {/* Corporate Office & Direct Lines */}
+          <ScrollReveal delay={0.4}>
+            <div className="mt-8 p-6 md:p-8 bg-white rounded-2xl border border-[#000000]/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div className="flex flex-col gap-1">
+                <span className="font-sans font-bold text-[11px] text-[#E51E25] uppercase tracking-[0.2em]">
+                  Corporate Office & Legal Inquiries
+                </span>
+                <p className="font-sans text-sm text-[#000000]/70">
+                  {COMPANY.legalName} &bull; {COMPANY.address}
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-sm font-sans">
+                <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#000000] font-mono hover:text-[#E51E25] underline">
+                  {COMPANY.adminEmail}
+                </a>
+                <span className="text-[#000000]/20 hidden sm:inline">&bull;</span>
+                <a href={`tel:${COMPANY.phone}`} className="text-[#000000]/80 hover:text-[#000000]">
+                  {COMPANY.phone}
+                </a>
+                <span className="text-[#000000]/20 hidden sm:inline">&bull;</span>
+                <a href={`tel:${COMPANY.altPhone}`} className="text-[#000000]/80 hover:text-[#000000]">
+                  {COMPANY.altPhone}
+                </a>
+              </div>
+            </div>
+          </ScrollReveal>
 
         </div>
       </div>

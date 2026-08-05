@@ -12,11 +12,18 @@ export const COMPANY = {
   salesEmail: "gokul@loomenflylabs.com",
   techEmail: "hashiq@loomenflylabs.com",
   successEmail: "saheeda@loomenflylabs.com",
-  phone: "+91 9746914027",
+  phone: "+91 9292025954",
+  altPhone: "+91 9746914027",
   waNumber: "+919746914027",
   waLink: "https://wa.me/919746914027?text=Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   waDemoText: "Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   year: new Date().getFullYear(),
+  disclaimer: "LOOMENFLY LABS LLP is an independent software development entity registered in Kerala, India. FlowDesk uses the official WhatsApp Business Platform Cloud API. We are not affiliated with, sponsored by, or endorsed by WhatsApp Inc. or Meta Platforms, Inc.",
+  partners: [
+    { name: "Gokul Surendran", role: "Designated Partner & CEO", email: "gokul@loomenflylabs.com" },
+    { name: "M.V.S. Mohammed Hashiq", role: "Designated Partner & CTO", email: "hashiq@loomenflylabs.com" },
+    { name: "Saheeda Menamthuruthil Muhammed", role: "Designated Partner & COO", email: "saheeda@loomenflylabs.com" },
+  ],
 } as const;
 
 export type IndustryItem = {
@@ -97,7 +104,7 @@ export const PROBLEM_SOLUTION = {
       {
         icon: "04",
         title: "Automated growth",
-        desc: "FlowDesk automatically follows up for Google Reviews and sends promotional broadcasts to your past customers.",
+        desc: "FlowDesk automatically follows up for Google Reviews and sends automated appointment reminders and opt-in updates.",
       },
     ],
   },
@@ -132,9 +139,9 @@ export const PREMIUM_ADDONS = {
     },
     {
       icon: "📣",
-      title: "Broadcast Offers",
-      tagline: "Re-engage past clients",
-      desc: "Send targeted promotional messages to previous customers about new services, special discounts, or gentle booking reminders.",
+      title: "Broadcast Offers (Opt-in only)",
+      tagline: "Re-engage opted-in clients",
+      desc: "Re-engage customers who have opted-in to receive updates via approved WhatsApp templates. Every message includes easy opt-out.",
     },
     {
       icon: "🔔",
@@ -201,7 +208,7 @@ export const ABOUT = {
   ],
   cardTitle: "Built in Kerala.\nScaling Everywhere.",
   cardDesc:
-    "We're a team of software engineers and designers bringing enterprise-grade automation to local businesses.",
+    "LOOMENFLY LABS LLP (LLPIN: ACZ-5532), registered in Kerala. Founded by Gokul Surendran, M.V.S. Mohammed Hashiq, and Saheeda Menamthuruthil Muhammed — Designated Partners.",
 } as const;
 
 export const CUSTOM_SOLUTIONS = {

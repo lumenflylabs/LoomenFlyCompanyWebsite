@@ -39,6 +39,14 @@ export default function DataDeletionPage() {
             In accordance with the <strong>Meta Platform Terms</strong>, <strong>WhatsApp Business API Policies</strong>, and global data privacy standards (including GDPR and CCPA), <strong>{COMPANY.legalName}</strong> (&quot;{COMPANY.name}&quot;) provides a clear and transparent mechanism for users and customers to request the complete deletion of their personal data.
           </p>
 
+          {/* Legal Entity Credentials Card */}
+          <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm text-sm text-[#111111]/80">
+            <p><strong>Legal Entity:</strong> {COMPANY.legalName}</p>
+            <p><strong>LLPIN:</strong> {COMPANY.llpin} | <strong>MSME Udyam:</strong> {COMPANY.udyam}</p>
+            <p><strong>Registered Office:</strong> {COMPANY.address}</p>
+            <p><strong>Official Contact:</strong> <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline font-mono">{COMPANY.adminEmail}</a> | {COMPANY.phone} / {COMPANY.altPhone}</p>
+          </div>
+
           <div className="p-8 bg-white rounded-3xl border border-[#111111]/10 shadow-sm">
             <h2 className="font-heading text-2xl text-[#111111] mb-4">
               How to Request Data Deletion
@@ -48,23 +56,26 @@ export default function DataDeletionPage() {
             </p>
 
             <div className="flex flex-col gap-4 mt-6">
-              <div className="p-4 bg-[#F6F5ED] rounded-xl border border-[#111111]/5">
-                <h3 className="font-bold text-[#111111] mb-1">Option 1: Direct Email Request (Recommended)</h3>
+              <div className="p-5 bg-[#F6F5ED] rounded-xl border border-[#111111]/5">
+                <h3 className="font-bold text-[#111111] mb-1">Option 1: Direct Email Request (Official Meta Requirement)</h3>
                 <p className="text-sm text-[#111111]/70 mb-2">
-                  Send an email to our Data Protection Officer with the subject line <strong>&quot;Data Deletion Request&quot;</strong>:
+                  Send an email to our Data Protection Officer with the exact subject line:
                 </p>
+                <div className="p-3 bg-white rounded-lg border border-[#111111]/10 font-mono text-sm font-bold text-[#E51E25] mb-2">
+                  Subject: DATA DELETION REQUEST
+                </div>
                 <p className="text-sm">
-                  Email: <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] font-mono hover:underline">{COMPANY.adminEmail}</a>
+                  To: <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] font-mono hover:underline">{COMPANY.adminEmail}</a>
                 </p>
                 <p className="text-xs text-[#111111]/60 mt-2">
-                  Please specify the phone number used during your WhatsApp interactions so we can locate and purge your encrypted records.
+                  Please specify the phone number used during your WhatsApp interactions so our automated tools can locate and purge your encrypted records.
                 </p>
               </div>
 
-              <div className="p-4 bg-[#F6F5ED] rounded-xl border border-[#111111]/5">
+              <div className="p-5 bg-[#F6F5ED] rounded-xl border border-[#111111]/5">
                 <h3 className="font-bold text-[#111111] mb-1">Option 2: WhatsApp Chat Command</h3>
                 <p className="text-sm text-[#111111]/70">
-                  Send the message <strong>&quot;DELETE MY DATA&quot;</strong> directly inside any active FlowDesk WhatsApp conversation. Our automated system will flag your account for permanent data purging.
+                  Send the message <strong>&quot;DELETE MY DATA&quot;</strong> or <strong>&quot;STOP&quot;</strong> directly inside any active FlowDesk WhatsApp conversation. Our automated system will immediately revoke consent and flag your account for complete data purging.
                 </p>
               </div>
             </div>
@@ -75,23 +86,31 @@ export default function DataDeletionPage() {
               What Data is Deleted?
             </h2>
             <p className="mb-4">
-              Upon receiving and verifying your request, we will permanently delete the following data from our active databases and backup systems:
+              Upon receiving and verifying your request, we will permanently delete the following data from our active databases and application servers:
             </p>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li>Your WhatsApp phone number and blind-indexed hashes.</li>
-              <li>Your full name and any submitted demographic information.</li>
-              <li>Your entire historical appointment records and service booking logs.</li>
-              <li>Any synced Google Calendar metadata linked to your bookings.</li>
+              <li><strong>Customer Contact Details:</strong> Your WhatsApp phone number and blind-indexed hash keys.</li>
+              <li><strong>Personal Profile:</strong> Full name and demographic data (if provided).</li>
+              <li><strong>Booking &amp; Service History:</strong> Appointment logs, scheduled time slots, and staff selection records.</li>
+              <li><strong>Conversational Messages:</strong> WhatsApp interactive messages and form responses.</li>
+              <li><strong>Connected Calendars:</strong> Google Calendar event synchronizations linked to your appointments.</li>
             </ul>
           </div>
 
-          <div>
-            <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4">
-              Deletion Timeline & Confirmation
-            </h2>
-            <p>
-              All eligible data deletion requests are processed and permanently completed within <strong>30 days</strong>. You will receive an official confirmation receipt via email once the purge is finalized.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm">
+              <h3 className="font-heading text-xl text-[#111111] mb-2">Processing Timeline</h3>
+              <p className="text-sm text-[#111111]/70">
+                All data deletion requests are reviewed, verified, and executed within <strong>7 to 14 business days</strong> (guaranteed full active purge within 30 days). You will receive an email confirmation receipt upon completion.
+              </p>
+            </div>
+
+            <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm">
+              <h3 className="font-heading text-xl text-[#111111] mb-2">Backup Archive Deletion</h3>
+              <p className="text-sm text-[#111111]/70">
+                Encrypted disaster recovery backups rotate on a rolling schedule and are permanently overwritten and purged within <strong>90 days</strong>.
+              </p>
+            </div>
           </div>
 
           <div className="pt-6 border-t border-[#111111]/10 flex flex-wrap gap-4 text-sm">

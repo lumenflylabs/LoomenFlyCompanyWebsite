@@ -36,6 +36,10 @@ export default function Footer() {
                   <strong className="text-white/70">Phone:</strong>{" "}
                   <a href={`tel:${COMPANY.phone}`} className="text-white/80 hover:text-white">
                     {COMPANY.phone}
+                  </a>{" "}
+                  <span className="text-white/40">/</span>{" "}
+                  <a href={`tel:${COMPANY.altPhone}`} className="text-white/80 hover:text-white">
+                    {COMPANY.altPhone}
                   </a>
                 </p>
                 <p className="text-xs text-white/30 pt-1 font-mono">

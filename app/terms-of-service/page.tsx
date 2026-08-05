@@ -1,10 +1,22 @@
 import React from "react";
+import type { Metadata } from "next";
 import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: `Terms of Service | ${COMPANY.name}`,
   description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) and the FlowDesk WhatsApp booking platform.`,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: "https://www.loomenflylabs.com/terms-of-service",
+  },
 };
 
 export default function TermsOfService() {
@@ -31,7 +43,7 @@ export default function TermsOfService() {
             <p><strong>Legal Entity:</strong> {COMPANY.legalName}</p>
             <p><strong>LLPIN:</strong> {COMPANY.llpin} | <strong>MSME Udyam:</strong> {COMPANY.udyam}</p>
             <p><strong>Registered Office:</strong> {COMPANY.address}</p>
-            <p><strong>Official Contact:</strong> <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline font-mono">{COMPANY.adminEmail}</a> | {COMPANY.phone}</p>
+            <p><strong>Official Contact:</strong> <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline font-mono">{COMPANY.adminEmail}</a> | {COMPANY.phone} / {COMPANY.altPhone}</p>
           </div>
 
           <div>
@@ -56,7 +68,7 @@ export default function TermsOfService() {
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              3. User Messaging & Opt-In
+              3. User Messaging, Consent & Opt-In
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
               <li>By initiating a chat session with an active FlowDesk WhatsApp number, customers explicitly consent to receive transactional booking confirmations, rescheduling options, and appointment reminders.</li>
@@ -82,19 +94,30 @@ export default function TermsOfService() {
               FlowDesk and all proprietary software algorithms, UI components, and dashboards are the exclusive intellectual property of <strong>{COMPANY.legalName}</strong>.
             </p>
             <p className="text-sm bg-[#111111]/5 p-4 rounded-xl border border-[#111111]/10">
-              <strong>Disclaimer:</strong> {COMPANY.legalName} is an independent technology company. WhatsApp and Meta are registered trademarks of Meta Platforms, Inc. We are not directly endorsed by, affiliated with, or sponsored by Meta Platforms, Inc.
+              <strong>Disclaimer:</strong> {COMPANY.disclaimer}
             </p>
           </div>
 
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
-              6. Legal Inquiries & Governance
+              6. Pricing, Custom Setup & Refund Policy
+            </h2>
+            <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
+              <li><strong>Custom Pricing:</strong> FlowDesk platform setup and license fees are tailored to each business client based on catalog size, multi-staff routing, and custom workflow requirements established during discovery.</li>
+              <li><strong>7-Day Setup Refund Guarantee:</strong> If our technical team is unable to successfully configure or connect your FlowDesk WhatsApp integration within 7 days of onboarding, all one-time technical setup fees are 100% refundable upon written request.</li>
+              <li><strong>Subscription Cancellations:</strong> Monthly or annual platform subscription services can be cancelled at any time by providing 30 days written notice to <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] font-mono hover:underline">{COMPANY.adminEmail}</a>.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4 mt-8">
+              7. Legal Inquiries & Governance
             </h2>
             <p>
               These Terms of Service are governed by the laws of India and the jurisdiction of Kerala.<br /><br />
               <strong>{COMPANY.legalName}</strong><br />
               Email: <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline font-mono">{COMPANY.adminEmail}</a><br />
-              Phone: {COMPANY.phone}<br />
+              Phone: {COMPANY.phone} / {COMPANY.altPhone}<br />
               Address: {COMPANY.address}
             </p>
           </div>
@@ -105,7 +128,7 @@ export default function TermsOfService() {
             </Link>
             <span>•</span>
             <Link href="/data-deletion" className="text-[#E51E25] hover:underline font-medium">
-              Data Deletion
+              Data Deletion Instructions
             </Link>
             <span>•</span>
             <Link href="/contact" className="text-[#E51E25] hover:underline font-medium">

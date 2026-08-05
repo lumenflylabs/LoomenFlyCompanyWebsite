@@ -35,7 +35,7 @@ export default function ContactPage() {
             <div className="flex flex-col gap-2 pt-4 border-t border-[#111111]/10 text-sm">
               <p><strong>Entity:</strong> {COMPANY.legalName}</p>
               <p><strong>Email:</strong> <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline font-mono">{COMPANY.adminEmail}</a></p>
-              <p><strong>Phone:</strong> {COMPANY.phone}</p>
+              <p><strong>Phone:</strong> {COMPANY.phone} / {COMPANY.altPhone}</p>
               <p><strong>LLPIN:</strong> {COMPANY.llpin}</p>
               <p><strong>MSME:</strong> {COMPANY.udyam}</p>
             </div>
