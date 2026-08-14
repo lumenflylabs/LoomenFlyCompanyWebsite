@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: {
     absolute: `User Data Deletion Instructions | ${COMPANY.legalName}`,
   },
-  description: `Step-by-step instructions on how users can request data deletion for FlowDesk and WhatsApp integrations provided by ${COMPANY.name} (${COMPANY.legalName}) in accordance with Meta Platform Terms.`,
+  description: `Step-by-step instructions on how users can request data deletion for LoomenDesk and WhatsApp integrations provided by ${COMPANY.name} (${COMPANY.legalName}) in accordance with Meta Platform Terms.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/data-deletion-instructions",
   },
   openGraph: {
     title: `User Data Deletion Instructions | ${COMPANY.legalName}`,
-    description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and FlowDesk WhatsApp integrations.`,
+    description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and LoomenDesk WhatsApp integrations.`,
     url: "https://www.loomenflylabs.com/data-deletion-instructions",
     siteName: COMPANY.legalName,
     locale: "en_US",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `User Data Deletion Instructions | ${COMPANY.legalName}`,
-    description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and FlowDesk WhatsApp integrations.`,
+    description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and LoomenDesk WhatsApp integrations.`,
     images: ["https://www.loomenflylabs.com/images/og-human.png"],
   },
 };

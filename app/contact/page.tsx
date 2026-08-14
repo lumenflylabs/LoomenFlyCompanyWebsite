@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `Contact Us | ${COMPANY.legalName}`,
-    description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and FlowDesk WhatsApp booking platform.`,
+    description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and LoomenDesk WhatsApp booking platform.`,
     url: "https://www.loomenflylabs.com/contact",
     siteName: COMPANY.legalName,
     locale: "en_US",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `Contact Us | ${COMPANY.legalName}`,
-    description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and FlowDesk WhatsApp booking platform.`,
+    description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and LoomenDesk WhatsApp booking platform.`,
     images: ["https://www.loomenflylabs.com/images/og-human.png"],
   },
 };
@@ -47,7 +47,7 @@ export default function ContactPage() {
           Contact {COMPANY.name}
         </h1>
         <p className="font-sans text-xl md:text-2xl text-[#111111]/70 leading-relaxed mb-12">
-          Have questions about FlowDesk, need a custom software demonstration, or require official verification assistance? Reach out to our dedicated team.
+          Have questions about LoomenDesk, need a custom software demonstration, or require official verification assistance? Reach out to our dedicated team.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

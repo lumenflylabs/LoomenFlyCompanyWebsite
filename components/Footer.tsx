@@ -113,7 +113,7 @@ export default function Footer() {
           {/* Column 3: Platform Features */}
           <div className="md:col-span-6 lg:col-span-3">
             <h4 className="font-sans font-bold text-xs text-white/30 uppercase tracking-[0.2em] mb-6">
-              FlowDesk Platform
+              LoomenDesk Platform
             </h4>
             <ul className="flex flex-col gap-4 font-sans text-base text-white/70">
               <li>
@@ -154,7 +154,7 @@ export default function Footer() {
         {/* Mandatory Meta Independence Disclaimer */}
         <div className="py-8 border-t border-white/10 text-center">
           <p className="font-sans text-xs text-white/30 max-w-4xl mx-auto leading-relaxed">
-            <strong>Disclaimer:</strong> {COMPANY.legalName} is an independent software development entity registered in Kerala, India. FlowDesk integrates with the WhatsApp Business Platform via official Meta Cloud APIs. We are not directly endorsed by, affiliated with, or sponsored by WhatsApp Inc. or Meta Platforms, Inc.
+            <strong>Disclaimer:</strong> {COMPANY.legalName} is an independent software development entity registered in Kerala, India. LoomenDesk integrates with the WhatsApp Business Platform via official Meta Cloud APIs. We are not directly endorsed by, affiliated with, or sponsored by WhatsApp Inc. or Meta Platforms, Inc.
           </p>
         </div>
 

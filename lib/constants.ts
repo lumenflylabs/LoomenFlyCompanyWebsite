@@ -18,7 +18,7 @@ export const COMPANY = {
   waLink: "https://wa.me/919746914027?text=Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   waDemoText: "Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   year: new Date().getFullYear(),
-  disclaimer: "LOOMENFLY LABS LLP is an independent software development entity registered in Kerala, India. FlowDesk uses the official WhatsApp Business Platform Cloud API. We are not affiliated with, sponsored by, or endorsed by WhatsApp Inc. or Meta Platforms, Inc.",
+  disclaimer: "LOOMENFLY LABS LLP is an independent software development entity registered in Kerala, India. LoomenDesk uses the official WhatsApp Business Platform Cloud API. We are not affiliated with, sponsored by, or endorsed by WhatsApp Inc. or Meta Platforms, Inc.",
   partners: [
     { name: "Gokul Surendran", role: "Designated Partner & CEO", email: "gokul@loomenflylabs.com" },
     { name: "MS Mohammed Hashiq", role: "Designated Partner & CTO", email: "hashiq@loomenflylabs.com" },
@@ -51,7 +51,7 @@ export const HERO = {
   headline: "Turn Your Chat\nInto a Booking Engine.",
   highlight: "Booking Engine.",
   subtitle:
-    "A custom automated flow that gives your customers a rich, app-like booking experience natively inside WhatsApp—paired with a powerful owner dashboard to manage staff, catalogs, and schedules. Zero coding required.",
+    "A custom automated flow that provides customers with an interactive, app-like booking experience natively inside WhatsApp—paired with a cloud dashboard to manage staff, catalogs, and schedules. Done-for-you setup with no coding needed from the business side.",
   kpis: [
     { value: "24/7", label: "Always Available" },
     { value: "Instant", label: "Replies" },
@@ -60,57 +60,57 @@ export const HERO = {
 } as const;
 
 export const PROBLEM_SOLUTION = {
-  eyebrow: "The real problem",
-  headline: "You're Running a Business,\nNot an IT Department",
+  eyebrow: "Operational Challenges",
+  headline: "Designed for Business Owners,\nWithout Technical Overhead",
   subtitle:
-    "Managing catalogs, tracking staff schedules, sending reminders, and collecting reviews manually is exhausting. You need a system that runs itself, without forcing your customers to download a new app.",
+    "Managing service catalogs, staff availability, and appointment reminders manually takes valuable time away from service delivery. LoomenDesk provides structured scheduling without requiring clients to install separate apps.",
   without: {
-    label: "Without FlowDesk",
+    label: "Without LoomenDesk",
     items: [
       {
         icon: "01",
-        title: "Chaotic message inbox",
-        desc: "Customers texting 'What services do you offer?' while you're busy with a client. Lost leads and messy chats.",
+        title: "Unstructured inbox inquiries",
+        desc: "Customers inquiring about services while staff is busy with clients, leading to delayed replies and fragmented conversations.",
       },
       {
         icon: "02",
         title: "Manual scheduling & conflicts",
-        desc: "Juggling staff timings and double-booking clients because you're using a paper diary or basic notes app.",
+        desc: "Coordinating staff shifts and appointment slots manually across spreadsheets or paper diaries prone to double-booking.",
       },
       {
         icon: "03",
-        title: "Tech headaches",
-        desc: "Trying to build a website or manage complex booking software that requires you to be a part-time coder.",
+        title: "Technical configuration overhead",
+        desc: "Attempting to implement complex software platforms that require continuous administrative and technical maintenance.",
       },
       {
         icon: "04",
-        title: "Begging for reviews",
-        desc: "Manually messaging past clients asking for a Google Review, only for them to forget.",
+        title: "Manual review follow-ups",
+        desc: "Manually reaching out to past clients for feedback, which easily gets overlooked during daily business operations.",
       },
     ],
   },
   with: {
-    label: "With FlowDesk",
+    label: "With LoomenDesk",
     items: [
       {
         icon: "01",
-        title: "An interactive catalog inside your chat",
-        desc: "Customers browse your services, pick a staff member, and book seamlessly without ever leaving the chat interface.",
+        title: "Interactive catalog within WhatsApp",
+        desc: "Clients browse services, select team members, and confirm appointments directly within WhatsApp.",
       },
       {
         icon: "02",
-        title: "Your own management dashboard",
-        desc: "Update services, manage staff schedules, and view all booking data from one incredibly simple interface.",
+        title: "Centralized management dashboard",
+        desc: "Manage service listings, staff schedules, and appointment records from a clean, intuitive dashboard.",
       },
       {
         icon: "03",
-        title: "We build it. You just use it.",
-        desc: "Our team handles the entire technical setup and onboarding. You get a ready-to-use custom software suite.",
+        title: "Fully managed technical onboarding",
+        desc: "Our engineering team manages configuration, flows, and API connections for a seamless launch.",
       },
       {
         icon: "04",
-        title: "Automated growth",
-        desc: "FlowDesk automatically follows up for Google Reviews and sends automated appointment reminders and opt-in updates.",
+        title: "Structured follow-ups & reminders",
+        desc: "LoomenDesk sends scheduled appointment reminders and optional review requests to opted-in clients.",
       },
     ],
   },
@@ -118,9 +118,9 @@ export const PROBLEM_SOLUTION = {
 
 export const LEAD_CATCHER = {
   eyebrow: "The Core Software",
-  headline: "The FlowDesk Ecosystem",
+  headline: "The LoomenDesk Ecosystem",
   subtitle:
-    "A hybrid solution: An automated, app-like booking experience for your customers, connected to a powerful control center for you.",
+    "A complete solution: An interactive booking interface for clients on WhatsApp, connected to a centralized management dashboard for business administrators.",
   features: [
     "Management Dashboard to control it all",
     "Visual catalogs to showcase service photos and past work",
@@ -132,47 +132,47 @@ export const LEAD_CATCHER = {
 } as const;
 
 export const PREMIUM_ADDONS = {
-  eyebrow: "Automated Marketing",
-  headline: "Growth Features\nBuilt Right In",
+  eyebrow: "Communication & Workflow Tools",
+  headline: "Essential Utilities\nBuilt Right In",
   subtitle:
-    "FlowDesk doesn't just manage your bookings; it actively helps your business grow and retain customers on autopilot.",
+    "LoomenDesk helps manage and organize bookings and customer follow-ups across your business.",
   addons: [
     {
       icon: "★",
-      title: "Google Review System",
-      tagline: "Build your local reputation",
-      desc: "Automatically send a polite follow-up message asking happy customers to drop a Google Review right after their appointment.",
+      title: "Customer Review System",
+      tagline: "Collect structured feedback",
+      desc: "Send polite post-service follow-up messages asking verified clients for feedback after their completed appointment.",
     },
     {
       icon: "📣",
-      title: "Broadcast Offers (Opt-in only)",
-      tagline: "Re-engage opted-in clients",
-      desc: "Re-engage customers who have opted-in to receive updates via approved WhatsApp templates. Every message includes easy opt-out.",
+      title: "Client Broadcasts (Opt-in only)",
+      tagline: "Message opted-in clients",
+      desc: "Send service updates and announcements exclusively to clients who have opted in via approved WhatsApp templates, with immediate opt-out support.",
     },
     {
       icon: "🔔",
       title: "Automated Reminders",
-      tagline: "Reduce no-shows",
-      desc: "Send basic confirmation messages and timely reminders to help your customers remember their appointments.",
+      tagline: "Reduce missed appointments",
+      desc: "Send timely booking confirmations and scheduled reminder notifications to help clients keep their appointments.",
     },
     {
       icon: "ℹ️",
-      title: "Smart FAQs",
-      tagline: "Instant answers",
-      desc: "A built-in list of Frequently Asked Questions that instantly answers common customer queries about location, pricing, and prep.",
+      title: "Structured FAQs",
+      tagline: "Direct information",
+      desc: "A built-in repository of Frequently Asked Questions that provides instant answers about location, services, and operational hours.",
     },
   ],
 } as const;
 
 export const TRUST_FLOW = {
-  eyebrow: "Zero Tech Skills Required",
-  headline: "We Handle the Setup.\nYou Run the Business.",
+  eyebrow: "Managed Implementation",
+  headline: "Comprehensive Setup,\nReady for Operation",
   subtitle:
-    "You don't need to know anything about coding, tech, or software setup. We do 100% of the heavy lifting so you can focus on your clients.",
+    "Done-for-you setup with no coding needed from the business side. We handle all configuration, API integrations, and catalog setup so your system is fully operational from day one.",
   nodes: [
-    { icon: "1", label: "We input your details and\nbuild the interactive Flow" },
-    { icon: "2", label: "We connect the Flow to\nyour business number" },
-    { icon: "3", label: "We hand over a Dashboard\nfully pre-loaded with your data" },
+    { icon: "1", label: "We structure your catalog and\nbuild the interactive Flow" },
+    { icon: "2", label: "We connect the Flow to\nyour verified business line" },
+    { icon: "3", label: "We deliver a Management Dashboard\npre-loaded with your data" },
   ],
 } as const;
 
@@ -185,7 +185,7 @@ export const INDUSTRIES: {
   eyebrow: "Industries We Serve",
   headline: "Perfect for Salons,\nScalable for Everyone",
   subtitle:
-    "We are heavily focused on the Salon and Beauty industry, but FlowDesk's custom architecture adapts to any service business.",
+    "We are heavily focused on the Salon and Beauty industry, but LoomenDesk's custom architecture adapts to any service business.",
   items: [
     { icon: "01", name: "Salons", desc: "Hair · Beauty · Styling", highlighted: true },
     { icon: "02", name: "Beauty Parlours", desc: "Skincare · Treatments", highlighted: true },
@@ -202,9 +202,9 @@ export const ABOUT = {
   eyebrow: "Our Approach",
   headline: "Custom Software,\nWithout the Custom Price Tag.",
   paragraphs: [
-    "Loomenfly Labs is shifting the paradigm of local business software. We realized that off-the-shelf booking apps force you to change how you work, and custom software development is too expensive.",
-    "So we created a hybrid. We use the official WhatsApp Business Platform to build an interactive booking experience that your customers already know how to use. Then, we pair it with a powerful dashboard that puts you in total control.",
-    "No coding. No steep learning curves. Just a brilliantly simple ecosystem designed to make managing your business effortless.",
+    "Loomenfly Labs is shifting the paradigm of local business software. We realized that off-the-shelf booking apps force businesses to change how they work, while traditional custom software development requires prohibitive upfront expense.",
+    "So we engineered LoomenDesk as a hybrid platform. We use the official WhatsApp Business Platform to build an interactive booking experience that clients already know how to use, paired with a management dashboard providing full operational control.",
+    "Done-for-you setup with no coding needed from the business side. No steep learning curves. Just a structured software ecosystem designed to make managing business bookings straightforward.",
   ],
   values: [
     "Interactive flows that feel like a native app",
@@ -219,38 +219,38 @@ export const ABOUT = {
 
 export const CUSTOM_SOLUTIONS = {
   eyebrow: "The Onboarding Experience",
-  headline: "Completely Hands-Free Setup",
+  headline: "Fully Managed Technical Onboarding",
   subtitle:
-    "When you partner with Loomenfly, you aren't left alone to figure things out. We act as your dedicated technical team.",
+    "Loomenfly Labs provides end-to-end technical assistance and onboarding for every business partner.",
   perks: [
     {
       icon: "A",
-      title: "The Discovery Call",
-      desc: "We jump on a quick call with you to understand your services, pricing, facilities, and staff.",
+      title: "Discovery & Requirements",
+      desc: "We connect with your team to outline your service menu, pricing structure, and staff availability.",
     },
     {
       icon: "B",
-      title: "We Build the Catalog",
-      desc: "You don't lift a finger. Our team manually inputs all your services and staff data into your new dashboard.",
+      title: "Catalog Configuration",
+      desc: "Our team organizes and inputs all service items, durations, and staff details directly into your dashboard.",
     },
     {
       icon: "C",
       title: "Number Connection",
-      desc: "We securely connect the interactive Flow directly to your existing WhatsApp Business number.",
+      desc: "We securely configure the interactive Flow with your official WhatsApp Business Platform API.",
     },
     {
       icon: "D",
       title: "Ready to Launch",
-      desc: "We hand over the keys to a fully operational system. You just sit back and watch the bookings roll in.",
+      desc: "A fully operational system designed to streamline incoming bookings.",
     },
   ],
 } as const;
 
 export const CONTACT = {
   eyebrow: "Get in Touch",
-  headline: "Let's Build\nYour FlowDesk",
+  headline: "Let's Build\nYour LoomenDesk",
   subtitle:
-    "Ready to upgrade your booking experience and take control with your own dashboard? Let's talk.",
+    "Connect with our team to explore an interactive WhatsApp booking solution and custom management dashboard.",
   methods: [
     { icon: "►", label: "Sales Enquiries — Gokul (CEO)", value: COMPANY.salesEmail, href: `mailto:${COMPANY.salesEmail}` },
     { icon: "►", label: "Technical Lead — Hashiq (CTO)", value: COMPANY.techEmail, href: `mailto:${COMPANY.techEmail}` },
@@ -276,10 +276,10 @@ export const FOOTER = {
       title: "Features",
       links: [
         { label: "Interactive Booking", href: "/#why" },
-        { label: "Google Review System", href: "/#addons" },
-        { label: "Broadcast Ads", href: "/#addons" },
+        { label: "Customer Review System", href: "/#addons" },
+        { label: "Broadcast Messaging", href: "/#addons" },
         { label: "Management Dashboard", href: "/#custom" },
-        { label: "Done-for-you Setup", href: "/#why" },
+        { label: "Managed Onboarding", href: "/#why" },
       ],
     },
   ],
@@ -290,23 +290,23 @@ export const FOOTER = {
 } as const;
 
 export const REVIEWS = {
-  eyebrow: "What Our Clients Say",
-  headline: "Don't Just Take Our Word For It",
+  eyebrow: "Client Feedback",
+  headline: "Trusted by Service Businesses",
   subtitle:
-    "Join the growing number of local businesses using FlowDesk to automate their bookings and scale their growth.",
+    "See how service businesses use LoomenDesk to organize scheduling and streamline customer communication.",
   items: [
     {
-      quote: "FlowDesk completely changed how we handle our salon bookings. No more double-booking or lost chats in our inbox.",
+      quote: "LoomenDesk completely organized how we handle our salon bookings. No more double-booking or lost chats in our inbox.",
       author: "Sarah M.",
       role: "Salon Owner",
     },
     {
-      quote: "Our customers love the interactive catalog. It feels like a premium app, but they never have to leave the chat.",
+      quote: "Our customers appreciate the interactive catalog. It feels like a premium app, but they never have to leave the chat.",
       author: "Rahul T.",
       role: "Spa Manager",
     },
     {
-      quote: "The automated review requests alone have brought us so much new business. Highly recommended for any clinic.",
+      quote: "The automated reminders and review requests help our clinic maintain consistent customer communication.",
       author: "Dr. Ananya",
       role: "Clinic Director",
     },

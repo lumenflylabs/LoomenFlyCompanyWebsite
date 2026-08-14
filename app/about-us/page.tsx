@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: {
     absolute: `About Us | ${COMPANY.legalName}`,
   },
-  description: `Learn about ${COMPANY.name} (${COMPANY.legalName}), our mission, MCA Designated Partners, and our flagship product FlowDesk.`,
+  description: `Learn about ${COMPANY.name} (${COMPANY.legalName}), our mission, MCA Designated Partners, and our flagship product LoomenDesk.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/about-us",
   },

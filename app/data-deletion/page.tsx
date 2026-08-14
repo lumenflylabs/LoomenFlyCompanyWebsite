@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: {
     absolute: `User Data Deletion Instructions | ${COMPANY.legalName}`,
   },
-  description: `Instructions on how users can request data deletion for FlowDesk and WhatsApp integrations provided by ${COMPANY.name} (${COMPANY.legalName}) in accordance with Meta Platform Terms.`,
+  description: `Instructions on how users can request data deletion for LoomenDesk and WhatsApp integrations provided by ${COMPANY.name} (${COMPANY.legalName}) in accordance with Meta Platform Terms.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/data-deletion",
   },
   openGraph: {
     title: `User Data Deletion Instructions | ${COMPANY.legalName}`,
-    description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and FlowDesk WhatsApp integrations.`,
+    description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and LoomenDesk WhatsApp integrations.`,
     url: "https://www.loomenflylabs.com/data-deletion",
     siteName: COMPANY.legalName,
     locale: "en_US",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `User Data Deletion Instructions | ${COMPANY.legalName}`,
-    description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and FlowDesk WhatsApp integrations.`,
+    description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and LoomenDesk WhatsApp integrations.`,
     images: ["https://www.loomenflylabs.com/images/og-human.png"],
   },
 };
@@ -70,7 +70,7 @@ export default function DataDeletionPage() {
               How to Request Data Deletion (Step-by-Step)
             </h2>
             <p className="mb-4">
-              If you have interacted with a FlowDesk WhatsApp booking flow or service and wish to have all your personal information, booking records, and phone numbers permanently purged from our servers, you can initiate a deletion request through either of the following methods:
+              If you have interacted with a LoomenDesk WhatsApp booking flow or service and wish to have all your personal information, booking records, and phone numbers permanently purged from our servers, you can initiate a deletion request through either of the following methods:
             </p>
 
             <div className="flex flex-col gap-4 mt-6">
@@ -90,7 +90,7 @@ export default function DataDeletionPage() {
               <div className="p-5 bg-[#F6F5ED] rounded-xl border border-[#111111]/5">
                 <h3 className="font-bold text-[#111111] mb-1">Option 2: WhatsApp Chat Command</h3>
                 <p className="text-sm text-[#111111]/70">
-                  Send the message <strong>&quot;DELETE MY DATA&quot;</strong> or <strong>&quot;STOP&quot;</strong> directly inside any active FlowDesk WhatsApp conversation. Our automated system will immediately revoke consent and flag your account for complete data purging within 30 days.
+                  Send the message <strong>&quot;DELETE MY DATA&quot;</strong> or <strong>&quot;STOP&quot;</strong> directly inside any active LoomenDesk WhatsApp conversation. Our automated system will immediately revoke consent and flag your account for complete data purging within 30 days.
                 </p>
               </div>
             </div>

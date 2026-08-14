@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="mb-6 z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#111111]/5 border border-[#111111]/10 text-[12px] font-mono font-semibold text-[#111111]/80 uppercase tracking-wider">
             <span className="w-2 h-2 rounded-full bg-[#E51E25] animate-pulse" />
-            LOOMENFLY LABS LLP &bull; FlowDesk
+            LOOMENFLY LABS LLP &bull; LoomenDesk
           </div>
         </div>
 
@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="relative max-w-[1000px] mx-auto mb-6 z-10">
           <h1 className="font-heading text-[clamp(40px,6vw,84px)] leading-[1.1] text-balance text-center text-[#000000]">
             Automate WhatsApp Bookings <br /> with <span className="text-[#E51E25] relative inline-block pr-2">
-              FlowDesk
+              LoomenDesk
               <svg className="absolute -bottom-2 left-0 w-full h-[14px] pointer-events-none" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true">
                 <path d="M0,10 Q50,0 100,10" fill="none" stroke="#FFD100" strokeWidth="4" strokeLinecap="round" />
               </svg>

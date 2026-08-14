@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: {
     absolute: `Privacy Policy | ${COMPANY.legalName}`,
   },
-  description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the FlowDesk WhatsApp Business Platform Cloud API integration and booking system.`,
+  description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk WhatsApp Business Platform Cloud API integration and booking system.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/privacy-policy",
   },
   openGraph: {
     title: `Privacy Policy | ${COMPANY.legalName}`,
-    description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the FlowDesk WhatsApp Business Platform Cloud API integration and booking system.`,
+    description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk WhatsApp Business Platform Cloud API integration and booking system.`,
     url: "https://www.loomenflylabs.com/privacy-policy",
     siteName: COMPANY.legalName,
     locale: "en_US",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `Privacy Policy | ${COMPANY.legalName}`,
-    description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the FlowDesk WhatsApp Business Platform Cloud API integration and booking system.`,
+    description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk WhatsApp Business Platform Cloud API integration and booking system.`,
     images: ["https://www.loomenflylabs.com/images/og-human.png"],
   },
 };
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
           </p>
 
           <p>
-            Welcome to FlowDesk. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, process, share, retain, and safeguard your data when you interact with our WhatsApp booking services, business management dashboards, and software ecosystem provided by <strong>{COMPANY.legalName}</strong> (&quot;{COMPANY.name}&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;).
+            Welcome to LoomenDesk. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, process, share, retain, and safeguard your data when you interact with our WhatsApp booking services, business management dashboards, and software ecosystem provided by <strong>{COMPANY.legalName}</strong> (&quot;{COMPANY.name}&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;).
           </p>
 
           {/* Data Controller Credentials Card */}
@@ -69,7 +69,7 @@ export default function PrivacyPolicy() {
           <div className="p-5 bg-white rounded-2xl border border-[#111111]/10 text-sm text-[#111111]/80 leading-relaxed shadow-sm">
             <p className="font-bold text-[#111111] mb-1">WhatsApp Business Platform Cloud API Integration Disclosure:</p>
             <p>
-              FlowDesk uses Meta&apos;s official WhatsApp Business Platform Cloud API to process transactional booking conversations, dispatch appointment confirmations, and send customer service notifications. All message content is processed strictly in accordance with Meta Platform Terms and the WhatsApp Business Messaging Policy. We do not sell, rent, monetize, or use conversational data for cross-site profiling or advertising.
+              LoomenDesk uses Meta&apos;s official WhatsApp Business Platform Cloud API to process transactional booking conversations, dispatch appointment confirmations, and send customer service notifications. All message content is processed strictly in accordance with Meta Platform Terms and the WhatsApp Business Messaging Policy. We do not sell, rent, monetize, or use conversational data for cross-site profiling or advertising.
             </p>
           </div>
 
@@ -112,7 +112,7 @@ export default function PrivacyPolicy() {
               3. Third-Party Data Sharing &amp; Processors
             </h2>
             <p className="mb-4">
-              We share data only with verified enterprise infrastructure providers required to operate FlowDesk:
+              We share data only with verified enterprise infrastructure providers required to operate LoomenDesk:
             </p>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
               <li><strong>Meta Platforms, Inc. (WhatsApp Cloud API):</strong> We share message payloads and phone numbers with Meta Platforms, Inc. strictly as necessary to deliver conversational WhatsApp messages to you.</li>

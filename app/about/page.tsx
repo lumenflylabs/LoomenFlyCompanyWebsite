@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: {
     absolute: `About Us | ${COMPANY.legalName}`,
   },
-  description: `Learn about ${COMPANY.name} (${COMPANY.legalName}), our mission, MCA Designated Partners, and our flagship product FlowDesk.`,
+  description: `Learn about ${COMPANY.name} (${COMPANY.legalName}), our mission, MCA Designated Partners, and our flagship product LoomenDesk.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/about",
   },
@@ -68,13 +68,13 @@ export default function AboutPage() {
           {/* Product Relationship */}
           <div>
             <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4">
-              Our Flagship Product: FlowDesk
+              Our Flagship Product: LoomenDesk
             </h2>
             <p className="mb-4">
-              <strong>FlowDesk</strong> is a proprietary software platform developed, owned, and operated entirely by <strong>{COMPANY.legalName}</strong>. 
+              <strong>LoomenDesk</strong> is a proprietary software platform developed, owned, and operated entirely by <strong>{COMPANY.legalName}</strong>. 
             </p>
             <p className="mb-4">
-              FlowDesk connects directly to the official Meta / WhatsApp Business Platform (Cloud API) to provide local service businesses (salons, spas, wellness centers, studios) with an interactive, app-like booking experience inside WhatsApp. It combines direct client messaging with a powerful cloud-based management dashboard for business owners.
+              LoomenDesk connects directly to the official Meta / WhatsApp Business Platform (Cloud API) to provide local service businesses (salons, spas, wellness centers, studios) with an interactive, app-like booking experience inside WhatsApp. It combines direct client messaging with a powerful cloud-based management dashboard for business owners.
             </p>
           </div>
 

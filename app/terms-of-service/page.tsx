@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: {
     absolute: `Terms of Service | ${COMPANY.legalName}`,
   },
-  description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) and the FlowDesk WhatsApp booking platform.`,
+  description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) and the LoomenDesk WhatsApp booking platform.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/terms-of-service",
   },
   openGraph: {
     title: `Terms of Service | ${COMPANY.legalName}`,
-    description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) governing the FlowDesk WhatsApp booking platform and software services.`,
+    description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk WhatsApp booking platform and software services.`,
     url: "https://www.loomenflylabs.com/terms-of-service",
     siteName: COMPANY.legalName,
     locale: "en_US",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `Terms of Service | ${COMPANY.legalName}`,
-    description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) governing the FlowDesk WhatsApp booking platform and software services.`,
+    description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk WhatsApp booking platform and software services.`,
     images: ["https://www.loomenflylabs.com/images/og-human.png"],
   },
 };
@@ -53,7 +53,7 @@ export default function TermsOfService() {
           </p>
 
           <p>
-            Welcome to FlowDesk. These Terms of Service govern your use of our WhatsApp-based conversational booking platform, business management dashboard, and software ecosystem provided by <strong>{COMPANY.legalName}</strong> (&quot;{COMPANY.name}&quot;).
+            Welcome to LoomenDesk. These Terms of Service govern your use of our WhatsApp-based conversational booking platform, business management dashboard, and software ecosystem provided by <strong>{COMPANY.legalName}</strong> (&quot;{COMPANY.name}&quot;).
           </p>
           
           <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm text-sm text-[#111111]/80">
@@ -69,7 +69,7 @@ export default function TermsOfService() {
               1. Platform Description &amp; Scope
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li>FlowDesk provides interactive booking infrastructure, automated client notifications, and calendar management software integrated directly with the official WhatsApp Business Platform (Cloud API).</li>
+              <li>LoomenDesk provides interactive booking infrastructure, automated client notifications, and calendar management software integrated directly with the official WhatsApp Business Platform (Cloud API).</li>
               <li>{COMPANY.legalName} acts as a technical solution provider. We do not provide the direct salon, beauty, or grooming services offered by our business clients (Tenants).</li>
             </ul>
           </div>
@@ -79,7 +79,7 @@ export default function TermsOfService() {
               2. Compliance with Meta &amp; WhatsApp Policies
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li>All businesses and users utilizing FlowDesk must strictly adhere to the <strong>Meta Platform Terms</strong> and <strong>WhatsApp Business Messaging &amp; Commerce Policies</strong>.</li>
+              <li>All businesses and users utilizing LoomenDesk must strictly adhere to the <strong>Meta Platform Terms</strong> and <strong>WhatsApp Business Messaging &amp; Commerce Policies</strong>.</li>
               <li>Spam, deceptive content, harassment, or unauthorized promotional messaging is strictly prohibited and grounds for immediate termination of platform access.</li>
             </ul>
           </div>
@@ -89,7 +89,7 @@ export default function TermsOfService() {
               3. User Messaging, Consent &amp; Opt-In
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li>By initiating a chat session with an active FlowDesk WhatsApp number, customers explicitly consent to receive transactional booking confirmations, rescheduling options, and appointment reminders.</li>
+              <li>By initiating a chat session with an active LoomenDesk WhatsApp number, customers explicitly consent to receive transactional booking confirmations, rescheduling options, and appointment reminders.</li>
               <li>Customers may opt-out at any time by messaging &quot;STOP&quot;, &quot;DELETE MY DATA&quot;, or blocking the verified number.</li>
             </ul>
           </div>
@@ -109,7 +109,7 @@ export default function TermsOfService() {
               5. Intellectual Property &amp; Independence Disclaimer
             </h2>
             <p className="mb-4">
-              FlowDesk and all proprietary software algorithms, UI components, and dashboards are the exclusive intellectual property of <strong>{COMPANY.legalName}</strong>.
+              LoomenDesk and all proprietary software algorithms, UI components, and dashboards are the exclusive intellectual property of <strong>{COMPANY.legalName}</strong>.
             </p>
             <p className="text-sm bg-[#111111]/5 p-4 rounded-xl border border-[#111111]/10">
               <strong>Disclaimer:</strong> {COMPANY.disclaimer}
@@ -121,8 +121,8 @@ export default function TermsOfService() {
               6. Pricing, Custom Setup &amp; Refund Policy
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li><strong>Custom Pricing:</strong> FlowDesk platform setup and license fees are tailored to each business client based on catalog size, multi-staff routing, and custom workflow requirements established during discovery.</li>
-              <li><strong>7-Day Setup Refund Guarantee:</strong> If our technical team is unable to successfully configure or connect your FlowDesk WhatsApp integration within 7 days of onboarding, all one-time technical setup fees are 100% refundable upon written request.</li>
+              <li><strong>Custom Pricing:</strong> LoomenDesk platform setup and license fees are tailored to each business client based on catalog size, multi-staff routing, and custom workflow requirements established during discovery.</li>
+              <li><strong>7-Day Setup Refund Guarantee:</strong> If our technical team is unable to successfully configure or connect your LoomenDesk WhatsApp integration within 7 days of onboarding, all one-time technical setup fees are 100% refundable upon written request.</li>
               <li><strong>Subscription Cancellations:</strong> Monthly or annual platform subscription services can be cancelled at any time by providing 30 days written notice to <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] font-mono hover:underline">{COMPANY.adminEmail}</a>.</li>
             </ul>
           </div>
