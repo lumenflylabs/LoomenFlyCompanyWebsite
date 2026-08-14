@@ -154,7 +154,7 @@ export default function Footer() {
         {/* Mandatory Meta Independence Disclaimer */}
         <div className="py-8 border-t border-white/10 text-center">
           <p className="font-sans text-xs text-white/30 max-w-4xl mx-auto leading-relaxed">
-            <strong>Disclaimer:</strong> {COMPANY.legalName} is an independent software development entity registered in Kerala, India. LoomenDesk integrates with the WhatsApp Business Platform via official Meta Cloud APIs. We are not directly endorsed by, affiliated with, or sponsored by WhatsApp Inc. or Meta Platforms, Inc.
+            <strong>Disclaimer:</strong> {COMPANY.disclaimer}
           </p>
         </div>
 

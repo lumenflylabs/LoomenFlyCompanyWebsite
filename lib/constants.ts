@@ -18,7 +18,7 @@ export const COMPANY = {
   waLink: "https://wa.me/919746914027?text=Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   waDemoText: "Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   year: new Date().getFullYear(),
-  disclaimer: "LOOMENFLY LABS LLP is an independent software development entity registered in Kerala, India. LoomenDesk uses the official WhatsApp Business Platform Cloud API. We are not affiliated with, sponsored by, or endorsed by WhatsApp Inc. or Meta Platforms, Inc.",
+  disclaimer: "LOOMENFLY LABS LLP is an independent software development entity registered in Kerala, India. LoomenDesk integrates with the WhatsApp Business Platform via official Meta Cloud APIs. We are not affiliated with, sponsored by, or endorsed by WhatsApp Inc. or Meta Platforms, Inc. WhatsApp is a registered trademark of Meta Platforms, Inc.",
   partners: [
     { name: "Gokul Surendran", role: "Designated Partner & CEO", email: "gokul@loomenflylabs.com" },
     { name: "MS Mohammed Hashiq", role: "Designated Partner & CTO", email: "hashiq@loomenflylabs.com" },
