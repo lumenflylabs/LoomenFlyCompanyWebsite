@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.loomenflylabs.com/images/og-human.png",
+        url: "https://www.loomenflylabs.com/images/og-booking.png",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Terms of Service | ${COMPANY.legalName}`,
     description: `Terms of Service for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk WhatsApp booking platform and software services.`,
-    images: ["https://www.loomenflylabs.com/images/og-human.png"],
+    images: ["https://www.loomenflylabs.com/images/og-booking.png"],
   },
 };
 
@@ -69,8 +69,8 @@ export default function TermsOfService() {
               1. Platform Description &amp; Scope
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li>LoomenDesk provides interactive booking infrastructure, automated client notifications, and calendar management software integrated directly with the official WhatsApp Business Platform (Cloud API).</li>
-              <li>{COMPANY.legalName} acts as a technical solution provider. We do not provide the direct salon, beauty, or grooming services offered by our business clients (Tenants).</li>
+              <li>LoomenDesk provides a Telegram Mini App, a browser booking page and a business management dashboard. In the standard setup, WhatsApp Business and Instagram native replies share booking links. Optional WhatsApp Cloud API integrations are configured separately.</li>
+              <li>{COMPANY.legalName} provides booking and business management software. Our business clients (Tenants) deliver the services booked through the platform.</li>
             </ul>
           </div>
 
@@ -121,7 +121,7 @@ export default function TermsOfService() {
               6. Pricing, Custom Setup &amp; Refund Policy
             </h2>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li><strong>Custom Pricing:</strong> LoomenDesk platform setup and license fees are tailored to each business client based on catalog size, multi-staff routing, and custom workflow requirements established during discovery.</li>
+              <li><strong>Custom Pricing:</strong> LoomenDesk platform setup and subscription fees are tailored to each business client based on catalog size, staff, branches and workflow requirements established during discovery. The standard Telegram and browser booking setup does not generate Meta API messaging charges. Optional WhatsApp Cloud API messaging and paid advertising may incur separate third-party charges.</li>
               <li><strong>7-Day Setup Refund Guarantee:</strong> If our technical team is unable to successfully configure or connect your LoomenDesk WhatsApp integration within 7 days of onboarding, all one-time technical setup fees are 100% refundable upon written request.</li>
               <li><strong>Subscription Cancellations:</strong> Monthly or annual platform subscription services can be cancelled at any time by providing 30 days written notice to <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] font-mono hover:underline">{COMPANY.adminEmail}</a>.</li>
             </ul>

@@ -118,12 +118,12 @@ export default function Footer() {
             <ul className="flex flex-col gap-4 font-sans text-base text-white/70">
               <li>
                 <Link href="/#why" className="hover:text-white transition-colors duration-200">
-                  Interactive Booking Flow
+                  Telegram & Browser Booking
                 </Link>
               </li>
               <li>
                 <Link href="/#addons" className="hover:text-white transition-colors duration-200">
-                  No-Show Protector
+                  WhatsApp & Instagram Reply Links
                 </Link>
               </li>
               <li>
@@ -133,7 +133,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/#addons" className="hover:text-white transition-colors duration-200">
-                  Google Calendar 2-Way Sync
+                  Branch Links & QR Codes
                 </Link>
               </li>
               <li className="pt-2">

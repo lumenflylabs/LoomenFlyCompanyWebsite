@@ -5,6 +5,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { COMPANY, NAV_LINKS } from "@/lib/constants";
 import Logo from "@/components/ui/Logo";
+import FeatureIcon, { type FeatureIconName } from "@/components/ui/FeatureIcon";
+
+const navigationIcons: FeatureIconName[] = [
+  "platform",
+  "features",
+  "setup",
+  "about",
+];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,37 +27,43 @@ export default function Navbar() {
 
   return (
     <>
-      <div className={`fixed left-0 right-0 z-50 flex justify-center px-4 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${scrolled ? 'top-6' : 'top-8 md:top-10'}`}>
-        
+      <div
+        className={`fixed left-0 right-0 z-50 flex justify-center px-4 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${scrolled ? "top-6" : "top-8 md:top-10"}`}
+      >
         {/* The Glass Island */}
-        <nav 
+        <nav
           className={`
-            w-full max-w-[850px] flex items-center justify-between p-2.5 rounded-full transition-all duration-500
-            ${scrolled 
-              ? 'bg-white/60 backdrop-blur-2xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.08)]' 
-              : 'bg-white/40 backdrop-blur-xl border border-white/30 shadow-[0_4px_24px_rgba(0,0,0,0.04)]'}
+            w-full max-w-[1050px] flex items-center justify-between gap-4 p-2.5 rounded-full transition-all duration-500
+            ${
+              scrolled
+                ? "bg-white/60 backdrop-blur-2xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.08)]"
+                : "bg-white/40 backdrop-blur-xl border border-white/30 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
+            }
           `}
         >
-          
           <Link href="/" className="flex items-center gap-3 pl-3 group z-50">
-            <Logo className="w-8 h-8 transition-transform duration-500 group-hover:scale-110" />
+            <Logo className="w-10 h-10 transition-transform duration-500 group-hover:scale-105" />
             <span className="font-heading text-lg font-bold text-[#000000] tracking-tight mt-0.5">
               Loomenfly Labs
             </span>
           </Link>
 
           {/* Magnetic Pill Links */}
-          <ul className="hidden md:flex gap-1 list-none items-center absolute left-1/2 -translate-x-1/2">
-            {NAV_LINKS.map((link) => (
+          <ul className="hidden md:flex gap-1 list-none items-center">
+            {NAV_LINKS.map((link, index) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`px-5 py-2 rounded-full text-[14px] font-sans font-medium transition-all duration-300 ${
+                  className={`inline-flex items-center gap-2 px-3 py-2 rounded-full text-[14px] font-sans font-medium transition-all duration-300 ${
                     pathname === link.href
                       ? "text-[#000000] bg-black/5 font-semibold"
                       : "text-[#000000]/70 hover:text-[#000000] hover:bg-black/5"
                   }`}
                 >
+                  <FeatureIcon
+                    name={navigationIcons[index]}
+                    className="w-4 h-4"
+                  />
                   {link.label}
                 </Link>
               </li>
@@ -65,7 +79,19 @@ export default function Navbar() {
             >
               <span className="relative z-10 flex items-center gap-2">
                 Book Demo
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover:translate-x-1 transition-transform duration-300"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="transform group-hover:translate-x-1 transition-transform duration-300"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
               </span>
             </a>
           </div>
@@ -74,30 +100,39 @@ export default function Navbar() {
           <button
             className="flex md:hidden flex-col gap-[5px] bg-white/50 border border-white/50 p-3 rounded-full cursor-pointer z-50 relative mr-1 hover:bg-white/80 transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Menu"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
           >
-            <span className={`block w-5 h-[1.5px] bg-[#000000] transition-transform duration-300 ${mobileOpen ? "rotate-45 translate-y-[6.5px]" : ""}`} />
-            <span className={`block w-5 h-[1.5px] bg-[#000000] transition-opacity duration-300 ${mobileOpen ? "opacity-0" : ""}`} />
-            <span className={`block w-5 h-[1.5px] bg-[#000000] transition-transform duration-300 ${mobileOpen ? "-rotate-45 -translate-y-[6.5px]" : ""}`} />
+            <span
+              className={`block w-5 h-[1.5px] bg-[#000000] transition-transform duration-300 ${mobileOpen ? "rotate-45 translate-y-[6.5px]" : ""}`}
+            />
+            <span
+              className={`block w-5 h-[1.5px] bg-[#000000] transition-opacity duration-300 ${mobileOpen ? "opacity-0" : ""}`}
+            />
+            <span
+              className={`block w-5 h-[1.5px] bg-[#000000] transition-transform duration-300 ${mobileOpen ? "-rotate-45 -translate-y-[6.5px]" : ""}`}
+            />
           </button>
-
         </nav>
       </div>
 
       {/* Mobile Menu */}
       <div
+        aria-hidden={!mobileOpen}
+        inert={!mobileOpen}
         className={`fixed inset-0 z-40 bg-[#F6F5ED] pt-[140px] px-8 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
           mobileOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
         <div className="flex flex-col gap-6 items-center text-center">
-          {NAV_LINKS.map((link) => (
+          {NAV_LINKS.map((link, index) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="text-3xl font-heading text-[#000000] hover:text-[#E51E25] transition-colors"
+              className="inline-flex items-center gap-3 text-3xl font-heading text-[#000000] hover:text-[#E51E25] transition-colors"
             >
+              <FeatureIcon name={navigationIcons[index]} className="w-6 h-6" />
               {link.label}
             </Link>
           ))}

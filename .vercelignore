@@ -1,0 +1,3 @@
+# Exclude local identity-verification assets from CLI deployment uploads.
+/gokul_surendran_passport_*
+/public/images/meta_id_verification/

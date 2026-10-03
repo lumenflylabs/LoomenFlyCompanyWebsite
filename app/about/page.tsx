@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { COMPANY, DESIGNATED_PARTNERS } from "@/lib/constants";
+import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.loomenflylabs.com/images/og-human.png",
+        url: "https://www.loomenflylabs.com/images/og-booking.png",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `About Us | ${COMPANY.legalName}`,
     description: `Official Corporate Profile of ${COMPANY.legalName} (${COMPANY.name}), leadership team, and software ecosystem.`,
-    images: ["https://www.loomenflylabs.com/images/og-human.png"],
+    images: ["https://www.loomenflylabs.com/images/og-booking.png"],
   },
 };
 
@@ -74,7 +74,7 @@ export default function AboutPage() {
               <strong>LoomenDesk</strong> is a proprietary software platform developed, owned, and operated entirely by <strong>{COMPANY.legalName}</strong>. 
             </p>
             <p className="mb-4">
-              LoomenDesk connects directly to the official Meta / WhatsApp Business Platform (Cloud API) to provide local service businesses (salons, spas, wellness centers, studios) with an interactive, app-like booking experience inside WhatsApp. It combines direct client messaging with a powerful cloud-based management dashboard for business owners.
+              LoomenDesk gives service businesses an interactive Telegram Mini App and a browser booking page. WhatsApp Business greetings and Instagram booking FAQ replies share the booking link. Customers choose services, staff and available times, while business owners manage appointments, schedules and branches from one dashboard. The standard booking setup does not generate Meta API messaging charges; optional WhatsApp Cloud API integrations are configured separately.
             </p>
           </div>
 
@@ -119,7 +119,7 @@ export default function AboutPage() {
 
           <div className="flex gap-4 pt-6">
             <Link href="/contact" className="px-8 py-4 bg-[#111111] text-white rounded-full font-medium hover:bg-[#E51E25] transition-all">
-              Contact Leadership
+              Contact Our Team
             </Link>
             <Link href="/" className="px-8 py-4 bg-white border border-[#111111]/20 text-[#111111] rounded-full font-medium hover:bg-[#111111]/5 transition-all">
               Back to Home

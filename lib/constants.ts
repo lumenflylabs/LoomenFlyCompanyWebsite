@@ -6,7 +6,7 @@ export const COMPANY = {
   pan: "AANFL3526F",
   tagline: "Turn Your Messages Into Bookings",
   description:
-    "We build custom software and automated messaging flows that give your customers an interactive booking experience directly on WhatsApp, while giving you a powerful dashboard to manage it all.",
+    "LoomenDesk brings interactive Telegram booking, WhatsApp and Instagram booking links, and a shared business dashboard together. Built for appointment-based businesses and service teams, with no Meta API messaging charges for the standard link-based booking setup.",
   address: "Door No. 150, Gurusadanam, Ala P.O, Chengannur, Ala (Alappuzha), Chengannur Police Station, Chengannur, Alappuzha- 689126, Kerala, India",
   adminEmail: "admin@loomenflylabs.com",
   salesEmail: "gokul@loomenflylabs.com",
@@ -18,7 +18,7 @@ export const COMPANY = {
   waLink: "https://wa.me/919746914027?text=Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   waDemoText: "Hi%20Loomenfly%20Team!%20I%20want%20to%20book%20a%20demo.",
   year: new Date().getFullYear(),
-  disclaimer: "LOOMENFLY LABS LLP is an independent software development entity registered in Kerala, India. LoomenDesk integrates with the WhatsApp Business Platform via official Meta Cloud APIs. We are not affiliated with, sponsored by, or endorsed by WhatsApp Inc. or Meta Platforms, Inc. WhatsApp is a registered trademark of Meta Platforms, Inc.",
+  disclaimer: "Loomenfly Labs is an independent software company registered in Kerala, India. Telegram, WhatsApp and Instagram are trademarks of their respective owners. We are not affiliated with or endorsed by Telegram or Meta. Optional WhatsApp Cloud API integrations are subject to Meta’s terms and messaging charges.",
   partners: [
     { name: "Gokul Surendran", role: "Designated Partner & CEO", email: "gokul@loomenflylabs.com" },
     { name: "MS Mohammed Hashiq", role: "Designated Partner & CTO", email: "hashiq@loomenflylabs.com" },
@@ -42,138 +42,151 @@ export type IndustryItem = {
 export const NAV_LINKS = [
   { label: "Platform", href: "/#plans" },
   { label: "Features", href: "/#addons" },
+  { label: "Setup", href: "/#custom" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
 ] as const;
 
 export const HERO = {
-  eyebrow: "Automated Booking & Management Dashboard",
-  headline: "Turn Your Chat\nInto a Booking Engine.",
-  highlight: "Booking Engine.",
-  subtitle:
-    "A custom automated flow that provides customers with an interactive, app-like booking experience natively inside WhatsApp—paired with a cloud dashboard to manage staff, catalogs, and schedules. Done-for-you setup with no coding needed from the business side.",
-  kpis: [
-    { value: "24/7", label: "Always Available" },
-    { value: "Instant", label: "Replies" },
-    { value: "Automated", label: "Lead Capture" },
-  ],
+  "eyebrow": "Automated Booking & Management Dashboard",
+  "headline": "Turn Your Messages\nInto Bookings.",
+  "highlight": "Bookings.",
+  "subtitle": "Interactive booking in Telegram. Booking links through WhatsApp Business and Instagram auto-replies. One dashboard for your services, staff and appointments — with setup handled by our team.",
+  "kpis": [
+    {
+      "value": "Telegram",
+      "label": "Interactive booking"
+    },
+    {
+      "value": "One link",
+      "label": "WhatsApp & Instagram"
+    },
+    {
+      "value": "One dashboard",
+      "label": "Every appointment"
+    }
+  ]
 } as const;
 
 export const PROBLEM_SOLUTION = {
-  eyebrow: "Operational Challenges",
-  headline: "Designed for Business Owners,\nWithout Technical Overhead",
-  subtitle:
-    "Managing service catalogs, staff availability, and appointment reminders manually takes valuable time away from service delivery. LoomenDesk provides structured scheduling without requiring clients to install separate apps.",
-  without: {
-    label: "Without LoomenDesk",
-    items: [
+  "eyebrow": "A Better Booking Day",
+  "headline": "Less Time Arranging.\nMore Time With Your Clients.",
+  "subtitle": "A customer should be able to see your services and pick a time without a long conversation. LoomenDesk connects your booking channels to the same schedule, so your team can focus on the work in front of them.",
+  "without": {
+    "label": "Without LoomenDesk",
+    "items": [
       {
-        icon: "01",
-        title: "Unstructured inbox inquiries",
-        desc: "Customers inquiring about services while staff is busy with clients, leading to delayed replies and fragmented conversations.",
+        "icon": "01",
+        "title": "Bookings buried in conversations",
+        "desc": "Prices, services and available times go back and forth in separate chats while your team is busy with clients."
       },
       {
-        icon: "02",
-        title: "Manual scheduling & conflicts",
-        desc: "Coordinating staff shifts and appointment slots manually across spreadsheets or paper diaries prone to double-booking.",
+        "icon": "02",
+        "title": "A schedule spread across notebooks",
+        "desc": "Matching services, staff shifts and available appointments manually makes changes harder to keep track of."
       },
       {
-        icon: "03",
-        title: "Technical configuration overhead",
-        desc: "Attempting to implement complex software platforms that require continuous administrative and technical maintenance.",
+        "icon": "03",
+        "title": "Another messaging bill to manage",
+        "desc": "An API-based WhatsApp setup can bring separate message charges, billing rules and account configuration alongside your booking software."
       },
       {
-        icon: "04",
-        title: "Manual review follow-ups",
-        desc: "Manually reaching out to past clients for feedback, which easily gets overlooked during daily business operations.",
-      },
-    ],
+        "icon": "04",
+        "title": "Customers waiting for the next reply",
+        "desc": "A customer may discover your work after hours, but still needs a clear way to choose a service and an appointment."
+      }
+    ]
   },
-  with: {
-    label: "With LoomenDesk",
-    items: [
+  "with": {
+    "label": "With LoomenDesk",
+    "items": [
       {
-        icon: "01",
-        title: "Interactive catalog within WhatsApp",
-        desc: "Clients browse services, select team members, and confirm appointments directly within WhatsApp.",
+        "icon": "01",
+        "title": "Interactive booking in Telegram",
+        "desc": "Customers choose services, staff and available times in your Telegram Mini App. WhatsApp and Instagram reply links open the booking page in their browser."
       },
       {
-        icon: "02",
-        title: "Centralized management dashboard",
-        desc: "Manage service listings, staff schedules, and appointment records from a clean, intuitive dashboard.",
+        "icon": "02",
+        "title": "One dashboard for the whole team",
+        "desc": "Manage service prices and durations, staff availability, breaks, time off and appointments in one place."
       },
       {
-        icon: "03",
-        title: "Fully managed technical onboarding",
-        desc: "Our engineering team manages configuration, flows, and API connections for a seamless launch.",
+        "icon": "03",
+        "title": "No Meta API bill for standard booking",
+        "desc": "Telegram and browser booking, with links in native WhatsApp Business and Instagram replies, do not generate Meta API messaging charges. LoomenDesk fees apply; optional API messaging has separate costs."
       },
       {
-        icon: "04",
-        title: "Structured follow-ups & reminders",
-        desc: "LoomenDesk sends scheduled appointment reminders and optional review requests to opted-in clients.",
-      },
-    ],
-  },
+        "icon": "04",
+        "title": "A booking link that stays available",
+        "desc": "Share your page in WhatsApp Business greetings and away messages, Instagram booking FAQs, your bio or a reception QR code. Customers can book without waiting for a conversation."
+      }
+    ]
+  }
 } as const;
 
 export const LEAD_CATCHER = {
-  eyebrow: "The Core Software",
-  headline: "The LoomenDesk Ecosystem",
-  subtitle:
-    "A complete solution: An interactive booking interface for clients on WhatsApp, connected to a centralized management dashboard for business administrators.",
-  features: [
-    "Management Dashboard to control it all",
-    "Visual catalogs to showcase service photos and past work",
-    "List and sell retail products directly through the flow",
-    "Interactive booking flows natively inside WhatsApp",
-    "Real-time Google Calendar synchronization",
-    "Full access to user data and booking history",
-  ],
+  "eyebrow": "The Core Software",
+  "headline": "Your Bookings. Your Team. One Dashboard.",
+  "subtitle": "A clear booking experience for your customers and a practical workspace for your team. Manage services, staff, availability and branches without piecing together separate chats.",
+  "features": [
+    "Every appointment in one dashboard",
+    "Your services, prices and durations",
+    "Staff schedules, breaks and time off",
+    "Telegram & booking links",
+    "Branch booking links and reception QR codes",
+    "Customer details and booking history"
+  ]
 } as const;
 
 export const PREMIUM_ADDONS = {
-  eyebrow: "Communication & Workflow Tools",
-  headline: "Essential Utilities\nBuilt Right In",
-  subtitle:
-    "LoomenDesk helps manage and organize bookings and customer follow-ups across your business.",
-  addons: [
+  "eyebrow": "Your Booking Channels",
+  "headline": "Simple Ways In.\nOne Booking Experience.",
+  "subtitle": "Meet customers where they already find your business. Each channel leads to your service menu and appointment schedule, with a clear next step.",
+  "addons": [
     {
-      icon: "★",
-      title: "Customer Review System",
-      tagline: "Collect structured feedback",
-      desc: "Send polite post-service follow-up messages asking verified clients for feedback after their completed appointment.",
+      "icon": "01",
+      "title": "Telegram Mini App",
+      "tagline": "Book without leaving Telegram",
+      "desc": "Customers browse the catalog, choose a team member and a time, then confirm their appointment inside Telegram. They can return to manage their booking."
     },
     {
-      icon: "📣",
-      title: "Client Broadcasts (Opt-in only)",
-      tagline: "Message opted-in clients",
-      desc: "Send service updates and announcements exclusively to clients who have opted in via approved WhatsApp templates, with immediate opt-out support.",
+      "icon": "02",
+      "title": "WhatsApp Business Replies",
+      "tagline": "A helpful greeting with your booking link",
+      "desc": "Use the WhatsApp Business app’s greeting and away-message tools to share your booking link. Customers tap through to choose their appointment in the browser. Replies follow the app’s configured rules."
     },
     {
-      icon: "🔔",
-      title: "Automated Reminders",
-      tagline: "Reduce missed appointments",
-      desc: "Send timely booking confirmations and scheduled reminder notifications to help clients keep their appointments.",
+      "icon": "03",
+      "title": "Instagram Booking Links",
+      "tagline": "From profile visits to appointments",
+      "desc": "Put your booking link in your Instagram bio and native booking FAQ reply. Customers can move from discovering your work to choosing a service and time."
     },
     {
-      icon: "ℹ️",
-      title: "Structured FAQs",
-      tagline: "Direct information",
-      desc: "A built-in repository of Frequently Asked Questions that provides instant answers about location, services, and operational hours.",
-    },
-  ],
+      "icon": "04",
+      "title": "Your Browser Booking Page",
+      "tagline": "No Telegram account required",
+      "desc": "Your booking page works in a mobile or desktop browser. Share it on your website, in a reply or through a branch QR code. Customers use the same catalog and availability across channels."
+    }
+  ]
 } as const;
 
 export const TRUST_FLOW = {
-  eyebrow: "Managed Implementation",
-  headline: "Comprehensive Setup,\nReady for Operation",
-  subtitle:
-    "Done-for-you setup with no coding needed from the business side. We handle all configuration, API integrations, and catalog setup so your system is fully operational from day one.",
-  nodes: [
-    { icon: "1", label: "We structure your catalog and\nbuild the interactive Flow" },
-    { icon: "2", label: "We connect the Flow to\nyour verified business line" },
-    { icon: "3", label: "We deliver a Management Dashboard\npre-loaded with your data" },
-  ],
+  "eyebrow": "One Shared Schedule",
+  "headline": "Different Starting Points.\nThe Same Booking System.",
+  "subtitle": "Whether a customer starts in Telegram, WhatsApp or Instagram, their appointment reaches the same dashboard. Keep your services, staff and available times in one place.",
+  "nodes": [
+    {
+      "icon": "1",
+      "label": "A customer opens Telegram\nor taps your booking link"
+    },
+    {
+      "icon": "2",
+      "label": "They choose a service,\na staff member and a time"
+    },
+    {
+      "icon": "3",
+      "label": "Your team sees the appointment\nin the same dashboard"
+    }
+  ]
 } as const;
 
 export const INDUSTRIES: {
@@ -182,85 +195,75 @@ export const INDUSTRIES: {
   subtitle: string;
   items: IndustryItem[];
 } = {
-  eyebrow: "Industries We Serve",
-  headline: "Perfect for Salons,\nScalable for Everyone",
+  eyebrow: "Built Around Your Business",
+  headline: "Your Services.\nYour Way of Working.",
   subtitle:
-    "We are heavily focused on the Salon and Beauty industry, but LoomenDesk's custom architecture adapts to any service business.",
+    "Organize appointments around your services, team, opening hours and locations. We help configure the booking experience to match how your business works.",
   items: [
-    { icon: "01", name: "Salons", desc: "Hair · Beauty · Styling", highlighted: true },
-    { icon: "02", name: "Beauty Parlours", desc: "Skincare · Treatments", highlighted: true },
-    { icon: "03", name: "Nail Studios", desc: "Nail Art · Extensions", highlighted: true },
-    { icon: "04", name: "Barbershops", desc: "Queue · Staff Routing", highlighted: true },
-    { icon: "05", name: "Clinics", desc: "Appointments · Follow-ups" },
-    { icon: "06", name: "Cafes", desc: "Reservations · Orders" },
-    { icon: "07", name: "Spas", desc: "Therapies · Massages" },
-    { icon: "08", name: "Your Business", desc: "Let's build your flow" },
+    { icon: "01", name: "Service Appointments", desc: "Services · Prices · Durations" },
+    { icon: "02", name: "Consultations", desc: "Availability · Follow-ups" },
+    { icon: "03", name: "Team Scheduling", desc: "Staff · Breaks · Time off" },
+    { icon: "04", name: "Multiple Locations", desc: "Branch links · Local schedules" },
+    { icon: "05", name: "Your Business", desc: "Let’s plan your setup" },
   ],
 };
 
 export const ABOUT = {
-  eyebrow: "Our Approach",
-  headline: "Custom Software,\nWithout the Custom Price Tag.",
-  paragraphs: [
-    "Loomenfly Labs is shifting the paradigm of local business software. We realized that off-the-shelf booking apps force businesses to change how they work, while traditional custom software development requires prohibitive upfront expense.",
-    "So we engineered LoomenDesk as a hybrid platform. We use the official WhatsApp Business Platform to build an interactive booking experience that clients already know how to use, paired with a management dashboard providing full operational control.",
-    "Done-for-you setup with no coding needed from the business side. No steep learning curves. Just a structured software ecosystem designed to make managing business bookings straightforward.",
+  "eyebrow": "Our Approach",
+  "headline": "Built Around\nYour Working Day.",
+  "paragraphs": [
+    "We build software for businesses and service teams who want less time arranging appointments and more time serving their customers.",
+    "LoomenDesk brings interactive Telegram booking and a browser booking page together. WhatsApp Business greetings and Instagram booking replies share the link, while your dashboard keeps the team’s schedule organized.",
+    "Our team helps configure your catalog, staff and booking channels. The standard setup avoids Meta API messaging charges for booking, with LoomenDesk setup and subscription pricing agreed for your business."
   ],
-  values: [
-    "Interactive flows that feel like a native app",
+  "values": [
+    "Interactive Telegram and browser booking",
     "Complete control via your Management Dashboard",
     "Done-for-you onboarding and technical setup",
-    "Built natively for the Salon & Beauty industry first",
+    "Configured for your services, team and locations"
   ],
-  cardTitle: "Built in Kerala.\nScaling Everywhere.",
-  cardDesc:
-    "LOOMENFLY LABS LLP (LLPIN: ACZ-5532), registered in Kerala. Founded by Gokul Surendran, MS Mohammed Hashiq, and Saheeda Menamthuruthil Muhammed — Designated Partners.",
+  "cardTitle": "Built in Kerala.\nFor Your Business.",
+  "cardDesc": "LOOMENFLY LABS LLP (LLPIN: ACZ-5532), registered in Kerala. Founded by Gokul Surendran, MS Mohammed Hashiq and Saheeda Menamthuruthil Muhammed — Designated Partners."
 } as const;
 
 export const CUSTOM_SOLUTIONS = {
-  eyebrow: "The Onboarding Experience",
-  headline: "Fully Managed Technical Onboarding",
-  subtitle:
-    "Loomenfly Labs provides end-to-end technical assistance and onboarding for every business partner.",
-  perks: [
+  "eyebrow": "The Onboarding Experience",
+  "headline": "We Help You Get Ready to Take Bookings",
+  "subtitle": "Bring your service menu and your questions. We help set up your booking experience and walk your team through the dashboard.",
+  "perks": [
     {
-      icon: "A",
-      title: "Discovery & Requirements",
-      desc: "We connect with your team to outline your service menu, pricing structure, and staff availability.",
+      "icon": "A",
+      "title": "Show Us How You Work",
+      "desc": "We go through your service menu, prices, staff, opening hours and locations with you."
     },
     {
-      icon: "B",
-      title: "Catalog Configuration",
-      desc: "Our team organizes and inputs all service items, durations, and staff details directly into your dashboard.",
+      "icon": "B",
+      "title": "Your Catalog & Schedule",
+      "desc": "We organize your services, durations, staff availability and branch details in your dashboard."
     },
     {
-      icon: "C",
-      title: "Number Connection",
-      desc: "We securely configure the interactive Flow with your official WhatsApp Business Platform API.",
+      "icon": "C",
+      "title": "Your Booking Channels",
+      "desc": "We configure your Telegram experience and booking page, then help you add booking links to WhatsApp Business greetings and Instagram FAQs."
     },
     {
-      icon: "D",
-      title: "Ready to Launch",
-      desc: "A fully operational system designed to streamline incoming bookings.",
-    },
-  ],
+      "icon": "D",
+      "title": "Test It. Then Share It.",
+      "desc": "Walk through a booking with us, learn your dashboard and share your booking link or QR code with customers."
+    }
+  ]
 } as const;
 
 export const CONTACT = {
-  eyebrow: "Get in Touch",
-  headline: "Let's Build\nYour LoomenDesk",
-  subtitle:
-    "Connect with our team to explore an interactive WhatsApp booking solution and custom management dashboard.",
-  methods: [
-    { icon: "►", label: "Sales Enquiries — Gokul (CEO)", value: COMPANY.salesEmail, href: `mailto:${COMPANY.salesEmail}` },
-    { icon: "►", label: "Technical Lead — Hashiq (CTO)", value: COMPANY.techEmail, href: `mailto:${COMPANY.techEmail}` },
-    { icon: "►", label: "Operations — Saheeda (COO)", value: COMPANY.successEmail, href: `mailto:${COMPANY.successEmail}` },
-  ],
+  "eyebrow": "See It For Yourself",
+  "headline": "Let’s Look at\nYour Booking Day",
+  "subtitle": "See the Telegram experience, your booking page and the business dashboard in a live walkthrough. We’ll explain the setup and pricing for your team.",
+  "methods": []
 } as const;
 
 export const FOOTER = {
   description:
-    "We build custom software ecosystems powered by the WhatsApp Business Platform and intuitive management dashboards.",
+    "Interactive Telegram booking, WhatsApp and Instagram booking links, and one dashboard to keep your business organized.",
   navColumns: [
     {
       title: "Company & Legal",
@@ -286,30 +289,6 @@ export const FOOTER = {
   socials: [
     { label: "Instagram", href: "https://www.instagram.com/loomenflylabs/" },
     { label: "X (Twitter)", href: "https://x.com/LoomenflyLabs" },
-  ],
-} as const;
-
-export const REVIEWS = {
-  eyebrow: "Client Feedback",
-  headline: "Trusted by Service Businesses",
-  subtitle:
-    "See how service businesses use LoomenDesk to organize scheduling and streamline customer communication.",
-  items: [
-    {
-      quote: "LoomenDesk completely organized how we handle our salon bookings. No more double-booking or lost chats in our inbox.",
-      author: "Sarah M.",
-      role: "Salon Owner",
-    },
-    {
-      quote: "Our customers appreciate the interactive catalog. It feels like a premium app, but they never have to leave the chat.",
-      author: "Rahul T.",
-      role: "Spa Manager",
-    },
-    {
-      quote: "The automated reminders and review requests help our clinic maintain consistent customer communication.",
-      author: "Dr. Ananya",
-      role: "Clinic Director",
-    },
   ],
 } as const;
 

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.loomenflylabs.com/images/og-human.png",
+        url: "https://www.loomenflylabs.com/images/og-booking.png",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `User Data Deletion Instructions | ${COMPANY.legalName}`,
     description: `Official User Data Deletion Instructions for ${COMPANY.name} (${COMPANY.legalName}) and LoomenDesk WhatsApp integrations.`,
-    images: ["https://www.loomenflylabs.com/images/og-human.png"],
+    images: ["https://www.loomenflylabs.com/images/og-booking.png"],
   },
 };
 
@@ -70,7 +70,7 @@ export default function DataDeletionPage() {
               How to Request Data Deletion (Step-by-Step)
             </h2>
             <p className="mb-4">
-              If you have interacted with a LoomenDesk WhatsApp booking flow or service and wish to have all your personal information, booking records, and phone numbers permanently purged from our servers, you can initiate a deletion request through either of the following methods:
+              If you have interacted with a LoomenDesk Telegram, browser booking or optional WhatsApp service and wish to have all your personal information, booking records, and phone numbers permanently purged from our servers, you can initiate a deletion request through either of the following methods:
             </p>
 
             <div className="flex flex-col gap-4 mt-6">

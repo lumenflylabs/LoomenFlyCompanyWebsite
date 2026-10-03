@@ -99,3 +99,25 @@ body {
 ::-webkit-scrollbar-track { background: var(--color-bg-base); }
 ::-webkit-scrollbar-thumb { background: rgba(24, 22, 14, 0.15); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(24, 22, 14, 0.3); }
+
+/* Keep the supplied symbol intact; hide its wordmark and underline. */
+.brand-symbol {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: white;
+}
+.brand-symbol .brand-symbol-image {
+  position: absolute;
+  width: 233.955%;
+  height: auto;
+  max-width: none;
+  left: -73.507%;
+  top: -49.416%;
+}
+:focus-visible { outline: 3px solid #E51E25; outline-offset: 5px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

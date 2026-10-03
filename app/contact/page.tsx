@@ -7,20 +7,20 @@ export const metadata: Metadata = {
   title: {
     absolute: `Contact Us | ${COMPANY.legalName}`,
   },
-  description: `Contact ${COMPANY.name} (${COMPANY.legalName}) for sales, technical support, enterprise WhatsApp integrations, and official verification inquiries.`,
+  description: `Contact ${COMPANY.name} (${COMPANY.legalName}) for sales, technical support, Telegram and browser booking, and official verification inquiries.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/contact",
   },
   openGraph: {
     title: `Contact Us | ${COMPANY.legalName}`,
-    description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and LoomenDesk WhatsApp booking platform.`,
+    description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and LoomenDesk booking platform.`,
     url: "https://www.loomenflylabs.com/contact",
     siteName: COMPANY.legalName,
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://www.loomenflylabs.com/images/og-human.png",
+        url: "https://www.loomenflylabs.com/images/og-booking.png",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Contact Us | ${COMPANY.legalName}`,
     description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and LoomenDesk WhatsApp booking platform.`,
-    images: ["https://www.loomenflylabs.com/images/og-human.png"],
+    images: ["https://www.loomenflylabs.com/images/og-booking.png"],
   },
 };
 
@@ -88,35 +88,12 @@ export default function ContactPage() {
         </div>
 
         {/* Department Direct Contacts */}
-        <div className="bg-white p-8 md:p-10 rounded-3xl border border-[#111111]/10 shadow-sm mb-12">
-          <h2 className="font-heading text-2xl text-[#111111] mb-6">Direct Department Channels</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-4 rounded-xl bg-[#F6F5ED] border border-[#111111]/5">
-              <p className="font-bold text-sm text-[#111111] mb-1">Sales &amp; Onboarding</p>
-              <p className="text-xs text-[#111111]/60 mb-3">Gokul (CEO)</p>
-              <a href={`mailto:${COMPANY.salesEmail}`} className="text-xs text-[#E51E25] font-mono hover:underline">{COMPANY.salesEmail}</a>
-            </div>
-
-            <div className="p-4 rounded-xl bg-[#F6F5ED] border border-[#111111]/5">
-              <p className="font-bold text-sm text-[#111111] mb-1">Technical Architecture</p>
-              <p className="text-xs text-[#111111]/60 mb-3">Hashiq (CTO)</p>
-              <a href={`mailto:${COMPANY.techEmail}`} className="text-xs text-[#E51E25] font-mono hover:underline">{COMPANY.techEmail}</a>
-            </div>
-
-            <div className="p-4 rounded-xl bg-[#F6F5ED] border border-[#111111]/5">
-              <p className="font-bold text-sm text-[#111111] mb-1">Operations &amp; Support</p>
-              <p className="text-xs text-[#111111]/60 mb-3">Saheeda (COO)</p>
-              <a href={`mailto:${COMPANY.successEmail}`} className="text-xs text-[#E51E25] font-mono hover:underline">{COMPANY.successEmail}</a>
-            </div>
-          </div>
-        </div>
-
         {/* Official Social & Developer Channels */}
         <div className="bg-white p-8 md:p-10 rounded-3xl border border-[#111111]/10 shadow-sm mb-12">
           <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-2 font-bold">Connect Online</span>
           <h2 className="font-heading text-2xl text-[#111111] mb-4">Official Social &amp; Community Channels</h2>
           <p className="font-sans text-sm text-[#111111]/70 mb-6 leading-relaxed">
-            Follow our verified company profiles for software release updates, engineering blogs, and business announcements:
+            Follow our company profiles for software release updates, engineering blogs, and business announcements:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl">
             <a

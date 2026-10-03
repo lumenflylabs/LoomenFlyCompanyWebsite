@@ -7,20 +7,20 @@ export const metadata: Metadata = {
   title: {
     absolute: `Privacy Policy | ${COMPANY.legalName}`,
   },
-  description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk WhatsApp Business Platform Cloud API integration and booking system.`,
+  description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk booking platform and its enabled messaging integrations.`,
   alternates: {
     canonical: "https://www.loomenflylabs.com/privacy-policy",
   },
   openGraph: {
     title: `Privacy Policy | ${COMPANY.legalName}`,
-    description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk WhatsApp Business Platform Cloud API integration and booking system.`,
+    description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk booking platform and its enabled messaging integrations.`,
     url: "https://www.loomenflylabs.com/privacy-policy",
     siteName: COMPANY.legalName,
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://www.loomenflylabs.com/images/og-human.png",
+        url: "https://www.loomenflylabs.com/images/og-booking.png",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `Privacy Policy | ${COMPANY.legalName}`,
-    description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk WhatsApp Business Platform Cloud API integration and booking system.`,
-    images: ["https://www.loomenflylabs.com/images/og-human.png"],
+    description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk booking platform and its enabled messaging integrations.`,
+    images: ["https://www.loomenflylabs.com/images/og-booking.png"],
   },
 };
 
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
           </p>
 
           <p>
-            Welcome to LoomenDesk. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, process, share, retain, and safeguard your data when you interact with our WhatsApp booking services, business management dashboards, and software ecosystem provided by <strong>{COMPANY.legalName}</strong> (&quot;{COMPANY.name}&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;).
+            Welcome to LoomenDesk. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, process, share, retain, and safeguard your data when you use our Telegram or browser booking experience, optional messaging integrations, and business management dashboards provided by <strong>{COMPANY.legalName}</strong> (&quot;{COMPANY.name}&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;).
           </p>
 
           {/* Data Controller Credentials Card */}
@@ -67,9 +67,9 @@ export default function PrivacyPolicy() {
           </div>
 
           <div className="p-5 bg-white rounded-2xl border border-[#111111]/10 text-sm text-[#111111]/80 leading-relaxed shadow-sm">
-            <p className="font-bold text-[#111111] mb-1">WhatsApp Business Platform Cloud API Integration Disclosure:</p>
+            <p className="font-bold text-[#111111] mb-1">Messaging and Booking Integrations:</p>
             <p>
-              LoomenDesk uses Meta&apos;s official WhatsApp Business Platform Cloud API to process transactional booking conversations, dispatch appointment confirmations, and send customer service notifications. All message content is processed strictly in accordance with Meta Platform Terms and the WhatsApp Business Messaging Policy. We do not sell, rent, monetize, or use conversational data for cross-site profiling or advertising.
+              The standard setup uses Telegram and a browser booking page, with links shared through WhatsApp Business and Instagram native reply tools. Where a business enables an optional WhatsApp Cloud API integration, message payloads and contact details are processed to deliver that integration under Meta&apos;s applicable terms. We do not sell, rent, monetize, or use conversational data for cross-site profiling or advertising.
             </p>
           </div>
 
@@ -78,12 +78,12 @@ export default function PrivacyPolicy() {
               1. Information We Collect
             </h2>
             <p className="mb-4">
-              When you interact with our WhatsApp automated flows, salon/clinic booking systems, or owner dashboard, we collect only the minimal data necessary to fulfill your appointment requests:
+              When you interact with our Telegram or browser booking systems, optional messaging integrations, or owner dashboard, we collect the information needed to fulfill your appointment requests:
             </p>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li><strong>WhatsApp Contact Details:</strong> Your WhatsApp phone number (encrypted at rest and blind-indexed) and profile name.</li>
+              <li><strong>Customer Contact Details:</strong> Your name and phone number, and your Telegram user or chat identifier when you use the Telegram experience. Optional WhatsApp integrations may also process your WhatsApp phone number and profile name.</li>
               <li><strong>Appointment &amp; Service History:</strong> Requested service packages, assigned staff member, scheduled date/time, and booking confirmation status.</li>
-              <li><strong>Conversational Messages:</strong> Interactive messages, flow selections, and customer responses submitted during the WhatsApp chat session.</li>
+              <li><strong>Booking and Messaging Selections:</strong> Services, staff, times and customer details submitted during booking, and messages processed by enabled Telegram or optional WhatsApp integrations.</li>
               <li><strong>Connected Calendar Metadata:</strong> Calendar event IDs and timestamps synchronized with connected Google Calendar accounts.</li>
               <li><strong>Demographic Information:</strong> Age or gender only when explicitly requested by specialized healthcare or wellness providers for service customization.</li>
             </ul>
@@ -98,8 +98,8 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
               <li>To schedule, confirm, modify, or cancel service appointments.</li>
-              <li>To send automated transactional reminders and booking status receipts via WhatsApp.</li>
-              <li>To prevent appointment no-shows and coordinate staff availability for salon and clinic owners.</li>
+              <li>To deliver booking information and reminders through enabled Telegram, email, browser notification or optional WhatsApp integrations.</li>
+              <li>To help customers keep their appointments and coordinate staff availability for businesses and service teams.</li>
               <li>To respond to customer support inquiries and provide technical assistance.</li>
             </ul>
             <p className="mt-4 font-semibold text-[#111111]">
@@ -115,7 +115,8 @@ export default function PrivacyPolicy() {
               We share data only with verified enterprise infrastructure providers required to operate LoomenDesk:
             </p>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-[#111111]/70">
-              <li><strong>Meta Platforms, Inc. (WhatsApp Cloud API):</strong> We share message payloads and phone numbers with Meta Platforms, Inc. strictly as necessary to deliver conversational WhatsApp messages to you.</li>
+              <li><strong>Telegram:</strong> Telegram identifiers and message payloads are processed as needed to operate the bot and Mini App booking experience.</li>
+              <li><strong>Meta Platforms, Inc. (optional WhatsApp Cloud API):</strong> Where this integration is enabled, message payloads and phone numbers are shared with Meta as needed to deliver WhatsApp messages.</li>
               <li><strong>Google LLC (Google Calendar API):</strong> If enabled by the business owner, appointment timestamps are synchronized to Google Calendar.</li>
               <li><strong>Enterprise Cloud Infrastructure:</strong> Database and server hosting protected by AES-256 field-level encryption, multi-tenant row-level security (RLS), and strict access controls.</li>
             </ul>

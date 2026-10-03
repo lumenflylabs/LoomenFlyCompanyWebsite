@@ -33,14 +33,14 @@ export const metadata: Metadata = {
   },
   description: COMPANY.description,
   icons: {
-    icon: "/favicon.svg",
-    apple: "/images/logo.jpeg",
+    icon: "/favicon.svg?v=round-2",
+    apple: "/images/apple-touch-icon.png",
   },
   openGraph: {
     siteName: COMPANY.legalName,
     images: [
       {
-        url: "https://www.loomenflylabs.com/images/og-human.png",
+        url: "https://www.loomenflylabs.com/images/og-booking.png",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://www.loomenflylabs.com/images/og-human.png"],
+    images: ["https://www.loomenflylabs.com/images/og-booking.png"],
   },
   verification: {
     other: {
@@ -72,7 +72,7 @@ export default function RootLayout({
     name: COMPANY.name,
     legalName: COMPANY.legalName,
     url: siteUrl,
-    logo: `${siteUrl}/images/logo.jpeg`,
+    logo: `${siteUrl}/favicon.svg`,
     email: COMPANY.adminEmail,
     telephone: COMPANY.phone,
     address: {
