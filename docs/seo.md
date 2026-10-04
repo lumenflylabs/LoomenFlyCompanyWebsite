@@ -22,7 +22,14 @@ industry-exclusive positioning or unsupported automation and pricing claims.
 
 ## Google Search Console setup
 
-Ownership has not yet been verified. The company owner should:
+The company has accessed Search Console for the www URL-prefix property after
+publishing Google's HTML verification file. Keep
+`public/google38e44d131de05a2c.html` deployed. The submitted sitemap subsequently
+showed a fetch error; live checks confirmed HTTP 200 and valid XML, but Google's
+successful read has not yet been confirmed. Inspect the exact submitted URL
+and use Google's live URL test for further diagnosis.
+
+For broader Domain-property coverage, the company owner can:
 
 1. Open https://search.google.com/search-console and add a Domain property
    for `loomenflylabs.com`.
@@ -52,6 +59,28 @@ Run `npm run build` and `npm run lint`. With a production build running on
 port 3001, run `npm run check:seo -- http://localhost:3001`. After deployment,
 run `npm run check:seo -- https://www.loomenflylabs.com` to check the public
 responses, canonical URLs, structured data, sitemap, redirects and missing pages.
+
+## Company identity in search
+
+The owner confirmed that Loomenfly Labs operates entirely online. Under Google's
+eligibility rules, this does not qualify for a Google Business Profile. Keep
+Organization and WebSite structured data; do not represent the registered
+address as a customer-facing storefront or add LocalBusiness markup.
+
+The structured data uses the public name `Loomenfly Labs`, legal name
+`LOOMENFLY LABS LLP`, and alternate name `Loomenflylabs` to connect the compact
+brand search with the real company. Use the same public name, website, logo and
+company description on genuine social and company profiles.
+
+Google may still show a different company's panel when it corrects the query
+to a similar name. The website cannot force or purchase an organic company
+knowledge panel. Request indexing of the updated homepage in Search Console;
+review the result after Google recrawls the site. The observed search screenshot
+still contained the previous favicon, title and WhatsApp-only description.
+
+References:
+- https://support.google.com/business/answer/13763036
+- https://developers.google.com/search/docs/appearance/structured-data/organization
 
 ## References
 

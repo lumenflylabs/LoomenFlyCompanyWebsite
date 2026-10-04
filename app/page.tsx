@@ -20,6 +20,7 @@ export default function Home() {
         "@id": `${SITE_URL}/#website`,
         url: `${SITE_URL}/`,
         name: COMPANY.name,
+        alternateName: "Loomenflylabs",
         inLanguage: "en-IN",
         publisher: { "@id": `${SITE_URL}/#organization` },
       },

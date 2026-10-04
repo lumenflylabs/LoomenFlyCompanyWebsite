@@ -85,6 +85,7 @@ export default function RootLayout({
     "@type": "Organization",
     "@id": `${siteUrl}/#organization`,
     name: COMPANY.name,
+    alternateName: "Loomenflylabs",
     legalName: COMPANY.legalName,
     url: siteUrl,
     logo: `${siteUrl}/images/apple-touch-icon.png`,
