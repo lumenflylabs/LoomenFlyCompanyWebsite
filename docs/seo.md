@@ -62,10 +62,29 @@ responses, canonical URLs, structured data, sitemap, redirects and missing pages
 
 ## Company identity in search
 
-The owner confirmed that Loomenfly Labs operates entirely online. Under Google's
-eligibility rules, this does not qualify for a Google Business Profile. Keep
-Organization and WebSite structured data; do not represent the registered
-address as a customer-facing storefront or add LocalBusiness markup.
+The owner clarified that the LLP's registered office is a cofounder's home and
+that the team visits customers for setup, demos and support. A service-area
+Business Profile is therefore the appropriate setup, subject to Google's
+verification. Use the real operating address for verification and hide it from
+the public profile when customers are not served there. Select only locations
+the team actually visits. Keep Organization and WebSite structured data; do not
+represent the registered address as a customer-facing storefront.
+
+Business Profile details prepared from the company's public website:
+- Public name: Loomenfly Labs.
+- Website: https://www.loomenflylabs.com/.
+- Primary phone: +91 7736119930.
+- Category to look for in Google's dropdown: Software company.
+- Description: Loomenfly Labs develops LoomenDesk appointment booking software
+  for businesses and service teams. The platform combines interactive Telegram
+  booking, browser booking links shared through WhatsApp Business and Instagram
+  replies, and a dashboard for services, staff availability, branches and
+  customer records. Our team provides setup, demonstrations and support,
+  including visits to customer locations.
+
+Service areas, hours, profile creation and Google verification remain to be
+completed in the owner's Google account. Once a verified profile exists, add
+its genuine public URL to the website's Organization sameAs data.
 
 The structured data uses the public name `Loomenfly Labs`, legal name
 `LOOMENFLY LABS LLP`, and alternate name `Loomenflylabs` to connect the compact
