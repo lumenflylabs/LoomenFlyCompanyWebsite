@@ -1,23 +1,9 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/seo";
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-      },
-      {
-        userAgent: [
-          "facebookexternalhit",
-          "Facebot",
-          "Meta-ExternalAgent",
-          "Meta-ExternalFetcher",
-          "Googlebot",
-        ],
-        allow: "/",
-      },
-    ],
-    sitemap: "https://www.loomenflylabs.com/sitemap.xml",
+    rules: { userAgent: "*", allow: "/" },
+    sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }

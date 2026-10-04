@@ -1,40 +1,9 @@
 import React from "react";
-import type { Metadata } from "next";
+import { getPageMetadata } from "@/lib/seo";
 import { COMPANY, DESIGNATED_PARTNERS } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: `Privacy Policy | ${COMPANY.legalName}`,
-  },
-  description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk booking platform and its enabled messaging integrations.`,
-  alternates: {
-    canonical: "https://www.loomenflylabs.com/privacy-policy",
-  },
-  openGraph: {
-    title: `Privacy Policy | ${COMPANY.legalName}`,
-    description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk booking platform and its enabled messaging integrations.`,
-    url: "https://www.loomenflylabs.com/privacy-policy",
-    siteName: COMPANY.legalName,
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "https://www.loomenflylabs.com/images/og-booking.png",
-        width: 1200,
-        height: 630,
-        type: "image/png",
-        alt: `Privacy Policy | ${COMPANY.legalName}`,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `Privacy Policy | ${COMPANY.legalName}`,
-    description: `Official Privacy Policy for ${COMPANY.name} (${COMPANY.legalName}) governing the LoomenDesk booking platform and its enabled messaging integrations.`,
-    images: ["https://www.loomenflylabs.com/images/og-booking.png"],
-  },
-};
+export const metadata = getPageMetadata("privacy");
 
 export default function PrivacyPolicy() {
   return (

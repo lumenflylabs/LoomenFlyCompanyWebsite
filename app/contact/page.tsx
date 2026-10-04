@@ -1,40 +1,9 @@
 import React from "react";
-import type { Metadata } from "next";
+import { getPageMetadata } from "@/lib/seo";
 import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: `Contact Us | ${COMPANY.legalName}`,
-  },
-  description: `Contact ${COMPANY.name} (${COMPANY.legalName}) for sales, technical support, Telegram and browser booking, and official verification inquiries.`,
-  alternates: {
-    canonical: "https://www.loomenflylabs.com/contact",
-  },
-  openGraph: {
-    title: `Contact Us | ${COMPANY.legalName}`,
-    description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and LoomenDesk booking platform.`,
-    url: "https://www.loomenflylabs.com/contact",
-    siteName: COMPANY.legalName,
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "https://www.loomenflylabs.com/images/og-booking.png",
-        width: 1200,
-        height: 630,
-        type: "image/png",
-        alt: `Contact Us | ${COMPANY.legalName}`,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `Contact Us | ${COMPANY.legalName}`,
-    description: `Official Contact Channels for ${COMPANY.legalName} (${COMPANY.name}) and LoomenDesk WhatsApp booking platform.`,
-    images: ["https://www.loomenflylabs.com/images/og-booking.png"],
-  },
-};
+export const metadata = getPageMetadata("contact");
 
 export default function ContactPage() {
   return (

@@ -50,7 +50,7 @@ export const HERO = {
   "eyebrow": "Automated Booking & Management Dashboard",
   "headline": "Turn Your Messages\nInto Bookings.",
   "highlight": "Bookings.",
-  "subtitle": "Interactive booking in Telegram. Booking links through WhatsApp Business and Instagram auto-replies. One dashboard for your services, staff and appointments — with setup handled by our team.",
+  "subtitle": "Appointment booking software for your business. Interactive booking in Telegram, booking links through WhatsApp Business and Instagram auto-replies, and one dashboard for your services, staff and appointments.",
   "kpis": [
     {
       "value": "Telegram",

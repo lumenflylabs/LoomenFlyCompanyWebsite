@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { COMPANY } from "@/lib/constants";
+import { SEO_PAGES, SITE_URL, serializeJsonLd } from "@/lib/seo";
 
 const abeezee = ABeeZee({
   variable: "--font-heading",
@@ -23,21 +24,33 @@ const playfair = Playfair_Display({
   style: ["normal", "italic"],
 });
 
-const siteUrl = "https://www.loomenflylabs.com";
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${COMPANY.name} — ${COMPANY.tagline}`,
-    template: `%s | ${COMPANY.legalName}`,
+    default: SEO_PAGES.home.title,
+    template: `%s | ${COMPANY.name}`,
   },
-  description: COMPANY.description,
+  description: SEO_PAGES.home.description,
+  applicationName: "LoomenDesk",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   icons: {
     icon: "/favicon.svg?v=round-2",
     apple: "/images/apple-touch-icon.png",
   },
   openGraph: {
-    siteName: COMPANY.legalName,
+    siteName: COMPANY.name,
     images: [
       {
         url: "https://www.loomenflylabs.com/images/og-booking.png",
@@ -47,7 +60,7 @@ export const metadata: Metadata = {
         alt: `${COMPANY.name} — ${COMPANY.tagline}`,
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
@@ -55,6 +68,7 @@ export const metadata: Metadata = {
     images: ["https://www.loomenflylabs.com/images/og-booking.png"],
   },
   verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
     other: {
       "facebook-domain-verification": "067by66wm4xvz067lskbpnhu55kc9r",
     },
@@ -69,10 +83,12 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${siteUrl}/#organization`,
     name: COMPANY.name,
     legalName: COMPANY.legalName,
     url: siteUrl,
-    logo: `${siteUrl}/favicon.svg`,
+    logo: `${siteUrl}/images/apple-touch-icon.png`,
+    description: "Loomenfly Labs is a software company in Kerala, India, and the developer of LoomenDesk appointment booking software.",
     email: COMPANY.adminEmail,
     telephone: COMPANY.phone,
     address: {
@@ -113,7 +129,7 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#F6F5ED] text-[#000000] relative">

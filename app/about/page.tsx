@@ -1,40 +1,9 @@
 import React from "react";
-import type { Metadata } from "next";
+import { getPageMetadata } from "@/lib/seo";
 import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: `About Us | ${COMPANY.legalName}`,
-  },
-  description: `Learn about ${COMPANY.name} (${COMPANY.legalName}), our mission, MCA Designated Partners, and our flagship product LoomenDesk.`,
-  alternates: {
-    canonical: "https://www.loomenflylabs.com/about",
-  },
-  openGraph: {
-    title: `About Us | ${COMPANY.legalName}`,
-    description: `Official Corporate Profile of ${COMPANY.legalName} (${COMPANY.name}), leadership team, and software ecosystem.`,
-    url: "https://www.loomenflylabs.com/about",
-    siteName: COMPANY.legalName,
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "https://www.loomenflylabs.com/images/og-booking.png",
-        width: 1200,
-        height: 630,
-        type: "image/png",
-        alt: `About Us | ${COMPANY.legalName}`,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `About Us | ${COMPANY.legalName}`,
-    description: `Official Corporate Profile of ${COMPANY.legalName} (${COMPANY.name}), leadership team, and software ecosystem.`,
-    images: ["https://www.loomenflylabs.com/images/og-booking.png"],
-  },
-};
+export const metadata = getPageMetadata("about");
 
 export default function AboutPage() {
   return (

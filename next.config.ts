@@ -5,6 +5,21 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/about-us",
+        destination: "/about",
+        permanent: true,
+      },
+      {
+        source: "/data-deletion-instructions",
+        destination: "/data-deletion",
+        permanent: true,
+      },
+      {
+        source: "/user-data-deletion",
+        destination: "/data-deletion",
+        permanent: true,
+      },
+      {
         source: "/terms-conditions",
         destination: "/terms-of-service",
         permanent: true,
