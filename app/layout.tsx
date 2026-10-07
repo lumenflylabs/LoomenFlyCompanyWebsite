@@ -46,9 +46,18 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.svg?v=round-2",
-    apple: "/images/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: ["/favicon.ico"],
   },
+  manifest: "/manifest.json",
   openGraph: {
     siteName: COMPANY.name,
     images: [
@@ -84,22 +93,64 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${siteUrl}/#organization`,
-    name: COMPANY.name,
-    alternateName: "Loomenflylabs",
+    name: "Loomenfly Labs LLP",
+    alternateName: [
+      "Loomenfly Labs",
+      "LoomenflyLabsLLP",
+      "Loomenfly",
+      "LoomenDesk",
+    ],
     legalName: COMPANY.legalName,
     url: siteUrl,
-    logo: `${siteUrl}/images/apple-touch-icon.png`,
-    description: "Loomenfly Labs is a software company in Kerala, India, and the developer of LoomenDesk appointment booking software.",
+    logo: `${siteUrl}/icon-512.png`,
+    image: `${siteUrl}/icon-512.png`,
+    description:
+      "Software company and creators of LoomenDesk appointment booking software.",
     email: COMPANY.adminEmail,
     telephone: COMPANY.phone,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Door No. 150, Gurusadanam, Ala P.O, Chengannur, Ala (Alappuzha), Chengannur Police Station",
+      streetAddress:
+        "Door No. 150, Gurusadanam, Ala P.O, Chengannur, Ala (Alappuzha), Chengannur Police Station",
       addressLocality: "Chengannur, Alappuzha",
       addressRegion: "Kerala",
       postalCode: "689126",
       addressCountry: "IN",
     },
+    identifier: [
+      {
+        "@type": "PropertyValue",
+        name: "LLPIN",
+        value: COMPANY.llpin,
+      },
+      {
+        "@type": "PropertyValue",
+        name: "MSME Udyam",
+        value: COMPANY.udyam,
+      },
+      {
+        "@type": "PropertyValue",
+        name: "PAN",
+        value: COMPANY.pan,
+      },
+    ],
+    founder: [
+      {
+        "@type": "Person",
+        name: "Gokul Surendran",
+        jobTitle: "Designated Partner & CEO",
+      },
+      {
+        "@type": "Person",
+        name: "MS Mohammed Hashiq",
+        jobTitle: "Designated Partner & CTO",
+      },
+      {
+        "@type": "Person",
+        name: "Saheeda Menamthuruthil Muhammed",
+        jobTitle: "Designated Partner & COO",
+      },
+    ],
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -107,6 +158,7 @@ export default function RootLayout({
         contactType: "customer service",
         email: COMPANY.adminEmail,
         areaServed: "IN",
+        availableLanguage: ["en", "ml"],
       },
       {
         "@type": "ContactPoint",
@@ -114,11 +166,13 @@ export default function RootLayout({
         contactType: "technical support",
         email: COMPANY.techEmail,
         areaServed: "IN",
+        availableLanguage: ["en", "ml"],
       },
     ],
     sameAs: [
       COMPANY.socials.instagram,
       COMPANY.socials.x,
+      "https://www.falconebiz.biz/company/loomenfly-labs-llp-acz-5532",
     ],
   };
 
