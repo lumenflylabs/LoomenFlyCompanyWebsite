@@ -2,6 +2,7 @@ import React from "react";
 import { getPageMetadata } from "@/lib/seo";
 import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
+import RegisteredAddress from "@/components/RegisteredAddress";
 
 export const metadata = getPageMetadata("contact");
 
@@ -16,7 +17,7 @@ export default function ContactPage() {
           Contact {COMPANY.name}
         </h1>
         <p className="font-sans text-xl md:text-2xl text-[#111111]/70 leading-relaxed mb-12">
-          Have questions about LoomenDesk, need a custom software demonstration, or require official verification assistance? Reach out to our dedicated team.
+          Talk to us about LoomenDesk, book a demo, or get help with setup and support. For partnerships and company correspondence, use the contact details below.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -25,7 +26,7 @@ export default function ContactPage() {
           <div className="p-8 bg-white rounded-3xl border border-[#111111]/10 shadow-sm flex flex-col justify-between">
             <div>
               <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-2 font-bold">General &amp; Legal</span>
-              <h2 className="font-heading text-2xl text-[#111111] mb-2">Corporate Office</h2>
+              <h2 className="font-heading text-2xl text-[#111111] mb-2">Company Contact</h2>
               <p className="font-sans text-sm text-[#111111]/70 mb-6 leading-relaxed">
                 For administrative, partnership, and legal verification inquiries:
               </p>
@@ -42,21 +43,17 @@ export default function ContactPage() {
           {/* Physical Location */}
           <div className="p-8 bg-white rounded-3xl border border-[#111111]/10 shadow-sm flex flex-col justify-between">
             <div>
-              <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-2 font-bold">Physical Address</span>
-              <h2 className="font-heading text-2xl text-[#111111] mb-2">Registered Location</h2>
-              <p className="font-sans text-sm text-[#111111]/70 mb-6 leading-relaxed">
-                {COMPANY.address}
-              </p>
+              <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-2 font-bold">Company Correspondence</span>
+              <h2 className="font-heading text-2xl text-[#111111] mb-2">Registered Office</h2>
+              <RegisteredAddress className="font-sans text-sm text-[#111111]/70 mb-6 leading-relaxed" />
             </div>
             <div className="pt-4 border-t border-[#111111]/10 text-sm text-[#111111]/70">
-              <p><strong>Working Hours:</strong> Mon - Fri: 9:00 AM – 6:00 PM IST</p>
-              <p><strong>Jurisdiction:</strong> Alappuzha, Kerala, India</p>
+              <p>We provide support online and visit customers for setup, demos and support by arrangement. Please contact our team before arranging an in-person meeting.</p>
             </div>
           </div>
 
         </div>
 
-        {/* Department Direct Contacts */}
         {/* Official Social & Developer Channels */}
         <div className="bg-white p-8 md:p-10 rounded-3xl border border-[#111111]/10 shadow-sm mb-12">
           <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-2 font-bold">Connect Online</span>

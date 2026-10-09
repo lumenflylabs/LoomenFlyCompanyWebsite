@@ -1,3 +1,18 @@
+// Registered details transcribed from the MCA Certificate of Incorporation.
+const REGISTERED_OFFICE = {
+  streetAddress: "Door No. 150, Gurusadanam, Ala P.O, Ala (Alappuzha), Chengannur Police Station",
+  addressLocality: "Chengannur, Alappuzha",
+  addressRegion: "Kerala",
+  postalCode: "689126",
+  addressCountry: "IN",
+  lines: [
+    "Door No. 150, Gurusadanam",
+    "Ala P.O, Chengannur, Ala (Alappuzha)",
+    "Chengannur Police Station, Chengannur",
+    "Alappuzha 689126, Kerala, India",
+  ],
+} as const;
+
 export const COMPANY = {
   name: "Loomenfly Labs",
   legalName: "LOOMENFLY LABS LLP",
@@ -7,7 +22,10 @@ export const COMPANY = {
   tagline: "Turn Your Messages Into Bookings",
   description:
     "LoomenDesk brings interactive Telegram booking, WhatsApp and Instagram booking links, and a shared business dashboard together. Built for appointment-based businesses and service teams, with no Meta API messaging charges for the standard link-based booking setup.",
-  address: "Door No. 150, Gurusadanam, Ala P.O, Chengannur, Ala (Alappuzha), Chengannur Police Station, Chengannur, Alappuzha- 689126, Kerala, India",
+  address: REGISTERED_OFFICE.lines.join(", "),
+  registeredOffice: REGISTERED_OFFICE,
+  incorporationDate: "2026-06-29",
+  incorporationDateLabel: "29 June 2026",
   adminEmail: "admin@loomenflylabs.com",
   salesEmail: "gokul@loomenflylabs.com",
   techEmail: "hashiq@loomenflylabs.com",
@@ -20,9 +38,9 @@ export const COMPANY = {
   year: new Date().getFullYear(),
   disclaimer: "Loomenfly Labs is an independent software company registered in Kerala, India. Telegram, WhatsApp and Instagram are trademarks of their respective owners. We are not affiliated with or endorsed by Telegram or Meta. Optional WhatsApp Cloud API integrations are subject to Meta’s terms and messaging charges.",
   partners: [
-    { name: "Gokul Surendran", role: "Designated Partner & CEO", email: "gokul@loomenflylabs.com" },
-    { name: "MS Mohammed Hashiq", role: "Designated Partner & CTO", email: "hashiq@loomenflylabs.com" },
-    { name: "Saheeda Menamthuruthil Muhammed", role: "Designated Partner & COO", email: "saheeda@loomenflylabs.com" },
+    { name: "Gokul Surendran", role: "Designated Partner", email: "gokul@loomenflylabs.com" },
+    { name: "MS Mohammed Hashiq", role: "Designated Partner", email: "hashiq@loomenflylabs.com" },
+    { name: "Saheeda Menamthuruthil Muhammed", role: "Designated Partner", email: "saheeda@loomenflylabs.com" },
   ],
   socials: {
     instagram: "https://www.instagram.com/loomenflylabs",
@@ -223,7 +241,7 @@ export const ABOUT = {
     "Configured for your services, team and locations"
   ],
   "cardTitle": "Built in Kerala.\nFor Your Business.",
-  "cardDesc": "LOOMENFLY LABS LLP (LLPIN: ACZ-5532), registered in Kerala. Founded by Gokul Surendran, MS Mohammed Hashiq and Saheeda Menamthuruthil Muhammed — Designated Partners."
+  "cardDesc": "LoomenDesk is built and operated by LOOMENFLY LABS LLP (LLPIN: ACZ-5532), a software company registered in Kerala, India. We help businesses manage bookings, staff availability and customer records in one place."
 } as const;
 
 export const CUSTOM_SOLUTIONS = {

@@ -108,14 +108,14 @@ export default function RootLayout({
       "Software company and creators of LoomenDesk appointment booking software.",
     email: COMPANY.adminEmail,
     telephone: COMPANY.phone,
+    foundingDate: COMPANY.incorporationDate,
     address: {
       "@type": "PostalAddress",
-      streetAddress:
-        "Door No. 150, Gurusadanam, Ala P.O, Chengannur, Ala (Alappuzha), Chengannur Police Station",
-      addressLocality: "Chengannur, Alappuzha",
-      addressRegion: "Kerala",
-      postalCode: "689126",
-      addressCountry: "IN",
+      streetAddress: COMPANY.registeredOffice.streetAddress,
+      addressLocality: COMPANY.registeredOffice.addressLocality,
+      addressRegion: COMPANY.registeredOffice.addressRegion,
+      postalCode: COMPANY.registeredOffice.postalCode,
+      addressCountry: COMPANY.registeredOffice.addressCountry,
     },
     identifier: [
       {
@@ -132,23 +132,6 @@ export default function RootLayout({
         "@type": "PropertyValue",
         name: "PAN",
         value: COMPANY.pan,
-      },
-    ],
-    founder: [
-      {
-        "@type": "Person",
-        name: "Gokul Surendran",
-        jobTitle: "Designated Partner & CEO",
-      },
-      {
-        "@type": "Person",
-        name: "MS Mohammed Hashiq",
-        jobTitle: "Designated Partner & CTO",
-      },
-      {
-        "@type": "Person",
-        name: "Saheeda Menamthuruthil Muhammed",
-        jobTitle: "Designated Partner & COO",
       },
     ],
     contactPoint: [

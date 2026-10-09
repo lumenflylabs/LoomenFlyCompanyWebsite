@@ -2,6 +2,7 @@ import React from "react";
 import { getPageMetadata } from "@/lib/seo";
 import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
+import RegisteredAddress from "@/components/RegisteredAddress";
 
 export const metadata = getPageMetadata("about");
 
@@ -16,7 +17,7 @@ export default function AboutPage() {
           About {COMPANY.name}
         </h1>
         <p className="font-sans text-xl md:text-2xl text-[#111111]/70 leading-relaxed mb-12">
-          We are <strong>{COMPANY.legalName}</strong> (LLPIN: {COMPANY.llpin}), an Indian software and technology firm registered in Kerala, specializing in conversational commerce, automated booking infrastructure, and business management software.
+          We build booking and business management software for teams that work by appointment. <strong>{COMPANY.legalName}</strong> is the Kerala-based company behind LoomenDesk, helping customers book and businesses manage their day from one dashboard.
         </p>
 
         <div className="flex flex-col gap-12 font-sans text-base md:text-lg text-[#111111]/80 leading-relaxed">
@@ -27,8 +28,9 @@ export default function AboutPage() {
             <h2 className="font-heading text-2xl md:text-3xl text-[#111111]">{COMPANY.legalName}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-[#111111]/70 pt-2 border-t border-[#111111]/10">
               <p><strong>LLPIN:</strong> {COMPANY.llpin}</p>
-              <p><strong>MSME Udyam:</strong> {COMPANY.udyam}</p>
-              <p className="md:col-span-2"><strong>Registered Office:</strong> {COMPANY.address}</p>
+              <p><strong>Incorporated:</strong> <time dateTime={COMPANY.incorporationDate}>{COMPANY.incorporationDateLabel}</time></p>
+              <p className="md:col-span-2"><strong>MSME Udyam:</strong> {COMPANY.udyam}</p>
+              <div className="md:col-span-2"><p className="font-semibold mb-2">Registered Office</p><RegisteredAddress /></div>
               <p><strong>Official Inquiries:</strong> <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline font-mono">{COMPANY.adminEmail}</a></p>
               <p><strong>Official Contact:</strong> {COMPANY.phone} / {COMPANY.altPhone}</p>
             </div>
@@ -47,36 +49,13 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Leadership Team (Designated Partners) */}
           <div>
-            <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-2">
-              Designated Partners &amp; Leadership
+            <h2 className="font-heading text-2xl md:text-3xl font-medium text-[#111111] mb-4">
+              Setup and support from our team
             </h2>
-            <p className="text-sm text-[#111111]/60 mb-6">
-              Founded and managed by Designated Partners registered under the Limited Liability Partnership Act:
+            <p>
+              We help you set up your services, booking links and staff schedules, then support your team as you use LoomenDesk. Contact us online to discuss a demo, onboarding or an on-site visit. Our registered office is for company correspondence; customer visits are arranged separately.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm">
-                <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-1 font-bold">Designated Partner</span>
-                <h3 className="font-heading text-xl text-[#111111] mb-1">Gokul Surendran</h3>
-                <p className="text-xs text-[#111111]/60 mb-4">Chief Executive Officer (CEO)</p>
-                <a href={`mailto:${COMPANY.salesEmail}`} className="text-xs text-[#E51E25] hover:underline font-mono">{COMPANY.salesEmail}</a>
-              </div>
-
-              <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm">
-                <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-1 font-bold">Designated Partner</span>
-                <h3 className="font-heading text-xl text-[#111111] mb-1">MS Mohammed Hashiq</h3>
-                <p className="text-xs text-[#111111]/60 mb-4">Chief Technology Officer (CTO)</p>
-                <a href={`mailto:${COMPANY.techEmail}`} className="text-xs text-[#E51E25] hover:underline font-mono">{COMPANY.techEmail}</a>
-              </div>
-
-              <div className="p-6 bg-white rounded-2xl border border-[#111111]/10 shadow-sm">
-                <span className="font-mono text-xs text-[#E51E25] uppercase tracking-wider block mb-1 font-bold">Designated Partner</span>
-                <h3 className="font-heading text-xl text-[#111111] mb-1">Saheeda Menamthuruthil Muhammed</h3>
-                <p className="text-xs text-[#111111]/60 mb-4">Chief Operating Officer (COO)</p>
-                <a href={`mailto:${COMPANY.successEmail}`} className="text-xs text-[#E51E25] hover:underline font-mono">{COMPANY.successEmail}</a>
-              </div>
-            </div>
           </div>
 
           {/* Compliance & Independence */}

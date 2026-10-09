@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RegisteredAddress from "@/components/RegisteredAddress";
 import { COMPANY, FOOTER } from "@/lib/constants";
 
 export default function Footer() {
@@ -21,10 +22,10 @@ export default function Footer() {
             </p>
             
             <div className="flex flex-col gap-3 font-sans text-sm text-white/40 leading-relaxed max-w-[460px]">
-              <p>
-                <strong className="text-white/70 font-medium">Registered Address:</strong><br />
-                {COMPANY.address}
-              </p>
+              <div>
+                <p className="text-white/70 font-medium mb-1">Registered Office</p>
+                <RegisteredAddress />
+              </div>
               <div className="flex flex-col gap-1 pt-2 border-t border-white/10 text-white/60">
                 <p>
                   <strong className="text-white/70">Email:</strong>{" "}

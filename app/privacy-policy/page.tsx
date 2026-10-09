@@ -129,7 +129,7 @@ export default function PrivacyPolicy() {
               In accordance with the Information Technology Act, 2000 and Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, the designated Grievance Officer for LOOMENFLY LABS LLP is:
             </p>
             <div className="p-5 bg-white rounded-2xl border border-[#111111]/10 text-sm text-[#111111]/80 shadow-sm leading-relaxed">
-              <p><strong>Grievance Officer:</strong> {DESIGNATED_PARTNERS[1].name} (Designated Partner &amp; {DESIGNATED_PARTNERS[1].role})</p>
+              <p><strong>Grievance Officer:</strong> {DESIGNATED_PARTNERS[1].name} ({DESIGNATED_PARTNERS[1].role})</p>
               <p><strong>Entity:</strong> {COMPANY.legalName}</p>
               <p><strong>Email:</strong> <a href={`mailto:${COMPANY.adminEmail}`} className="text-[#E51E25] hover:underline font-mono">{COMPANY.adminEmail}</a></p>
               <p><strong>Physical Address:</strong> {COMPANY.address}</p>
